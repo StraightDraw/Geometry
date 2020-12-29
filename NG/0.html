@@ -57,6 +57,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.1 Congruence, Lines and Angles" href="1.html" />
     <link rel="prev" title="1.5 Searching for a Parallel Posutlate" href="../FFG/5.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -75,6 +76,8 @@
     
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Geometry</h1>
@@ -95,9 +98,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../FFG/0.html">
-   <span style="color:darkblue">
-    1.0  Foundations and Finite Geometries
-   </span>
+   Foundations and Finite Geometries
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -134,10 +135,24 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
    Neutral Geometry
   </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2.html">
+     2.2 Triangles
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
 </ul>
 
@@ -236,18 +251,6 @@
    Axiomatics of Neutral Geometry
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#congruence-lines-and-angles">
-   Congruence, Lines and Angles
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#theorems">
-     Theorems
-    </a>
-   </li>
-  </ul>
- </li>
 </ul>
 
         </nav>
@@ -263,7 +266,8 @@
 <h1>Neutral Geometry<a class="headerlink" href="#neutral-geometry" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="geometry-without-a-parallel-property">
 <h2>Geometry without a Parallel Property<a class="headerlink" href="#geometry-without-a-parallel-property" title="Permalink to this headline">¶</a></h2>
-<p>Many theorems of traditional, high school geometry are true regardless of which parallel postulate is used. A <em>neutral geometry</em> is one in which no parallel postulate exists, and the theorems of a netural geometry are true for Euclidean and (some) non-Euclidean geomteries. We will explore neutral geometry until forced into a choice about how  parallel lines must work. Without a parallel postulate, the basic theorems of both Euclidean and hyperbolic geometry are true. This difficulty confused geometers for more than two thousand years.</p>
+<p>Many theorems of traditional, high school geometry are true regardless of which parallel postulate is used. A <em>neutral geometry</em> is one in which no parallel postulate exists, and the theorems of a netural geometry are true for Euclidean and (some) non-Euclidean geomteries. We will explore neutral geometry until forced into a choice about how  parallel lines must work. Without a parallel postulate, the basic theorems of both Euclidean and hyperbolic geometry are true. This difficulty confused geometers for more than two thousand years as illustrated by this animated parallelogram in hyperbolic geometry.</p>
+<p><img alt="Poincare Disk Model of Hyperbolic Geometry" src="https://mathworld.wolfram.com/images/gifs/poincare.gif" /></p>
 <p>Spherical geometry is a special case of elliptical geometry where the lines of the geometry are great circles of the sphere. In spherical geometry, triangles have angle sums greater than <span class="math notranslate nohighlight">\(180^{\circ}\)</span>. Elliptical and spherical geometry develops along a separate path from Euclidean and hyperbolic geometries, and the axioms and theorems of neutral geometry do not typically apply.</p>
 <p>The axioms and theorems of netural geometry can be proven using the SMSG axioms 1 through 15. In the SMSG axiom list, Axiom 16 is the Euclidean parallel postulate. A neutral geometry assumes only the first 15 axioms of the SMSG set.</p>
 <p><strong>Notes on Notation.</strong> The SMSG axioms refer to the length or measure of line segments and the measure of angles. Thus, we will use the notation <span class="math notranslate nohighlight">\(\overline{AB}\)</span> to describe a line segment but use <span class="math notranslate nohighlight">\(AB\)</span> to denote its length or measure. We refer to the angle formed by <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> and <span class="math notranslate nohighlight">\(\overrightarrow{AC}\)</span> as <span class="math notranslate nohighlight">\(\angle BAC\)</span> (with vertex <span class="math notranslate nohighlight">\(A\)</span>) and denote its measure as <span class="math notranslate nohighlight">\(m\angle BAC\)</span>.</p>
@@ -271,8 +275,16 @@
 <div class="section" id="axiomatics-of-neutral-geometry">
 <h2>Axiomatics of Neutral Geometry<a class="headerlink" href="#axiomatics-of-neutral-geometry" title="Permalink to this headline">¶</a></h2>
 <p>When undergraduate math majors encounter proofs for the first time, they often wonder why in the world anyone would need to prove that the number <span class="math notranslate nohighlight">\(\sqrt 2\)</span> exists. Mathematicians prove every single result starting from the axioms and defined terms. Undergraduate math majors often roll their eyes. What’s the point? For many students, these exercises are tedious at best, confusing at worst.</p>
-<p>The biggest problem for geometers is that geometric lines are not necessarily <em>complete</em>. We can have sequences of points on a line where the distances between successive terms get smaller and smaller, yet the limiting point is nowhere to be found. The completeness property means that any two lines that “cross” each other actually intersect.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n-tWaJcUeR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Problem of Completeness<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">The biggest problem for geometers is that geometric lines are not necessarily <em>complete</em>. We can have sequences of points on a line where the distances between successive terms get smaller and smaller, yet the limiting point is nowhere to be found. The completeness property means that any two lines that “cross” each other actually intersect.</p>
+</div>
+</details><iframe width="560" height="315" src="https://www.youtube.com/embed/n-tWaJcUeR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>The SMSG Axioms form a bridge to the most interesting and accessible results of Euclidean geometry. The tedium of proving completeness of all lines is avoided, and “real” geometry takes place almost immediately. For neutral geometry, we will assume only the first 15 of the SMSG axioms are true. Axiom 16 is the parallel postulate.</p>
 <p>The undefined terms for the SMSG axioms are often said to be <em>points</em>, <em>lines</em> and <em>plane</em>. The hidden gold of the SMSG axioms is that they provide tools from three categories of mathematics.</p>
 <ul class="simple">
@@ -323,71 +335,7 @@
 <li><p><strong>Supplementary Postulate</strong>. If two angles form a linear pair, then they are supplementary.</p></li>
 <li><p><strong>Side Angle Side Postulate</strong>. Given a one-to-one correspondence between two triangles (or between a triangle and itself), if two sides and the included angle of the first triangle are congruent to the corresponding parts of the second triangle, the correspondence is a congruence.</p></li>
 </ol>
-</div>
-<div class="section" id="congruence-lines-and-angles">
-<h2>Congruence, Lines and Angles<a class="headerlink" href="#congruence-lines-and-angles" title="Permalink to this headline">¶</a></h2>
-<p><strong>Definitions</strong></p>
-<ul class="simple">
-<li><p>Segment and Angle Congruence. Two segments (or angles) are congruent if and only if their measures are equal.</p></li>
-<li><p>Polygon Congruence. Two polygons are congruent if and only if there exists a one-to-one correspondence between their vertices such that all their corresponding sides (line sgements) and all their corresponding angles are congruent.</p></li>
-</ul>
-<p>Congruence relations are <em>equivalance relations</em> (see Theorem 1). Specifically, congruence relations are symmetric, reflexive and transitive.</p>
-<ul>
-<li><p>Collinear. Two points are <em>collinear</em> if they lie on the same line.</p></li>
-<li><p>Intersecting Lines. Two lines <em>intersect</em> if there exists a point that is on both lines.</p></li>
-<li><p>Parallel Lines. <em>Parallel</em> lines are two lines in the same plan which do not intersect.</p></li>
-<li><p>Concurrent Lines. <em>Concurrent</em> lines are three or more coplanar lines that have a point in common.</p></li>
-<li><p>Segment. A <em>segment</em> <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is the set of points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and all points <span class="math notranslate nohighlight">\(P\)</span> such that <span class="math notranslate nohighlight">\(P\in\overleftrightarrow{AB}\)</span> and <span class="math notranslate nohighlight">\(AP+PB=AB\)</span>.</p>
-<p>In the above definition, we would like to say “…all points <span class="math notranslate nohighlight">\(P\)</span> <strong>between</strong> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>,” but as you’ll see
-below, we need the concept of <em>segment</em> to define the idea of <em>between</em>, so we rely upon the SMSG
-Ruler Postulate (Axiom 3) and Distance Postulate (Axiom 2) to define a segment.</p>
-</li>
-<li><p>Between. A point <span class="math notranslate nohighlight">\(B\)</span> is <em>between</em> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span> if <span class="math notranslate nohighlight">\(B\in \overline{AC}\)</span> but <span class="math notranslate nohighlight">\(B\neq A,C\)</span>.</p></li>
-<li><p>Ray. A ray <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> (also called a half-line) is a subset of the line <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> that contains a given point <span class="math notranslate nohighlight">\(A\)</span> and all the points <span class="math notranslate nohighlight">\(C\in\overleftrightarrow{AB}\)</span> such that <span class="math notranslate nohighlight">\(A\)</span> is \textbf{not} between <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. The point <span class="math notranslate nohighlight">\(A\)</span> is called the \textbf{endpoint} of the ray.</p></li>
-<li><p>Angle. An angle is the union of two rays which have the same endpoint.</p></li>
-<li><p>Angle Interior. A point <span class="math notranslate nohighlight">\(P\)</span> is in the interior of <span class="math notranslate nohighlight">\(\angle{ABC}\)</span> provided:</p></li>
-</ul>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(m\angle{ABC}&lt;180^\circ\)</span></p></li>
-<li><p>there exist points <span class="math notranslate nohighlight">\(X,Y\)</span> such that</p>
-<ul>
-<li><p><span class="math notranslate nohighlight">\(X\in\overrightarrow{BA}\)</span>,</p></li>
-<li><p><span class="math notranslate nohighlight">\(Y\in\overrightarrow{BC}\)</span>, and</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> is between <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span></p></li>
-</ul>
-</li>
-</ul>
-<ul class="simple">
-<li><p>Convex. A set (or polygon) <span class="math notranslate nohighlight">\(P\)</span> is convex if <span class="math notranslate nohighlight">\(A,B\in P\implies \overline{AB}\in P\)</span>.</p></li>
-<li><p>Midpoint. The midpoint C of <span class="math notranslate nohighlight">\(\overline{AB}\)</span> lies on <span class="math notranslate nohighlight">\(\overline{AB}\)</span> such that <span class="math notranslate nohighlight">\(AC = CB\)</span>.</p></li>
-<li><p>Angle Bisector. The ray <span class="math notranslate nohighlight">\(\overrightarrow{BD}\)</span> is the angle bisector of <span class="math notranslate nohighlight">\(\angle{ABC}\)</span> if <span class="math notranslate nohighlight">\(m\angle ABD = m\angle DBC\)</span>.</p></li>
-<li><p>Right Angle. An angle with angle measure <span class="math notranslate nohighlight">\(90^\circ\)</span> (see SMSG Axiom 11).</p></li>
-<li><p>Acute Angle. An angle with angle measure less than <span class="math notranslate nohighlight">\(90^\circ\)</span>.</p></li>
-<li><p>Perpendicular Bisector. A line which passes through the midpoint of a line segment and which forms a right angle with that segment at the point of intersection.</p></li>
-<li><p>Obtuse Angle. An angle with angle measure greater than <span class="math notranslate nohighlight">\(90^\circ\)</span>.<a class="footnote-reference brackets" href="#id2" id="id1">2</a></p></li>
-<li><p>Straight Angle. An angle whose rays are distinct but collinear.</p></li>
-<li><p>Vertical Angles.} The angles opposite each other when two lines cross.</p></li>
-<li><p>Supplementary Angles Postulate. (From SMSG Axiom list.) If two angles form a linear pair, they are supplentary.</p></li>
-<li><p>Complementary Angle. If two angles form a right angle, they are complementary.</p></li>
-</ul>
-<div class="section" id="theorems">
-<h3>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Congruence relations are equivalence relations.</p></li>
-<li><p>Every line segment has exactly one midpoint.</p></li>
-<li><p>Every angle has exactly one bisector.</p></li>
-<li><p>Supplements and complements of the same angles are congruent.</p></li>
-<li><p>The intersection of two convex polygons is convex.</p></li>
-<li><p>Vertical angles are congruent.</p></li>
-<li><p><strong>Pasch’s Axiom</strong>. Given a line that contains no vertex of a triangle, if that line intersects one side of the triangle, it must intersect another.</p></li>
-<li><p><strong>Crossbar Theorem</strong>. If at least one point of <span class="math notranslate nohighlight">\(\overrightarrow{AC}\)</span> is in the interior of <span class="math notranslate nohighlight">\(\angle{BAD}\)</span> then <span class="math notranslate nohighlight">\(\overrightarrow{AC}\)</span> intersects <span class="math notranslate nohighlight">\(\overline{BD}\)</span>.</p></li>
-</ol>
-<hr class="docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
-<dd><p>Note that according to SMSG Axiom 11, angles <em>must</em> have measure <span class="math notranslate nohighlight">\(\leq 180^\circ\)</span>, so we don’t yet have the idea (or a way to define) “reflex angles,” nor do we have angles with negative measure.</p>
-</dd>
-</dl>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 </div>
@@ -421,6 +369,7 @@ Ruler Postulate (Axiom 3) and Distance Postulate (Axiom 2) to define a segment.<
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../FFG/5.html" title="previous page">1.5  Searching for a Parallel Posutlate</a>
+    <a class='right-next' id="next-link" href="1.html" title="next page">2.1 Congruence, Lines and Angles</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.1 Finite Geometries &#8212; Geometry</title>
+    <title>2.1 Congruence, Lines and Angles &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.2 The Five Point Geometry" href="2.html" />
-    <link rel="prev" title="Foundations and Finite Geometries" href="0.html" />
+    <link rel="next" title="2.2 Triangles" href="2.html" />
+    <link rel="prev" title="Neutral Geometry" href="0.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,38 +96,38 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../FFG/0.html">
    Foundations and Finite Geometries
   </a>
-  <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="2.html">
+    <a class="reference internal" href="../FFG/2.html">
      1.2 The Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3.html">
+    <a class="reference internal" href="../FFG/3.html">
      1.3 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="4.html">
+    <a class="reference internal" href="../FFG/4.html">
      1.4 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html">
+    <a class="reference internal" href="../FFG/5.html">
      1.5  Searching for a Parallel Posutlate
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html#incidence-geometries">
+    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
      Incidence Geometries
     </a>
    </li>
@@ -135,18 +135,18 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="0.html">
    Neutral Geometry
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="2.html">
      2.2 Triangles
     </a>
    </li>
@@ -194,7 +194,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/FFG/1.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/NG/1.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -219,7 +219,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/FFG/1.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/NG/1.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -242,8 +242,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#four-point-geometry">
-   Four Point Geometry
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
   </a>
  </li>
 </ul>
@@ -257,33 +257,70 @@
         
               <div>
                 
-  <div class="section" id="finite-geometries">
-<h1>1.1 Finite Geometries<a class="headerlink" href="#finite-geometries" title="Permalink to this headline">¶</a></h1>
-<p>Finite geometries are the most primitive axiomatic systems with a finite set of points and lines. The geometric ideas we meet studying finite geometry are robust and apply to more sophisticated geometries. The Incidence Axioms (see below) govern the relationship between points and lines and provide the building blocks necessary for ideas like <em>intersect</em> and <em>parallel</em>.</p>
-<p><span style="color:red"><strong>Important</strong>.</span> All finite geometries in this course will have the same three and the same defined terms <em>intersect</em>, <em>parallel</em> and <em>concurrent</em> the definitions for which are given below.</p>
+  <div class="section" id="congruence-lines-and-angles">
+<h1>2.1 Congruence, Lines and Angles<a class="headerlink" href="#congruence-lines-and-angles" title="Permalink to this headline">¶</a></h1>
+<p><strong>Definitions</strong></p>
 <ul class="simple">
-<li><p>Two lines on the same point are said to <em>intersect</em> at that point and are called <em>intersecting lines</em>.</p></li>
-<li><p>Two lines that do not intersect are called <em>parallel</em> lines.</p></li>
-<li><p>Three or more lines that intersect at the same point are called <em>concurrent</em>.</p></li>
+<li><p>Segment and Angle Congruence. Two segments (or angles) are congruent if and only if their measures are equal.</p></li>
+<li><p>Polygon Congruence. Two polygons are congruent if and only if there exists a one-to-one correspondence between their vertices such that all their corresponding sides (line sgements) and all their corresponding angles are congruent.</p></li>
 </ul>
-<div class="section" id="four-point-geometry">
-<h2>Four Point Geometry<a class="headerlink" href="#four-point-geometry" title="Permalink to this headline">¶</a></h2>
-<p>The axioms below together with the undefined terms describe the Four Point Geometry.</p>
-<blockquote>
-<div><p>    i. There exist exactly four points.</p>
-<p>  ii. Any two distinct points have exactly one line on both of them.</p>
-<p>iii. Each line is on exactly two points.</p>
-</div></blockquote>
-<p>We would normally say two lines intersect if they contain the same point. However, we have not defined what <em>contain</em> means. We use the undefined term “on” to refer both to a line being on some points and to points being on a line.</p>
-<p><strong>Theorems.</strong></p>
+<p>Congruence relations are <em>equivalance relations</em> (see Theorem 1). Specifically, congruence relations are symmetric, reflexive and transitive.</p>
+<ul>
+<li><p>Collinear. Two points are <em>collinear</em> if they lie on the same line.</p></li>
+<li><p>Intersecting Lines. Two lines <em>intersect</em> if there exists a point that is on both lines.</p></li>
+<li><p>Parallel Lines. <em>Parallel</em> lines are two lines in the same plan which do not intersect.</p></li>
+<li><p>Concurrent Lines. <em>Concurrent</em> lines are three or more coplanar lines that have a point in common.</p></li>
+<li><p>Segment. A <em>segment</em> <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is the set of points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and all points <span class="math notranslate nohighlight">\(P\)</span> such that <span class="math notranslate nohighlight">\(P\in\overleftrightarrow{AB}\)</span> and <span class="math notranslate nohighlight">\(AP+PB=AB\)</span>.</p>
+<p>In the above definition, we would like to say “…all points <span class="math notranslate nohighlight">\(P\)</span> <strong>between</strong> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>,” but as you’ll see
+below, we need the concept of <em>segment</em> to define the idea of <em>between</em>, so we rely upon the SMSG
+Ruler Postulate (Axiom 3) and Distance Postulate (Axiom 2) to define a segment.</p>
+</li>
+<li><p>Between. A point <span class="math notranslate nohighlight">\(B\)</span> is <em>between</em> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span> if <span class="math notranslate nohighlight">\(B\in \overline{AC}\)</span> but <span class="math notranslate nohighlight">\(B\neq A,C\)</span>.</p></li>
+<li><p>Ray. A ray <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> (also called a half-line) is a subset of the line <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> that contains a given point <span class="math notranslate nohighlight">\(A\)</span> and all the points <span class="math notranslate nohighlight">\(C\in\overleftrightarrow{AB}\)</span> such that <span class="math notranslate nohighlight">\(A\)</span> is \textbf{not} between <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. The point <span class="math notranslate nohighlight">\(A\)</span> is called the \textbf{endpoint} of the ray.</p></li>
+<li><p>Angle. An angle is the union of two rays which have the same endpoint.</p></li>
+<li><p>Angle Interior. A point <span class="math notranslate nohighlight">\(P\)</span> is in the interior of <span class="math notranslate nohighlight">\(\angle{ABC}\)</span> provided:</p></li>
+</ul>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m\angle{ABC}&lt;180^\circ\)</span></p></li>
+<li><p>there exist points <span class="math notranslate nohighlight">\(X,Y\)</span> such that</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(X\in\overrightarrow{BA}\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(Y\in\overrightarrow{BC}\)</span>, and</p></li>
+<li><p><span class="math notranslate nohighlight">\(P\)</span> is between <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span></p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Convex. A set (or polygon) <span class="math notranslate nohighlight">\(P\)</span> is convex if <span class="math notranslate nohighlight">\(A,B\in P\implies \overline{AB}\in P\)</span>.</p></li>
+<li><p>Midpoint. The midpoint C of <span class="math notranslate nohighlight">\(\overline{AB}\)</span> lies on <span class="math notranslate nohighlight">\(\overline{AB}\)</span> such that <span class="math notranslate nohighlight">\(AC = CB\)</span>.</p></li>
+<li><p>Angle Bisector. The ray <span class="math notranslate nohighlight">\(\overrightarrow{BD}\)</span> is the angle bisector of <span class="math notranslate nohighlight">\(\angle{ABC}\)</span> if <span class="math notranslate nohighlight">\(m\angle ABD = m\angle DBC\)</span>.</p></li>
+<li><p>Right Angle. An angle with angle measure <span class="math notranslate nohighlight">\(90^\circ\)</span> (see SMSG Axiom 11).</p></li>
+<li><p>Acute Angle. An angle with angle measure less than <span class="math notranslate nohighlight">\(90^\circ\)</span>.</p></li>
+<li><p>Perpendicular Bisector. A line which passes through the midpoint of a line segment and which forms a right angle with that segment at the point of intersection.</p></li>
+<li><p>Obtuse Angle. An angle with angle measure greater than <span class="math notranslate nohighlight">\(90^\circ\)</span>.<a class="footnote-reference brackets" href="#id2" id="id1">2</a></p></li>
+<li><p>Straight Angle. An angle whose rays are distinct but collinear.</p></li>
+<li><p>Vertical Angles.} The angles opposite each other when two lines cross.</p></li>
+<li><p>Supplementary Angles Postulate. (From SMSG Axiom list.) If two angles form a linear pair, they are supplentary.</p></li>
+<li><p>Complementary Angle. If two angles form a right angle, they are complementary.</p></li>
+</ul>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>In the Four Point Geometry, if two lines intersect, they have exactly one point in common.</p></li>
-<li><p>The Four Point Geometry has exactly six lines.</p></li>
-<li><p>In the Four Point Geometry, each point has exactly three lines on it.</p></li>
-<li><p>In the Four Point Geometry, each line has at least one line that is parallel to it.</p></li>
-<li><p>Prove that there exists a set of two lines in the Four Point Geometry that contain all of the points in the geometry.</p></li>
+<li><p>Congruence relations are equivalence relations.</p></li>
+<li><p>Every line segment has exactly one midpoint.</p></li>
+<li><p>Every angle has exactly one bisector.</p></li>
+<li><p>Supplements and complements of the same angles are congruent.</p></li>
+<li><p>The intersection of two convex polygons is convex.</p></li>
+<li><p>Vertical angles are congruent.</p></li>
+<li><p><strong>Pasch’s Axiom</strong>. Given a line that contains no vertex of a triangle, if that line intersects one side of the triangle, it must intersect another.</p></li>
+<li><p><strong>Crossbar Theorem</strong>. If at least one point of <span class="math notranslate nohighlight">\(\overrightarrow{AC}\)</span> is in the interior of <span class="math notranslate nohighlight">\(\angle{BAD}\)</span> then <span class="math notranslate nohighlight">\(\overrightarrow{AC}\)</span> intersects <span class="math notranslate nohighlight">\(\overline{BD}\)</span>.</p></li>
 </ol>
-<p>The Four Point Geometry can be extended to five, six or more points by simply changing the first axiom. We will explore the Five Point Geometry in the next section, but some of the properties will be different.</p>
+<hr class="docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
+<dd><p>Note that according to SMSG Axiom 11, angles <em>must</em> have measure <span class="math notranslate nohighlight">\(\leq 180^\circ\)</span>, so we don’t yet have the idea (or a way to define) “reflex angles,” nor do we have angles with negative measure.</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -300,7 +337,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./FFG"
+            path: "./NG"
         },
         predefinedOutput: true
     }
@@ -315,8 +352,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="0.html" title="previous page">Foundations and Finite Geometries</a>
-    <a class='right-next' id="next-link" href="2.html" title="next page">1.2 The Five Point Geometry</a>
+    <a class='left-prev' id="prev-link" href="0.html" title="previous page">Neutral Geometry</a>
+    <a class='right-next' id="next-link" href="2.html" title="next page">2.2 Triangles</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
