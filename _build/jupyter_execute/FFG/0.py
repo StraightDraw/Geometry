@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # <span style="color:darkblue">1.0  Foundations and Finite Geometries</span>
-
-# #### Course Notes packet 1 of 5 for UNG College Geometry (MATH 3120). Developed by Robb Sinn.
+# # Foundations and Finite Geometries
 
 # ## Axiomatic Systems
 # Consider a proof of a theorem in mathematics, say, the Pythagorean Theorem. Mathematicians cannot prove this theorem is true everywhere, all the time. Mathematicians can only operate within a given set of ground rules. Primitive ideas must be assumed to be true, not proven. More advanced theorems are built upon the basics, but different sets of primitive ideas are possible.

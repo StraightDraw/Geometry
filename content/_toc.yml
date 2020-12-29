@@ -8,3 +8,6 @@ sections:
   - file: FFG/4
   - file: FFG/5
 - file: NG/0
+  sections:
+  - file: NG/1
+  - file: NG/2
