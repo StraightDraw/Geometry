@@ -3,12 +3,16 @@
 
 # # A.3 Birkhoff Axioms
 
-# Birkhoff's Axiom set is an example of what is called a metric geometry. A metric geometry has axioms for distance and angle measure which leverage the properties of real numbers and the real number line. Birkhoff used the following undefined terms:
+# Birkhoff's Axiom set is an example of what is called a *metric geometry*. A metric geometry has axioms for distance and angle measure which leverage the properties of real numbers and the real number line. Birkhoff used the following undefined terms:
 # 
 # * Points
 # * Sets of points called *lines*
 # * *Distance* between any two points $A$ and $B$: a non-negative real number $d(A,B)$ such that $d(A,B)=d(B,A)$
 # * *Angle* formed by three ordered points $A$, $O$, $B$ ($A \neq O$, $B \neq O$): $\angle AOB$ a real number (mod $2\pi$). The point $O$ is called the \textbf{vertex} of the angle.
+# 
+# ````{note}
+# Note that lines are sets of points, and Birkhoff intentionally invites basic set theory into his geometric system including opeations like intersections, unions and set subtraction.
+# ````
 # 
 # Birkhoff used only four axioms:
 # 
