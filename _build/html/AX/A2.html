@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.2 Hilbert’s Axioms &#8212; Geometry</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="A.3 Birkhoff Axioms" href="A3.html" />
+    <link rel="prev" title="A.1 Eculid’s Elements" href="A1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Geometry</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introduction.html">
+   Geometry
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../FFG/0.html">
+   Foundations and Finite Geometries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/1.html">
+     1.1 Finite Geometries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/2.html">
+     1.2 The Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/3.html">
+     1.3 Fano’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/4.html">
+     1.4 Young’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/5.html">
+     1.5  Searching for a Parallel Posutlate
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
+     Incidence Geometries
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../NG/0.html">
+   Neutral Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NG/1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NG/2.html">
+     2.2 Triangles
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="A0.html">
+   Axiomatics
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="A1.html">
+     A.1 Eculid’s Elements
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     A.2 Hilbert’s Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A3.html">
+     A.3 Birkhoff Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A4.html">
+     A.4 SMSG Axioms
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/AX/A2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/AX/A2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#incidence-axioms">
+   Incidence Axioms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#betweenness-axioms">
+   Betweenness Axioms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#congruence-axioms">
+   Congruence Axioms
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="a-2-hilbert-s-axioms">
+<h1>A.2 Hilbert’s Axioms<a class="headerlink" href="#a-2-hilbert-s-axioms" title="Permalink to this headline">¶</a></h1>
+<p>The system begins with undefined terms <em>point</em>, <em>line</em> and <em>plane</em> and the fundamental <strong>incidence relation</strong>. We need two more relations: the <em>betweenness relation</em> denoted by <span class="math notranslate nohighlight">\(*\)</span>, and the <em>congruence relation</em> denoted by <span class="math notranslate nohighlight">\(\cong\)</span>. All three relations are undefined and are given meaning within the corresponding set axioms. A quick note about incidence: although the relation <span class="math notranslate nohighlight">\(P\in l\)</span> should, strictly speaking, be read: “<span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(l\)</span> are incident,” we shall use “<span class="math notranslate nohighlight">\(l\)</span> contains <span class="math notranslate nohighlight">\(P\)</span>,” “<span class="math notranslate nohighlight">\(P\)</span> lies on <span class="math notranslate nohighlight">\(l\)</span>” or any obviously logical equivalent.</p>
+<div class="section" id="incidence-axioms">
+<h2>Incidence Axioms<a class="headerlink" href="#incidence-axioms" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>For every pair of distinct points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> there is a unique line <span class="math notranslate nohighlight">\(l\)</span> containing <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>Every line contains at least two points.</p></li>
+<li><p>There are at least three points that do not lie on the same line.</p></li>
+</ol>
+</div>
+<div class="section" id="betweenness-axioms">
+<h2>Betweenness Axioms<a class="headerlink" href="#betweenness-axioms" title="Permalink to this headline">¶</a></h2>
+<p>The next group of axioms deals with the relation “<span class="math notranslate nohighlight">\(B\)</span> lies between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>.”  We will use the notation <span class="math notranslate nohighlight">\(A*B*C\)</span> for “<span class="math notranslate nohighlight">\(B\)</span> lies between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>.”</p>
+<ol class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(A*B*C\)</span>, then <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> are distinct points on a line, and <span class="math notranslate nohighlight">\(C*B*A\)</span> also holds.</p></li>
+<li><p>Given two distinct points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, there exists a point <span class="math notranslate nohighlight">\(C\)</span> such that <span class="math notranslate nohighlight">\(A*B*C\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> are distinct points on a line, then one and only one of the relations <span class="math notranslate nohighlight">\(A*B*C\)</span>, <span class="math notranslate nohighlight">\(B*C*A\)</span> and <span class="math notranslate nohighlight">\(C*A*B\)</span> is satisfied.</p></li>
+<li><p>Let <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> be points not on the same line and let <span class="math notranslate nohighlight">\(l\)</span> be a line which contains none of them. If <span class="math notranslate nohighlight">\(D\in l\)</span> and <span class="math notranslate nohighlight">\(A*D*B\)</span>, there exists an <span class="math notranslate nohighlight">\(E\)</span> on <span class="math notranslate nohighlight">\(l\)</span> such that <span class="math notranslate nohighlight">\(B*E*C\)</span>, or an <span class="math notranslate nohighlight">\(F\)</span> on <span class="math notranslate nohighlight">\(l\)</span> such that <span class="math notranslate nohighlight">\(A*F*C\)</span>, but not both.</p></li>
+</ol>
+<p>If we think of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span> as the vertices of a triangle, another formulation of B4 is this: If a line <span class="math notranslate nohighlight">\(l\)</span> goes through a side of a triangle but none of its vertices, then it also goes through exactly one of the other sides. This formulation is also called <strong>Pasch’s Axiom</strong>. Note that this is not true in <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> where <span class="math notranslate nohighlight">\(n\geq3\)</span>. Hence, I.3 and B.4 together define the geometry as “2-dimensional.”</p>
+</div>
+<div class="section" id="congruence-axioms">
+<h2>Congruence Axioms<a class="headerlink" href="#congruence-axioms" title="Permalink to this headline">¶</a></h2>
+<p>We have two sets of three congruence axioms, the first for congruent line segments, the second for angle congrunce.</p>
+<ol class="simple">
+<li><p>Given a segment <span class="math notranslate nohighlight">\(AB\)</span> and a ray <span class="math notranslate nohighlight">\(r\)</span> from <span class="math notranslate nohighlight">\(C\)</span>, there is a uniquely determined point <span class="math notranslate nohighlight">\(D\)</span> on <span class="math notranslate nohighlight">\(r\)</span> such that <span class="math notranslate nohighlight">\(CD\cong AB\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\cong\)</span> is an equivalence relation on the set of segments.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A*B*C\)</span> and <span class="math notranslate nohighlight">\(A'*B'*C'\)</span> and both <span class="math notranslate nohighlight">\(AB\cong A'B'\)</span> and <span class="math notranslate nohighlight">\(BC\cong B'C'\)</span>, then also <span class="math notranslate nohighlight">\(AC\cong A'C'\)</span>.</p></li>
+<li><p>Given a ray <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> and an angle <span class="math notranslate nohighlight">\(\angle B'A'C'\)</span>, there are angles <span class="math notranslate nohighlight">\(\angle BAE\)</span> and <span class="math notranslate nohighlight">\(\angle BAF\)</span> on opposite sides of <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> such that <span class="math notranslate nohighlight">\(\angle BAE \cong \angle BAF \cong \angle B'A'C'\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\cong\)</span> is an equivalence relation on the set of angles.</p></li>
+<li><p>Given triangles <span class="math notranslate nohighlight">\(\triangle ABC\)</span> and <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span>. If <span class="math notranslate nohighlight">\(AB \cong A'B'\)</span>, <span class="math notranslate nohighlight">\(AC\cong A'C'\)</span> and <span class="math notranslate nohighlight">\(\angle BAC\cong \angle B'A'C'\)</span>, then the two triangles are congruent: <span class="math notranslate nohighlight">\(BC\cong B'C'\)</span>, <span class="math notranslate nohighlight">\(\angle ABC \cong \angle A'B'C'\)</span> and <span class="math notranslate nohighlight">\(\angle BCA \cong \angle B'C'A'\)</span>.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./AX"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="A1.html" title="previous page">A.1 Eculid’s Elements</a>
+    <a class='right-next' id="next-link" href="A3.html" title="next page">A.3 Birkhoff Axioms</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Robb Sinn<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
