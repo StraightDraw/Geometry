@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.3 Fano’s Geometry &#8212; Geometry</title>
+    <title>A.3 Birkhoff Axioms &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.4 Young’s Geometry" href="4.html" />
-    <link rel="prev" title="1.2 The Five Point Geometry" href="2.html" />
+    <link rel="next" title="A.4 SMSG Axioms" href="A4.html" />
+    <link rel="prev" title="A.2 Hilbert’s Axioms" href="A2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,38 +96,38 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../FFG/0.html">
    Foundations and Finite Geometries
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="1.html">
+    <a class="reference internal" href="../FFG/1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="2.html">
+    <a class="reference internal" href="../FFG/2.html">
      1.2 The Five Point Geometry
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/3.html">
      1.3 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="4.html">
+    <a class="reference internal" href="../FFG/4.html">
      1.4 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html">
+    <a class="reference internal" href="../FFG/5.html">
      1.5  Searching for a Parallel Posutlate
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html#incidence-geometries">
+    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
      Incidence Geometries
     </a>
    </li>
@@ -154,28 +154,28 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../AX/A0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="A0.html">
    Axiomatics
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../AX/A1.html">
+    <a class="reference internal" href="A1.html">
      A.1 Eculid’s Elements
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../AX/A2.html">
+    <a class="reference internal" href="A2.html">
      A.2 Hilbert’s Axioms
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../AX/A3.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      A.3 Birkhoff Axioms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../AX/A4.html">
+    <a class="reference internal" href="A4.html">
      A.4 SMSG Axioms
     </a>
    </li>
@@ -223,7 +223,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/FFG/3.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/AX/A3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -248,7 +248,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/FFG/3.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/AX/A3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -265,6 +265,20 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#birkhoff-s-defined-terms">
+   Birkhoff’s defined terms
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -272,32 +286,34 @@
         
               <div>
                 
-  <div class="section" id="fano-s-geometry">
-<h1>1.3 Fano’s Geometry<a class="headerlink" href="#fano-s-geometry" title="Permalink to this headline">¶</a></h1>
-<p>Our approach will be very similar to the Four and Five Point Geometries using the same undefined terms. Here are the axioms for Fano’s Geometry:</p>
-<blockquote>
-<div><p>   i.   There exists at least one line.</p>
-<p>  ii.  There are exactly three points on each line.</p>
-<p>iii. Not all points are on the same line.</p>
-<p>iv.  There is exactly one line on any two distinct points.</p>
-<p>  v.   There is at least one point on any two distinct lines.</p>
-</div></blockquote>
-<p>We will also use the same defined terms as before: intersect, parallel and concurrent.</p>
-<p><strong>Theorems.</strong></p>
-<ol>
-<li><p>In Fano’s Geometry, there exist at least four points.</p></li>
-<li><p>Lindsey’s Lemma. For every point <span class="math notranslate nohighlight">\(P\)</span> in Fano’s Geometry, there exists a line that does not contain it.</p></li>
-<li><p>Fano’s Geometry contains <em>at least</em> seven points.</p></li>
-<li><p>Fano’s Geometry contains <em>no more than</em> seven points.</p>
-<p>Note that Theorems 10 and 11 are actually two lemmas needed to prove that Fano’s Geometry contains <em>exactly</em> seven points.</p>
-</li>
-<li><p>Fano’s Geometry contains \textbf{exactly} seven points.</p></li>
-<li><p>Fano’s Geometry contains \textbf{exactly} seven lines.</p></li>
-<li><p>In Fano’s Geometry, each line is on exactly three points.</p></li>
-<li><p>In Fano’s Geometry, the set of all lines on a single point contains all the points in the geometry.</p></li>
-<li><p>In Fano’s Geometry, for every pair of points, there exist exactly two lines containing neither point.</p></li>
-<li><p>In Fano’s Geometry, each point is on exactly three lines.</p></li>
+  <div class="section" id="a-3-birkhoff-axioms">
+<h1>A.3 Birkhoff Axioms<a class="headerlink" href="#a-3-birkhoff-axioms" title="Permalink to this headline">¶</a></h1>
+<p>Birkhoff’s Axiom set is an example of what is called a metric geometry. A metric geometry has axioms for distance and angle measure which leverage the properties of real numbers and the real number line. Birkhoff used the following undefined terms:</p>
+<ul class="simple">
+<li><p>Points</p></li>
+<li><p>Sets of points called <em>lines</em></p></li>
+<li><p><em>Distance</em> between any two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>: a non-negative real number <span class="math notranslate nohighlight">\(d(A,B)\)</span> such that <span class="math notranslate nohighlight">\(d(A,B)=d(B,A)\)</span></p></li>
+<li><p><em>Angle</em> formed by three ordered points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(O\)</span>, <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(A \neq O\)</span>, <span class="math notranslate nohighlight">\(B \neq O\)</span>): <span class="math notranslate nohighlight">\(\angle AOB\)</span> a real number (mod <span class="math notranslate nohighlight">\(2\pi\)</span>). The point <span class="math notranslate nohighlight">\(O\)</span> is called the \textbf{vertex} of the angle.</p></li>
+</ul>
+<p>Birkhoff used only four axioms:</p>
+<ol class="simple">
+<li><p><strong>Line Measure Axiom</strong>. The points <span class="math notranslate nohighlight">\(A,B,\dots\)</span>  of any line <span class="math notranslate nohighlight">\(l\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(x\)</span> so that <span class="math notranslate nohighlight">\(|x_A - x_B| = d(A,B)\)</span> for all points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p><strong>Point-Line Axiom</strong>. One and only one line <span class="math notranslate nohighlight">\(l\)</span> contains two given points <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> <span class="math notranslate nohighlight">\((P \neq Q)\)</span>.</p></li>
+<li><p><strong>Angle Measure Axiom</strong>. The half-lines <span class="math notranslate nohighlight">\(l,m,\dots\)</span> through any point <span class="math notranslate nohighlight">\(O\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(a(mod 2\pi)\)</span> so that if <span class="math notranslate nohighlight">\(A \neq O\)</span> and <span class="math notranslate nohighlight">\(B \neq O\)</span> are points of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>, respectively, the difference <span class="math notranslate nohighlight">\((a_m - a_n)(mod 2\pi)\)</span> is <span class="math notranslate nohighlight">\(\angle AOB\)</span>.</p></li>
+<li><p><strong>Similarity Axiom</strong>. If in two triangles <span class="math notranslate nohighlight">\(\triangle ABC\)</span>, <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> and for some constant <span class="math notranslate nohighlight">\(k &gt; 0\)</span>, <span class="math notranslate nohighlight">\(d(A',B') = kd(A,B)\)</span>, <span class="math notranslate nohighlight">\(d(A',C') = kd(A,C)\)</span>, and <span class="math notranslate nohighlight">\(m\angle B'A'C' = \pm\angle BAC\)</span>, then also <span class="math notranslate nohighlight">\(d(B',C') = kd(B,C)\)</span>, <span class="math notranslate nohighlight">\(m\angle A'B'C' = \pm\angle ABC\)</span>, and <span class="math notranslate nohighlight">\(\angle A'C'B' = \pm\angle ACB\)</span>.</p></li>
 </ol>
+<div class="section" id="birkhoff-s-defined-terms">
+<h2>Birkhoff’s defined terms<a class="headerlink" href="#birkhoff-s-defined-terms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A point <span class="math notranslate nohighlight">\(B\)</span> is <em>between</em> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span> <span class="math notranslate nohighlight">\((A \neq C)\)</span>, if <span class="math notranslate nohighlight">\(d(A,B) + d(B,C) = d(A,C)\)</span>.</p></li>
+<li><p>The points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, together with all points <span class="math notranslate nohighlight">\(B\)</span> between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, form <em>line segment</em> <span class="math notranslate nohighlight">\(\overline{AC}\)</span>.</p></li>
+<li><p>The <em>half-line</em> <span class="math notranslate nohighlight">\(l'\)</span> with <em>endpoint</em> <span class="math notranslate nohighlight">\(O\)</span> is defined by two points <span class="math notranslate nohighlight">\(O, A\)</span> in line <span class="math notranslate nohighlight">\(l\)</span> <span class="math notranslate nohighlight">\((A \neq O)\)</span> as the set of all points <span class="math notranslate nohighlight">\(A'\)</span> of <span class="math notranslate nohighlight">\(l\)</span> such that <span class="math notranslate nohighlight">\(O\)</span> is not between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A'\)</span>.</p></li>
+<li><p>If two distinct lines have no point in common, they are <em>parallel</em>. A line is always regarded as parallel to itself.</p></li>
+<li><p>Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>straight angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \pi\)</span>. Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>right angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \frac{\pi}{2}\)</span>, in which case we also say that <span class="math notranslate nohighlight">\(m\)</span> is \textbf{perpendicular} to <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A, B, C\)</span> are three distinct points, the segments <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> are said to form a <em>triangle</em> <span class="math notranslate nohighlight">\(\triangle ABC\)</span> with sides <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> and vertices <span class="math notranslate nohighlight">\(A, B, C\)</span>. If <span class="math notranslate nohighlight">\(A, B, C\)</span> are collinear, then <span class="math notranslate nohighlight">\(\triangle ABC\)</span> is said to be <em>degenerate</em>.</p></li>
+<li><p>Any two geometric figures are <em>similar</em> if there exists a one-to-one correspondence between the points of the two figures such that all corresponding distances are in proportion and corresponding angles have equal mesure (except, perhaps, for their sign). Any two geometric figures are <em>congruent</em> if they are similar with a constant of proportionality <span class="math notranslate nohighlight">\(k=1\)</span>.</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -313,7 +329,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./FFG"
+            path: "./AX"
         },
         predefinedOutput: true
     }
@@ -328,8 +344,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="2.html" title="previous page">1.2 The Five Point Geometry</a>
-    <a class='right-next' id="next-link" href="4.html" title="next page">1.4 Young’s Geometry</a>
+    <a class='left-prev' id="prev-link" href="A2.html" title="previous page">A.2 Hilbert’s Axioms</a>
+    <a class='right-next' id="next-link" href="A4.html" title="next page">A.4 SMSG Axioms</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
