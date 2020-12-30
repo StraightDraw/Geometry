@@ -14,11 +14,12 @@
 # Our course will use the **SMSG Axioms** for Neutral, Euclidean and Analytic Geometry.
 # ````
 # 
-# *Elements* was the geometry text of choice for two millenia. However, the postulates are stated awkwardly, and huge assumptions are hidden in many statements. Many geometers improved upon Euclid over the years. For example, almost all geometers used the [Playfair Postulate](https://en.wikipedia.org/wiki/Playfair%27s_axiom) instead of Euclid's Fifth. The efforts to clarify and correct Euclid's *Elements* culminated in the work of two great geometers: David Hilbert and George David Birkhoff.
+# *Elements* was the geometry text of choice for two millenia. However, the postulates are stated awkwardly, and huge assumptions are hidden in many statements. Many geometers improved upon Euclid over the years. For example, almost all geometers used the [Playfair Postulate](https://en.wikipedia.org/wiki/Playfair%27s_axiom) instead of Euclid's Fifth.
 # 
 # ````{dropdown} Playfair Postulate
 # Given a line and a point not on it, at most one line parallel to the given line can be drawn through the point.
 # ````
+# The efforts to clarify and correct Euclid's *Elements* culminated in the work of two great geometers: David Hilbert and George David Birkhoff.
 # 
 # Hilbert's work in the late 1800's created a precise, complete and independent set of axioms that generate the entirity of Euclidean geometry. Hilbert's quintessential set of axioms set the standard for work in Euclidean geometry and still influences teaching and research in geometry today. His grouping of axioms established the core concepts for the needed axioms of Eudlidean geometry. His **incidence** axioms described how objects connect to each other. His **betweeness** axioms injected the properties of the real line that need to be true for all lines in the geometry, for example, that for distinct points $A$, $B$ and $C$, exacgtly one of the following must be true:
 # 
