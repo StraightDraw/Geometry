@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.2 The Five Point Geometry &#8212; Geometry</title>
+    <title>3.3 Circles &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.3 Fano’s Geometry" href="3.html" />
-    <link rel="prev" title="1.1 Finite Geometries" href="1.html" />
+    <link rel="next" title="Axioms for Euclidean Geometry" href="../AX/A0.html" />
+    <link rel="prev" title="3.2 Area and Congruence" href="E2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,38 +96,38 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../FFG/0.html">
    Foundations and Finite Geometries
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="1.html">
+    <a class="reference internal" href="../FFG/1.html">
      1.1 Finite Geometries
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FFG/2.html">
      1.2 The Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3.html">
+    <a class="reference internal" href="../FFG/3.html">
      1.3 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="4.html">
+    <a class="reference internal" href="../FFG/4.html">
      1.4 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html">
+    <a class="reference internal" href="../FFG/5.html">
      1.5  Searching for a Parallel Posutlate
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="5.html#incidence-geometries">
+    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
      Incidence Geometries
     </a>
    </li>
@@ -159,23 +159,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../EG/E0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="E0.html">
    Euclidean Geometry
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E1.html">
+    <a class="reference internal" href="E1.html">
      3.1 Building Blocks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E2.html">
+    <a class="reference internal" href="E2.html">
      3.2 Area and Congruence
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E3.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      3.3 Circles
     </a>
    </li>
@@ -252,7 +252,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/FFG/2.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/EG/E3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -277,7 +277,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/FFG/2.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/EG/E3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -294,6 +294,20 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -301,20 +315,66 @@
         
               <div>
                 
-  <div class="section" id="the-five-point-geometry">
-<h1>1.2 The Five Point Geometry<a class="headerlink" href="#the-five-point-geometry" title="Permalink to this headline">¶</a></h1>
-<p>The axioms below describe the <em>Five Point Geometry</em> together with the undefined terms (point, line, on). Please note that Axioms (ii) and (iii) of the Five Point Geometry are identical to the Four Point Geometry. Axiom (i) only changes from four points to five. We will use the same defined terms as above. For clarity, here’s the axiom set:</p>
-<blockquote>
-<div><p>   i.   There exist exactly five points.</p>
-<p>  ii.  Any two distinct points have exactly one line on both of them.</p>
-<p>iii. Each line is on exactly two points.</p>
-</div></blockquote>
-<p><strong>Theorems.</strong></p>
-<ol class="simple">
-<li><p>How many distinct lines are in the Five Point Geometry? Prove your conjecture.</p></li>
-<li><p>Prove or disprove: There exists a set of <strong>two</strong> lines in the Five Point Geometry that contain all of the points in the geometry. If you disprove this statement, change the word in bold so that the theorem is true, and prove the new theorem.</p></li>
+  <div class="section" id="circles">
+<h1>3.3 Circles<a class="headerlink" href="#circles" title="Permalink to this headline">¶</a></h1>
+<dl class="simple myst">
+<dt>Circle</dt><dd><p>A set of points all of which are equidistant from a given point called the <em>center</em>.</p>
+</dd>
+<dt>Radius</dt><dd><p>The common distance between points on the circle and center point.</p>
+</dd>
+<dt>Chord</dt><dd><p>A <em>chord</em> of a circle is a line segment joining two of the points on the circle. A <em>secant</em> is a line which contains a chord.</p>
+</dd>
+<dt>Tangent</dt><dd><p>A line which contains exactly one point of a circle.</p>
+</dd>
+<dt>Diameter</dt><dd><p>The length of a chord that contains the center of the circle.</p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The radius and diameter are defined to be <em>distances</em>. Yet, we often refer to relevant line segments as radii or diameters.</p>
+</div>
+<dl class="simple myst">
+<dt>Central Angle</dt><dd><p>Any angle whose vertex is the center of a circle is a \textbf{central angle}.</p>
+</dd>
+<dt>Arc</dt><dd><p>The set of points on a circle that lie between two points on the circle, including the points themselves.</p>
+</dd>
+<dt>Arc Measure</dt><dd><p>The degree measure of an arc is the measure of the central angle corresponding to the arc. Two distinct points on a circle create two arcs, a <em>minor arc</em> and a <em>major arc</em>, with the degree measure of the major arc greater than (or equal to) that of the minor arc.</p>
+</dd>
+<dt>Inscribed Angle</dt><dd><p>The angle formed when two secant lines intersect at a point on the circle.</p>
+</dd>
+<dt>Intercepted Arc</dt><dd><p>The part of the circle that lies between two lines that intersect it.</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>In the Euclidean plane, three distinct points uniquely determine a circle.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Requires both an existance proof and a uniqueness proof.</p>
+</div>
+</li>
+<li><p>If <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is a diameter and <span class="math notranslate nohighlight">\(\overline{CD}\)</span> is any other chord of the same circle (which is not a diameter), then <span class="math notranslate nohighlight">\(AB&gt;CD\)</span>.</p></li>
+<li><p>If a diameter of a circle is perpendicular to a chord of the circle, then the diameter bisects the chord.</p></li>
+<li><p>The perpendicular bisector of a chord of a circle contains a diameter of the circle.</p></li>
+<li><p>If a line is tangent to a circle, it is perpendicular to the line joining the point of tangency to the center of the circle.</p></li>
+<li><p><strong>Arc Addition</strong>. If arc <span class="math notranslate nohighlight">\(ABC\)</span> and arc <span class="math notranslate nohighlight">\(CDE\)</span> are arcs sharing only the same endpoint <span class="math notranslate nohighlight">\(C\)</span>, then the measure of arc <span class="math notranslate nohighlight">\(ABC\)</span> plus the measure of arc <span class="math notranslate nohighlight">\(CDE\)</span> equals the measure of arc <span class="math notranslate nohighlight">\(ACE}\)</span>.</p></li>
+<li><p><strong>Inscribed Angle Theorem</strong>. The measure of an angle inscribed in an arc is one-half the measure of its intercepted arc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall the measure of an arc is equal to the measure of the central angle corresponding to the arc.</p>
+</div>
+</li>
+<li><p><strong>Two-Chord Angle Theorem</strong>. If two chords interesect in the interior of a circle to determine an angle, the measure of that angle is the average of the measures of the arcs intercepted by the angle and its vertical angles.</p></li>
+<li><p><strong>Two-Secant Angle Theorem</strong>. If two secants interesect in the exterior of a circle to determine an angle, the measure of the angle at the point of intersection is one-half the positive difference of the two intercepted arcs.</p></li>
+<li><p><strong>Tangent-Chord Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overline{AC}\)</span> is a chord of the circle with measure arc <span class="math notranslate nohighlight">\(APC=x^{\circ}\)</span>, then <span class="math notranslate nohighlight">\(m\angle BAC=\frac{x^{\circ}}{2}\)</span>.</p></li>
+<li><p><strong>Tangent-Secant Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overleftrightarrow{BD}\)</span> is a secant of the circle, then <span class="math notranslate nohighlight">\(m\angle ABD\)</span> is half the positive difference of the two intercepted arcs.</p></li>
+<li><p><strong>Two-Tangent Angle Theorem</strong>. The measure of an angle formed by two tangents drawn to a circle is one-half the positive difference of the measures of the intercepted arcs.</p></li>
+<li><p><strong>Corollary</strong>. Tangent segments drawn to a circle from the same (exterior) point are congruent.</p></li>
+<li><p><strong>Chord Segment Product Theorem</strong>. If two chords of a circle intersect, the products of the lengths of the segments of one chord is equal to the product of the lengths of the segments of the other.</p></li>
+<li><p><strong>Secant Segment Product Theorem</strong>. If two secant lines are drawn to a circle from the same exterior point, then the product of the length of the secant segment and the lenth of its exterior portion is the same for both secants.</p></li>
 </ol>
-<p>We will return to Five Point Geometry later when we discuss <em>affine</em> geometries. The next two finite geometries are iconic: Fano’s Geometry and Young’s Geometry.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -330,7 +390,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./FFG"
+            path: "./EG"
         },
         predefinedOutput: true
     }
@@ -345,8 +405,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="1.html" title="previous page">1.1 Finite Geometries</a>
-    <a class='right-next' id="next-link" href="3.html" title="next page">1.3 Fano’s Geometry</a>
+    <a class='left-prev' id="prev-link" href="E2.html" title="previous page">3.2 Area and Congruence</a>
+    <a class='right-next' id="next-link" href="../AX/A0.html" title="next page">Axioms for Euclidean Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
