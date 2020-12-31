@@ -11,6 +11,7 @@ sections:
   sections:
   - file: NG/1
   - file: NG/2 
+  - file: NG/3
 - file: AX/A0
   sections:
   - file: AX/A1

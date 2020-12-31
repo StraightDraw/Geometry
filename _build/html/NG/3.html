@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A.3 Birkhoff Axioms &#8212; Geometry</title>
+    <title>2.3 Quadrilaterals &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A.4 SMSG Axioms" href="A4.html" />
-    <link rel="prev" title="A.2 Hilbert’s Axioms" href="A2.html" />
+    <link rel="next" title="Axioms for Euclidean Geometry" href="../AX/A0.html" />
+    <link rel="prev" title="2.2 Triangles" href="2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -135,23 +135,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="0.html">
    Neutral Geometry
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+    <a class="reference internal" href="1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="2.html">
      2.2 Triangles
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../NG/3.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -159,28 +159,28 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="A0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
    Axioms for Euclidean Geometry
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="A1.html">
+    <a class="reference internal" href="../AX/A1.html">
      A.1 Eculid’s Elements
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A2.html">
+    <a class="reference internal" href="../AX/A2.html">
      A.2 Hilbert’s Axioms
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
      A.3 Birkhoff Axioms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A4.html">
+    <a class="reference internal" href="../AX/A4.html">
      A.4 SMSG Axioms
     </a>
    </li>
@@ -228,7 +228,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/AX/A3.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/NG/3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -253,7 +253,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/AX/A3.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/NG/3.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -276,8 +276,25 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#birkhoff-s-defined-terms">
-   Birkhoff’s defined terms
+  <a class="reference internal nav-link" href="#the-saccheri-legendre-theorem">
+   The Saccheri-Legendre Theorem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rectangles">
+   Rectangles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#searching-for-rectangles">
+     Searching for Rectangles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
   </a>
  </li>
 </ul>
@@ -291,37 +308,64 @@
         
               <div>
                 
-  <div class="section" id="a-3-birkhoff-axioms">
-<h1>A.3 Birkhoff Axioms<a class="headerlink" href="#a-3-birkhoff-axioms" title="Permalink to this headline">¶</a></h1>
-<p>Birkhoff’s Axiom set is an example of what is called a <em>metric geometry</em>. A metric geometry has axioms for distance and angle measure which leverage the properties of real numbers and the real number line. Birkhoff used the following undefined terms:</p>
-<ul class="simple">
-<li><p>Points</p></li>
-<li><p>Sets of points called <em>lines</em></p></li>
-<li><p><em>Distance</em> between any two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>: a non-negative real number <span class="math notranslate nohighlight">\(d(A,B)\)</span> such that <span class="math notranslate nohighlight">\(d(A,B)=d(B,A)\)</span></p></li>
-<li><p><em>Angle</em> formed by three ordered points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(O\)</span>, <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(A \neq O\)</span>, <span class="math notranslate nohighlight">\(B \neq O\)</span>): <span class="math notranslate nohighlight">\(\angle AOB\)</span> a real number (mod <span class="math notranslate nohighlight">\(2\pi\)</span>). The point <span class="math notranslate nohighlight">\(O\)</span> is called the \textbf{vertex} of the angle.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Note that lines are sets of points, and Birkhoff intentionally invites basic set theory into his geometric system including opeations like intersections, unions and set subtraction.</p>
+  <div class="section" id="quadrilaterals">
+<h1>2.3 Quadrilaterals<a class="headerlink" href="#quadrilaterals" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-saccheri-legendre-theorem">
+<h2>The Saccheri-Legendre Theorem<a class="headerlink" href="#the-saccheri-legendre-theorem" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>The sum of the measures of any two angles of a triangle is less than <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p></li>
+<li><p>For any <span class="math notranslate nohighlight">\(\triangle ABC\)</span> there exists <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> having the same angle sum as <span class="math notranslate nohighlight">\(\triangle ABC\)</span> but where <span class="math notranslate nohighlight">\(m\angle A'\leq\frac{1}{2}m\angle A\)</span>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.</p>
 </div>
-<p>Birkhoff used only four axioms:</p>
-<ol class="simple">
-<li><p><strong>Line Measure Axiom</strong>. The points <span class="math notranslate nohighlight">\(A,B,\dots\)</span>  of any line <span class="math notranslate nohighlight">\(l\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(x\)</span> so that <span class="math notranslate nohighlight">\(|x_A - x_B| = d(A,B)\)</span> for all points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-<li><p><strong>Point-Line Axiom</strong>. One and only one line <span class="math notranslate nohighlight">\(l\)</span> contains two given points <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> <span class="math notranslate nohighlight">\((P \neq Q)\)</span>.</p></li>
-<li><p><strong>Angle Measure Axiom</strong>. The half-lines <span class="math notranslate nohighlight">\(l,m,\dots\)</span> through any point <span class="math notranslate nohighlight">\(O\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(a(mod 2\pi)\)</span> so that if <span class="math notranslate nohighlight">\(A \neq O\)</span> and <span class="math notranslate nohighlight">\(B \neq O\)</span> are points of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>, respectively, the difference <span class="math notranslate nohighlight">\((a_m - a_n)(mod 2\pi)\)</span> is <span class="math notranslate nohighlight">\(\angle AOB\)</span>.</p></li>
-<li><p><strong>Similarity Axiom</strong>. If in two triangles <span class="math notranslate nohighlight">\(\triangle ABC\)</span>, <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> and for some constant <span class="math notranslate nohighlight">\(k &gt; 0\)</span>, <span class="math notranslate nohighlight">\(d(A',B') = kd(A,B)\)</span>, <span class="math notranslate nohighlight">\(d(A',C') = kd(A,C)\)</span>, and <span class="math notranslate nohighlight">\(m\angle B'A'C' = \pm\angle BAC\)</span>, then also <span class="math notranslate nohighlight">\(d(B',C') = kd(B,C)\)</span>, <span class="math notranslate nohighlight">\(m\angle A'B'C' = \pm\angle ABC\)</span>, and <span class="math notranslate nohighlight">\(\angle A'C'B' = \pm\angle ACB\)</span>.</p></li>
+</li>
+<li><p><strong>Saccheri-Legendre Theorem</strong>. The angle sum of any triangle is less than or equal to <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p></li>
+<li><p>The angle sum of any convex quadrilateral is less than or equal to <span class="math notranslate nohighlight">\(360^\circ\)</span>.</p></li>
+<li><p><strong>Unique Perpendicular</strong>. Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\perp l\)</span>.</p></li>
 </ol>
-<div class="section" id="birkhoff-s-defined-terms">
-<h2>Birkhoff’s defined terms<a class="headerlink" href="#birkhoff-s-defined-terms" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>A point <span class="math notranslate nohighlight">\(B\)</span> is <em>between</em> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span> <span class="math notranslate nohighlight">\((A \neq C)\)</span>, if <span class="math notranslate nohighlight">\(d(A,B) + d(B,C) = d(A,C)\)</span>.</p></li>
-<li><p>The points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, together with all points <span class="math notranslate nohighlight">\(B\)</span> between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, form <em>line segment</em> <span class="math notranslate nohighlight">\(\overline{AC}\)</span>.</p></li>
-<li><p>The <em>half-line</em> <span class="math notranslate nohighlight">\(l'\)</span> with <em>endpoint</em> <span class="math notranslate nohighlight">\(O\)</span> is defined by two points <span class="math notranslate nohighlight">\(O, A\)</span> in line <span class="math notranslate nohighlight">\(l\)</span> <span class="math notranslate nohighlight">\((A \neq O)\)</span> as the set of all points <span class="math notranslate nohighlight">\(A'\)</span> of <span class="math notranslate nohighlight">\(l\)</span> such that <span class="math notranslate nohighlight">\(O\)</span> is not between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A'\)</span>.</p></li>
-<li><p>If two distinct lines have no point in common, they are <em>parallel</em>. A line is always regarded as parallel to itself.</p></li>
-<li><p>Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>straight angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \pi\)</span>. Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>right angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \frac{\pi}{2}\)</span>, in which case we also say that <span class="math notranslate nohighlight">\(m\)</span> is \textbf{perpendicular} to <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(A, B, C\)</span> are three distinct points, the segments <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> are said to form a <em>triangle</em> <span class="math notranslate nohighlight">\(\triangle ABC\)</span> with sides <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> and vertices <span class="math notranslate nohighlight">\(A, B, C\)</span>. If <span class="math notranslate nohighlight">\(A, B, C\)</span> are collinear, then <span class="math notranslate nohighlight">\(\triangle ABC\)</span> is said to be <em>degenerate</em>.</p></li>
-<li><p>Any two geometric figures are <em>similar</em> if there exists a one-to-one correspondence between the points of the two figures such that all corresponding distances are in proportion and corresponding angles have equal mesure (except, perhaps, for their sign). Any two geometric figures are <em>congruent</em> if they are similar with a constant of proportionality <span class="math notranslate nohighlight">\(k=1\)</span>.</p></li>
-</ul>
+</div>
+<div class="section" id="rectangles">
+<h2>Rectangles<a class="headerlink" href="#rectangles" title="Permalink to this headline">¶</a></h2>
+<p>Offering the standard definitions of polygons and quadrilaterals is getting a bit ahead of ourselves since figures like parallelograms and rectangles don’t exist without a parallel postulate. As soon as we have Playfair’s parallel postulate, however, they make sense. Still, we need some structure to continue our investigation.</p>
+<dl class="simple myst">
+<dt>Polygon</dt><dd><p>A simple, closed curve comprised entirely of line segments.</p>
+</dd>
+<dt>Quadrilateral</dt><dd><p>A polygon containing exactly four line segments.</p>
+</dd>
+<dt>Parallelogram:</dt><dd><p>A convex quadrilateral with two pairs of parallel sides.</p>
+</dd>
+<dt>Rectangle</dt><dd><p>A rectangle is a parallelogram with a right angle.</p>
+</dd>
+</dl>
+<div class="section" id="searching-for-rectangles">
+<h3>Searching for Rectangles<a class="headerlink" href="#searching-for-rectangles" title="Permalink to this headline">¶</a></h3>
+<p>Rectangles don’t exist in a neutral geometry. In fact, the existence of a rectangle is equivalent to the Euclidean parallel postulate. Two pioneers tried to use the idea of a rectangle to prove Euclid’s Fifth Postulate: Saccheri and Lambert.</p>
+<dl class="simple myst">
+<dt>Saccheri Quadrilateral</dt><dd><p>A quadrilateral with two congruent sides, called <em>legs</em>, which are both perpendicular to a third side, called the <em>base</em>.</p>
+</dd>
+<dt>Lambert Quadrilateral</dt><dd><p>A quadrilateral with at least three right angles.</p>
+</dd>
+<dt>Summit</dt><dd><p>The line segment opposite the base of a Saccheri quadrilateral.</p>
+</dd>
+<dt>Summit Angles</dt><dd><p>The angles in a Saccheri quadrilateral that are adjacent to the summit.</p>
+</dd>
+</dl>
+<p>Both Saccheri and Lambert formulated their quadrilaterals as an attempt to prove the Euclidean Parallel Postulate was a theorem. Of course, it’s not, and they failed. However, their investigations led to deepened understanding of the implications of a parallel postulate and the creation of non-Euclidean geometries.</p>
+</div>
+</div>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>The diagonals of a Saccheri quadrilateral are congruent.</p></li>
+<li><p>The summit angles of a Saccheri quadrilateral are congruent.</p></li>
+<li><p>The summit angles of a Saccheri quadrilateral are not obtuse and thus are either right or acute.</p></li>
+<li><p>The line joining the midpoints of the summit and base of a Saccheri quadrilateral are perpendicular to both.</p></li>
+<li><p>The summit and base of a Saccheri quadrilateral are parallel.</p></li>
+<li><p>In any Saccheri quadrilateral, the length of the summit is greater than or equal the length of the base.</p></li>
+<li><p>The fourth angle of a Lambert quadrilateral is not obtuse, and is therefore either right or acute.</p></li>
+<li><p>The measure of the side included between two right angles of a Lambert quadrilateral is less than or equal to the measure of the side opposite it.</p></li>
+</ol>
 </div>
 </div>
 
@@ -338,7 +382,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./AX"
+            path: "./NG"
         },
         predefinedOutput: true
     }
@@ -353,8 +397,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="A2.html" title="previous page">A.2 Hilbert’s Axioms</a>
-    <a class='right-next' id="next-link" href="A4.html" title="next page">A.4 SMSG Axioms</a>
+    <a class='left-prev' id="prev-link" href="2.html" title="previous page">2.2 Triangles</a>
+    <a class='right-next' id="next-link" href="../AX/A0.html" title="next page">Axioms for Euclidean Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

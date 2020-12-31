@@ -129,5 +129,21 @@
 # 4. Supplements and complements of the same angles are congruent. 
 # 5. The intersection of two convex polygons is convex.
 # 6. Vertical angles are congruent.
+# 
+#     ````{tip}
+#     Pasch's Axiom is equivalent to the SMSG Plane Seperation Postulate (Axiom 9) and thus will not need to be proven.
+#     ````
+# 
 # 7. **Pasch's Axiom**. Given a line that contains no vertex of a triangle, if that line intersects one side of the triangle, it must intersect another. 
+# 
+#     <iframe scrolling="no" title="Pasch's Axiom" src="https://www.geogebra.org/material/iframe/id/czt3guuj/width/1180/height/360/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%" height="100%" style="border:1px;" allowfullscreen; style="display:block" > </iframe>
+# 
 # 8. **Crossbar Theorem**. If at least one point of $\overrightarrow{AC}$ is in the interior of $\angle{BAD}$ then $\overrightarrow{AC}$ intersects $\overline{BD}$.
+# 
+# ![Crossbar Theorem Illustration](Fig2.png)
+
+# ````{tip}
+# Euclid often used a version of the Crossbar theorem to prove that lines in his constructions actually intersected.
+# ````
+# 
+# The Crossbar theorem is a direct result of Pasch's Axiom. We don't need to prove this theorem when using the SMSG Axioms because the Ruler Postulate and Distance Postulates guarantee that all lines in our geometry have the same properties as the real number line, and the Plane Separation Postulate (or Pasch's Axiom) guarantees the intersections that Euclid was justifying.
