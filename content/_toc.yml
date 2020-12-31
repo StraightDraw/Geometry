@@ -12,6 +12,11 @@ sections:
   - file: NG/1
   - file: NG/2 
   - file: NG/3
+- file: EG/E0
+  sections:
+  - file: EG/E1
+  - file: EG/E2
+  - file: EG/E3
 - file: AX/A0
   sections:
   - file: AX/A1
