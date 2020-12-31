@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A.3 Birkhoff Axioms &#8212; Geometry</title>
+    <title>3.4 Triangle Centers and Euler Line &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A.4 SMSG Axioms" href="A4.html" />
-    <link rel="prev" title="A.2 Hilbert’s Axioms" href="A2.html" />
+    <link rel="next" title="Axioms for Euclidean Geometry" href="../AX/A0.html" />
+    <link rel="prev" title="3.3 Circles" href="E3.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -159,28 +159,28 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../EG/E0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="E0.html">
    Euclidean Geometry
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E1.html">
+    <a class="reference internal" href="E1.html">
      3.1 Building Blocks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E2.html">
+    <a class="reference internal" href="E2.html">
      3.2 Area and Congruence
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E3.html">
+    <a class="reference internal" href="E3.html">
      3.3 Circles
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E4.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      3.4 Triangle Centers and Euler Line
     </a>
    </li>
@@ -188,28 +188,28 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="A0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
    Axioms for Euclidean Geometry
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="A1.html">
+    <a class="reference internal" href="../AX/A1.html">
      A.1 Eculid’s Elements
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A2.html">
+    <a class="reference internal" href="../AX/A2.html">
      A.2 Hilbert’s Axioms
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
      A.3 Birkhoff Axioms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A4.html">
+    <a class="reference internal" href="../AX/A4.html">
      A.4 SMSG Axioms
     </a>
    </li>
@@ -257,7 +257,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/AX/A3.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/EG/E4.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -282,7 +282,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/AX/A3.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/EG/E4.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -305,8 +305,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#birkhoff-s-defined-terms">
-   Birkhoff’s defined terms
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
   </a>
  </li>
 </ul>
@@ -320,37 +320,39 @@
         
               <div>
                 
-  <div class="section" id="a-3-birkhoff-axioms">
-<h1>A.3 Birkhoff Axioms<a class="headerlink" href="#a-3-birkhoff-axioms" title="Permalink to this headline">¶</a></h1>
-<p>Birkhoff’s Axiom set is an example of what is called a <em>metric geometry</em>. A metric geometry has axioms for distance and angle measure which leverage the properties of real numbers and the real number line. Birkhoff used the following undefined terms:</p>
-<ul class="simple">
-<li><p>Points</p></li>
-<li><p>Sets of points called <em>lines</em></p></li>
-<li><p><em>Distance</em> between any two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>: a non-negative real number <span class="math notranslate nohighlight">\(d(A,B)\)</span> such that <span class="math notranslate nohighlight">\(d(A,B)=d(B,A)\)</span></p></li>
-<li><p><em>Angle</em> formed by three ordered points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(O\)</span>, <span class="math notranslate nohighlight">\(B\)</span> (<span class="math notranslate nohighlight">\(A \neq O\)</span>, <span class="math notranslate nohighlight">\(B \neq O\)</span>): <span class="math notranslate nohighlight">\(\angle AOB\)</span> a real number (mod <span class="math notranslate nohighlight">\(2\pi\)</span>). The point <span class="math notranslate nohighlight">\(O\)</span> is called the \textbf{vertex} of the angle.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Note that lines are sets of points, and Birkhoff intentionally invites basic set theory into his geometric system including opeations like intersections, unions and set subtraction.</p>
+  <div class="section" id="triangle-centers-and-euler-line">
+<h1>3.4 Triangle Centers and Euler Line<a class="headerlink" href="#triangle-centers-and-euler-line" title="Permalink to this headline">¶</a></h1>
+<p>Recall that Theorem 7, the Median Concurrence Theorem, established the centroid of the triangle. The centroid is the “center of mass” of a triangle. If the triangle and its interior were made of metal with perfectly constant mass, thickness and density, the centroid would be the balance point for that object. We have several triangle concurrence theorems and several notions of the center of a circle:</p>
+<p>Concurrence Point Idea
+Median Centroid Center of Mass
+Perpendicular Bisector Circumcenter Center of circumscribing circle
+Altitude Orthocenter
+Angle Bisector Incenter Center of incscribed circle</p>
+<dl class="simple myst">
+<dt>Circumscribe</dt><dd><p>A circle which contains all vertices of a polygon is said to <em>circumscribe</em> it.</p>
+</dd>
+<dt>Incircle.</dt><dd><p>A circle which can be inscribed in that triangle (e.g. tangent to all three sides of the triangle and otherwise interior to the triangle).</p>
+</dd>
+<dt>Altitude</dt><dd><p>The perpendicular line sement from the vertex of an angle to the side opposite.</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p><strong>Perpendicular Bisector Concurrence</strong>. The three perpendicular bisectors of the sides a triangle are concurrent. The concurrent point is called the \textbf{circumcenter} of the triangle. The center of the unique circle that circumscribes a triangle is the circumcenter (see Theorem 48).</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>We often instruct students to think intuitively about the distance from a point to a line as the “minimum distance” from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>. This idea is equivalent to the defition because any other line segment drawn from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span> would be the hypotenuse of a right triangle. The Pythagorean Theorem then implies the new segment has a length greater than the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>.</p>
 </div>
-<p>Birkhoff used only four axioms:</p>
-<ol class="simple">
-<li><p><strong>Line Measure Axiom</strong>. The points <span class="math notranslate nohighlight">\(A,B,\dots\)</span>  of any line <span class="math notranslate nohighlight">\(l\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(x\)</span> so that <span class="math notranslate nohighlight">\(|x_A - x_B| = d(A,B)\)</span> for all points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-<li><p><strong>Point-Line Axiom</strong>. One and only one line <span class="math notranslate nohighlight">\(l\)</span> contains two given points <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(Q\)</span> <span class="math notranslate nohighlight">\((P \neq Q)\)</span>.</p></li>
-<li><p><strong>Angle Measure Axiom</strong>. The half-lines <span class="math notranslate nohighlight">\(l,m,\dots\)</span> through any point <span class="math notranslate nohighlight">\(O\)</span> can be placed into one-to-one correspondence with the real numbers <span class="math notranslate nohighlight">\(a(mod 2\pi)\)</span> so that if <span class="math notranslate nohighlight">\(A \neq O\)</span> and <span class="math notranslate nohighlight">\(B \neq O\)</span> are points of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>, respectively, the difference <span class="math notranslate nohighlight">\((a_m - a_n)(mod 2\pi)\)</span> is <span class="math notranslate nohighlight">\(\angle AOB\)</span>.</p></li>
-<li><p><strong>Similarity Axiom</strong>. If in two triangles <span class="math notranslate nohighlight">\(\triangle ABC\)</span>, <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> and for some constant <span class="math notranslate nohighlight">\(k &gt; 0\)</span>, <span class="math notranslate nohighlight">\(d(A',B') = kd(A,B)\)</span>, <span class="math notranslate nohighlight">\(d(A',C') = kd(A,C)\)</span>, and <span class="math notranslate nohighlight">\(m\angle B'A'C' = \pm\angle BAC\)</span>, then also <span class="math notranslate nohighlight">\(d(B',C') = kd(B,C)\)</span>, <span class="math notranslate nohighlight">\(m\angle A'B'C' = \pm\angle ABC\)</span>, and <span class="math notranslate nohighlight">\(\angle A'C'B' = \pm\angle ACB\)</span>.</p></li>
+</li>
+<li><p>A point is on the bisector of angle if and only if it is equidistant from both rays of the angle.</p></li>
+<li><p><strong>Angle Bisector Concurrence</strong>. The bisectors of the interior angles of a triangle are concurrent at a point called the <em>incenter</em>.</p></li>
+<li><p><strong>Altitude Concurrence</strong>. The three altitudes of a triangle are concurrent at a point called the <em>orthocenter</em>.</p></li>
+<li><p>An angle bisector of an interior angle of a triangle is concurrent with the angle bisectors of the exterior angles of the two remaining angles of the triangles at a point called the <em>excenter</em>. This construction will lead to three distinct excenters.</p></li>
+<li><p>Each excenter of a triangle is the center of a circle which is externally tangent to one side of the triangle and tangent to the extensions of the other two sides.</p></li>
+<li><p>In an equilateral triangle, the incenter, circumcenter, centroid and orthocenter are all concurrent.</p></li>
+<li><p><strong>Euler Line</strong>. The orthocenter, centroid and circucenter of a triangle are collinear. The line that contains these three points is called the <em>Euler Line</em>.</p></li>
 </ol>
-<div class="section" id="birkhoff-s-defined-terms">
-<h2>Birkhoff’s defined terms<a class="headerlink" href="#birkhoff-s-defined-terms" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>A point <span class="math notranslate nohighlight">\(B\)</span> is <em>between</em> <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span> <span class="math notranslate nohighlight">\((A \neq C)\)</span>, if <span class="math notranslate nohighlight">\(d(A,B) + d(B,C) = d(A,C)\)</span>.</p></li>
-<li><p>The points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, together with all points <span class="math notranslate nohighlight">\(B\)</span> between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, form <em>line segment</em> <span class="math notranslate nohighlight">\(\overline{AC}\)</span>.</p></li>
-<li><p>The <em>half-line</em> <span class="math notranslate nohighlight">\(l'\)</span> with <em>endpoint</em> <span class="math notranslate nohighlight">\(O\)</span> is defined by two points <span class="math notranslate nohighlight">\(O, A\)</span> in line <span class="math notranslate nohighlight">\(l\)</span> <span class="math notranslate nohighlight">\((A \neq O)\)</span> as the set of all points <span class="math notranslate nohighlight">\(A'\)</span> of <span class="math notranslate nohighlight">\(l\)</span> such that <span class="math notranslate nohighlight">\(O\)</span> is not between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A'\)</span>.</p></li>
-<li><p>If two distinct lines have no point in common, they are <em>parallel</em>. A line is always regarded as parallel to itself.</p></li>
-<li><p>Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>straight angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \pi\)</span>. Two half-lines through <span class="math notranslate nohighlight">\(O\)</span> are said to form a <em>right angle</em> if <span class="math notranslate nohighlight">\(m\angle mOn=\pm \frac{\pi}{2}\)</span>, in which case we also say that <span class="math notranslate nohighlight">\(m\)</span> is \textbf{perpendicular} to <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(A, B, C\)</span> are three distinct points, the segments <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> are said to form a <em>triangle</em> <span class="math notranslate nohighlight">\(\triangle ABC\)</span> with sides <span class="math notranslate nohighlight">\(\overline{AB}, \overline{BC}, \overline{CA}\)</span> and vertices <span class="math notranslate nohighlight">\(A, B, C\)</span>. If <span class="math notranslate nohighlight">\(A, B, C\)</span> are collinear, then <span class="math notranslate nohighlight">\(\triangle ABC\)</span> is said to be <em>degenerate</em>.</p></li>
-<li><p>Any two geometric figures are <em>similar</em> if there exists a one-to-one correspondence between the points of the two figures such that all corresponding distances are in proportion and corresponding angles have equal mesure (except, perhaps, for their sign). Any two geometric figures are <em>congruent</em> if they are similar with a constant of proportionality <span class="math notranslate nohighlight">\(k=1\)</span>.</p></li>
-</ul>
 </div>
 </div>
 
@@ -367,7 +369,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./AX"
+            path: "./EG"
         },
         predefinedOutput: true
     }
@@ -382,8 +384,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="A2.html" title="previous page">A.2 Hilbert’s Axioms</a>
-    <a class='right-next' id="next-link" href="A4.html" title="next page">A.4 SMSG Axioms</a>
+    <a class='left-prev' id="prev-link" href="E3.html" title="previous page">3.3 Circles</a>
+    <a class='right-next' id="next-link" href="../AX/A0.html" title="next page">Axioms for Euclidean Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
