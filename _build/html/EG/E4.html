@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Euclidean Geometry &#8212; Geometry</title>
+    <title>3.4 Triangle Centers and Euler Line &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.1 Building Blocks" href="E1.html" />
-    <link rel="prev" title="2.3 Quadrilaterals" href="../NG/3.html" />
+    <link rel="next" title="Axioms for Euclidean Geometry" href="../AX/A0.html" />
+    <link rel="prev" title="3.3 Circles" href="E3.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -160,10 +160,10 @@
   </i>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="E0.html">
    Euclidean Geometry
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="E1.html">
      3.1 Building Blocks
@@ -179,8 +179,8 @@
      3.3 Circles
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="E4.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      3.4 Triangle Centers and Euler Line
     </a>
    </li>
@@ -257,7 +257,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/EG/E0.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/EG/E4.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -282,7 +282,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/EG/E0.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/EG/E4.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -299,6 +299,20 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -306,24 +320,39 @@
         
               <div>
                 
-  <div class="section" id="euclidean-geometry">
-<h1>Euclidean Geometry<a class="headerlink" href="#euclidean-geometry" title="Permalink to this headline">¶</a></h1>
-<p>We begin our investigation of Euclidean geometry with all the theorems of neutral geometry already established. We also, at long last, get to use the Playfair’s parallel postulate (SMSG Axiom 16).</p>
-<p>The proofs of theorems below can be proven using the SMSG postulates and the neutral geometry theorems provided in the previous section. In the SMSG axiom list, Axiom 16 is the Euclidean parallel postulate. All fifteen prior axioms are used to prove neutral geometry resulsts. Axioms 16 through 22 are needed to fully prove all Euclidean results for plane geometry.</p>
-<p>The most direct route from Neutral to Euclidean Geometry, after we have a parallel postulate, is through the Alternate Interior Angle Theorem which was proven in the Neutral Geometry Section. Let’s give a summary of what was already <em>proven</em> true in Neutral Geometry regarding parallel and perpendicular lines:</p>
-<ul class="simple">
-<li><p><strong>Alternate Interior Angle Theorem</strong>. If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.</p></li>
-<li><p><strong>Perpendicular Uniqueness</strong>. Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\perp l\)</span>.</p></li>
-<li><p>Two lines perpendicular to the same line are parallel (corollary to AIA Theorem).</p></li>
-</ul>
-<p>Parallel lines exist in neutral geometry. The problem is that, given line <span class="math notranslate nohighlight">\(l\)</span>, <em>more than one</em> line through a point <span class="math notranslate nohighlight">\(P\)</span> might be parallel to <span class="math notranslate nohighlight">\(l\)</span>. With the addition of SMSG Axiom 16, we can prove these very similar statements must be true in Euclidean Geometry:</p>
-<ul class="simple">
-<li><p><strong>Converse of the Alternate Interior Angle Theorem (CAIA)</strong>. If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.</p></li>
-<li><p><strong>Parallel Uniqueness</strong>. Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\parallel l\)</span>.</p></li>
-<li><p>If a line is perpendicular to one of two parallel lines, then it is perpedicular to the other.</p></li>
-</ul>
-<p>The fulcrum is focused on alternate interior angles when two lines are cut by a transversal.</p>
-<div class="toctree-wrapper compound">
+  <div class="section" id="triangle-centers-and-euler-line">
+<h1>3.4 Triangle Centers and Euler Line<a class="headerlink" href="#triangle-centers-and-euler-line" title="Permalink to this headline">¶</a></h1>
+<p>Recall that Theorem 7, the Median Concurrence Theorem, established the centroid of the triangle. The centroid is the “center of mass” of a triangle. If the triangle and its interior were made of metal with perfectly constant mass, thickness and density, the centroid would be the balance point for that object. We have several triangle concurrence theorems and several notions of the center of a circle:</p>
+<p>Concurrence Point Idea
+Median Centroid Center of Mass
+Perpendicular Bisector Circumcenter Center of circumscribing circle
+Altitude Orthocenter
+Angle Bisector Incenter Center of incscribed circle</p>
+<dl class="simple myst">
+<dt>Circumscribe</dt><dd><p>A circle which contains all vertices of a polygon is said to <em>circumscribe</em> it.</p>
+</dd>
+<dt>Incircle.</dt><dd><p>A circle which can be inscribed in that triangle (e.g. tangent to all three sides of the triangle and otherwise interior to the triangle).</p>
+</dd>
+<dt>Altitude</dt><dd><p>The perpendicular line sement from the vertex of an angle to the side opposite.</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p><strong>Perpendicular Bisector Concurrence</strong>. The three perpendicular bisectors of the sides a triangle are concurrent. The concurrent point is called the \textbf{circumcenter} of the triangle. The center of the unique circle that circumscribes a triangle is the circumcenter (see Theorem 48).</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>We often instruct students to think intuitively about the distance from a point to a line as the “minimum distance” from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>. This idea is equivalent to the defition because any other line segment drawn from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span> would be the hypotenuse of a right triangle. The Pythagorean Theorem then implies the new segment has a length greater than the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>.</p>
+</div>
+</li>
+<li><p>A point is on the bisector of angle if and only if it is equidistant from both rays of the angle.</p></li>
+<li><p><strong>Angle Bisector Concurrence</strong>. The bisectors of the interior angles of a triangle are concurrent at a point called the <em>incenter</em>.</p></li>
+<li><p><strong>Altitude Concurrence</strong>. The three altitudes of a triangle are concurrent at a point called the <em>orthocenter</em>.</p></li>
+<li><p>An angle bisector of an interior angle of a triangle is concurrent with the angle bisectors of the exterior angles of the two remaining angles of the triangles at a point called the <em>excenter</em>. This construction will lead to three distinct excenters.</p></li>
+<li><p>Each excenter of a triangle is the center of a circle which is externally tangent to one side of the triangle and tangent to the extensions of the other two sides.</p></li>
+<li><p>In an equilateral triangle, the incenter, circumcenter, centroid and orthocenter are all concurrent.</p></li>
+<li><p><strong>Euler Line</strong>. The orthocenter, centroid and circucenter of a triangle are collinear. The line that contains these three points is called the <em>Euler Line</em>.</p></li>
+</ol>
 </div>
 </div>
 
@@ -355,8 +384,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../NG/3.html" title="previous page">2.3 Quadrilaterals</a>
-    <a class='right-next' id="next-link" href="E1.html" title="next page">3.1 Building Blocks</a>
+    <a class='left-prev' id="prev-link" href="E3.html" title="previous page">3.3 Circles</a>
+    <a class='right-next' id="next-link" href="../AX/A0.html" title="next page">Axioms for Euclidean Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

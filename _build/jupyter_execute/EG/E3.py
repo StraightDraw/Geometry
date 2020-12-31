@@ -23,7 +23,7 @@
 # ````
 # 
 # Central Angle
-# : Any angle whose vertex is the center of a circle is a \textbf{central angle}. 
+# : Any angle whose vertex is the center of a circle. 
 # 
 # Arc
 # : The set of points on a circle that lie between two points on the circle, including the points themselves. 
@@ -46,7 +46,7 @@
 # 3. If a diameter of a circle is perpendicular to a chord of the circle, then the diameter bisects the chord.
 # 4. The perpendicular bisector of a chord of a circle contains a diameter of the circle.
 # 5. If a line is tangent to a circle, it is perpendicular to the line joining the point of tangency to the center of the circle.
-# 6. **Arc Addition**. If arc $ABC$ and arc $CDE$ are arcs sharing only the same endpoint $C$, then the measure of arc $ABC$ plus the measure of arc $CDE$ equals the measure of arc $ACE}$.
+# 6. **Arc Addition**. If arc $ABC$ and arc $CDE$ are arcs sharing only the same endpoint $C$, then the measure of arc $ABC$ plus the measure of  $\text{Arc}(CDE)$ equals the measure of arc $\text{Arc}(ACE)$.
 # 
 # 7. **Inscribed Angle Theorem**. The measure of an angle inscribed in an arc is one-half the measure of its intercepted arc. 
 #     ````{note}

@@ -17,6 +17,7 @@ sections:
   - file: EG/E1
   - file: EG/E2
   - file: EG/E3
+  - file: EG/E4
 - file: AX/A0
   sections:
   - file: AX/A1
