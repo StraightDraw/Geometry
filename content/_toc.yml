@@ -15,9 +15,14 @@ sections:
 - file: EG/E0
   sections:
   - file: EG/E1
+  - file: EG/E1b
   - file: EG/E2
   - file: EG/E3
   - file: EG/E4
+- file: CN/C0
+  sections:
+  - file: CN/C1 
+  - file: CN/C2
 - file: AX/A0
   sections:
   - file: AX/A1
