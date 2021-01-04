@@ -131,7 +131,13 @@
 # ````
 # 
 # Gauss was already a rock star mathematician at the time Bolyai published his work. Gauss coined the term [non-Euclidean geometry](https://en.wikipedia.org/wiki/Non-Euclidean_geometry) and told Bolyai that he had discovered hyperbolic geometry decades earlier but had not published his work. To a friend, after reading Bolyai's work, Gauss offered a fine critique:
-# >I regard this young geometer Bolyai as a genius of the first order.
+# 
+# ````{epigraph}
+# I regard this young geometer Bolyai as a genius of the first order.
+# 
+# --Carl Friederich Gauss
+# ````
+# >
 # 
 # The quest concluded. Mathematicians had proved rigorously that Euclid's Fifth Postulate was indeed a necessary axiom, and they further illustrated the three possibilities for geometries:
 # * Euclidean geometry with unique parallels
