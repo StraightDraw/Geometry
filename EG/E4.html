@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.4 Triangle Centers and Euler Line &#8212; Geometry</title>
+    <title>3.4 Right Triangles and the Pythagorean Theorem &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Constructions" href="../CN/C0.html" />
-    <link rel="prev" title="3.3 Circles" href="E3.html" />
+    <link rel="next" title="3.5 Circles" href="E5.html" />
+    <link rel="prev" title="3.3 Area and Similarity" href="E3.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -97,38 +97,38 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../FFG/0.html">
+  <a class="reference internal" href="../FFG/F0.html">
    Foundations and Finite Geometries
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/1.html">
+    <a class="reference internal" href="../FFG/F1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/2.html">
-     1.2 The Five Point Geometry
+    <a class="reference internal" href="../FFG/F2.html">
+     1.2 Four Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/3.html">
-     1.3 Fano’s Geometry
+    <a class="reference internal" href="../FFG/F3.html">
+     1.3 Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/4.html">
-     1.4 Young’s Geometry
+    <a class="reference internal" href="../FFG/F4.html">
+     1.4 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html">
-     1.5  Searching for a Parallel Posutlate
+    <a class="reference internal" href="../FFG/F5.html">
+     1.5 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
-     Incidence Geometries
+    <a class="reference internal" href="../FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
     </a>
    </li>
   </ul>
@@ -136,22 +136,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+  <a class="reference internal" href="../NG/N0.html">
    Neutral Geometry
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+    <a class="reference internal" href="../NG/N1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="../NG/N2.html">
      2.2 Triangles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/3.html">
+    <a class="reference internal" href="../NG/N3.html">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -170,23 +170,38 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="E1b.html">
-     3.1b Building Blocks
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="E2.html">
-     3.2 Area and Congruence
+     3.2 Parallel Lines
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="E3.html">
-     3.3 Circles
+     3.3 Area and Similarity
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     3.4 Triangle Centers and Euler Line
+     3.4 Right Triangles and the Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E8.html">
+     3.7 Homework
     </a>
    </li>
   </ul>
@@ -200,7 +215,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../CN/C1.html">
-     Constructions
+     C.1 Construction Theorems
     </a>
    </li>
    <li class="toctree-l2">
@@ -344,38 +359,27 @@
         
               <div>
                 
-  <div class="section" id="triangle-centers-and-euler-line">
-<h1>3.4 Triangle Centers and Euler Line<a class="headerlink" href="#triangle-centers-and-euler-line" title="Permalink to this headline">¶</a></h1>
-<p>Recall that Theorem 7, the Median Concurrence Theorem, established the centroid of the triangle. The centroid is the “center of mass” of a triangle. If the triangle and its interior were made of metal with perfectly constant mass, thickness and density, the centroid would be the balance point for that object. We have several triangle concurrence theorems and several notions of the center of a circle:</p>
-<p>Concurrence Point Idea
-Median Centroid Center of Mass
-Perpendicular Bisector Circumcenter Center of circumscribing circle
-Altitude Orthocenter
-Angle Bisector Incenter Center of incscribed circle</p>
-<dl class="simple myst">
-<dt>Circumscribe</dt><dd><p>A circle which contains all vertices of a polygon is said to <em>circumscribe</em> it.</p>
-</dd>
-<dt>Incircle.</dt><dd><p>A circle which can be inscribed in that triangle (e.g. tangent to all three sides of the triangle and otherwise interior to the triangle).</p>
-</dd>
-<dt>Altitude</dt><dd><p>The perpendicular line sement from the vertex of an angle to the side opposite.</p>
-</dd>
-</dl>
+  <div class="section" id="right-triangles-and-the-pythagorean-theorem">
+<h1>3.4 Right Triangles and the Pythagorean Theorem<a class="headerlink" href="#right-triangles-and-the-pythagorean-theorem" title="Permalink to this headline">¶</a></h1>
+<p>The following theorem establish a few important results about right triangles. Now that we have similarity defined, we can use it to prove the Pythaogrean Theorem. The area-based proof of the Pythagorean Theorem is shown above, but the similarity proof demonstrates the close relationship between the Pythagorean Theorem and the Geometric Mean Theorem.</p>
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p><strong>Perpendicular Bisector Concurrence</strong>. The three perpendicular bisectors of the sides a triangle are concurrent. The concurrent point is called the \textbf{circumcenter} of the triangle. The center of the unique circle that circumscribes a triangle is the circumcenter (see Theorem 48).</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>We often instruct students to think intuitively about the distance from a point to a line as the “minimum distance” from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>. This idea is equivalent to the defition because any other line segment drawn from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span> would be the hypotenuse of a right triangle. The Pythagorean Theorem then implies the new segment has a length greater than the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>.</p>
+<li><p>If a line segment has as its endpoints the midpoints of two sides of a triangle, then the segment is parallel to and one-half the length of the third side of the triangle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The above theorem has a stunning implication: the midpoints of \emph{any} quadrilateral are the vertices of a parallelogram. While it doesn’t exactly fit the theme of this section, we’ll prove it here because it is a straightforward consequence of the theorem we just proved.</p>
 </div>
 </li>
-<li><p>A point is on the bisector of angle if and only if it is equidistant from both rays of the angle.</p></li>
-<li><p><strong>Angle Bisector Concurrence</strong>. The bisectors of the interior angles of a triangle are concurrent at a point called the <em>incenter</em>.</p></li>
-<li><p><strong>Altitude Concurrence</strong>. The three altitudes of a triangle are concurrent at a point called the <em>orthocenter</em>.</p></li>
-<li><p>An angle bisector of an interior angle of a triangle is concurrent with the angle bisectors of the exterior angles of the two remaining angles of the triangles at a point called the <em>excenter</em>. This construction will lead to three distinct excenters.</p></li>
-<li><p>Each excenter of a triangle is the center of a circle which is externally tangent to one side of the triangle and tangent to the extensions of the other two sides.</p></li>
-<li><p>In an equilateral triangle, the incenter, circumcenter, centroid and orthocenter are all concurrent.</p></li>
-<li><p><strong>Euler Line</strong>. The orthocenter, centroid and circucenter of a triangle are collinear. The line that contains these three points is called the <em>Euler Line</em>.</p></li>
+<li><p>The midpoints of the sides of a quadrilateral are the vertices of a convex parallelogram.</p></li>
+<li><p>In a right triangle, the median from the right angle to the hypotenuse is one-half the length of the hypotenuse.</p></li>
+<li><p>In a right triangle, one of the angles measures <span class="math notranslate nohighlight">\(30^\circ\)</span> if and only if the side opposite this angle is one-half the length of the hypotenuse.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This result along with the Pythagorean Theorem gives us the <span class="math notranslate nohighlight">\(1-2-\sqrt3\)</span> ratio of side lengths for <span class="math notranslate nohighlight">\(30-60-90\)</span> right triangles. Recall that the Pythagorean Theorem is equivalent to the Euclidean parallel postulate and will be proven later.</p>
+</div>
+</li>
+<li><p><strong>Pythagorean Theorem (Similarity Proof)</strong>. If <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are the lengths of the legs of a right triangle the hypotenuse of which has length <span class="math notranslate nohighlight">\(c\)</span>, then <span class="math notranslate nohighlight">\(a^2+b^2=c^2\)</span>.</p></li>
 </ol>
 </div>
 </div>
@@ -408,8 +412,8 @@ Angle Bisector Incenter Center of incscribed circle</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="E3.html" title="previous page">3.3 Circles</a>
-    <a class='right-next' id="next-link" href="../CN/C0.html" title="next page">Constructions</a>
+    <a class='left-prev' id="prev-link" href="E3.html" title="previous page">3.3 Area and Similarity</a>
+    <a class='right-next' id="next-link" href="E5.html" title="next page">3.5 Circles</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

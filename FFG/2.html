@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.2 The Five Point Geometry &#8212; Geometry</title>
+    <title>1.2 Five Point Geometry &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -106,9 +106,24 @@
      1.1 Finite Geometries
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1.html#four-point-geometry">
+     Four Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1.html#pg-theorems">
+     4PG Theorems
+    </a>
+   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     1.2 The Five Point Geometry
+     1.2 Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#pg-theorems">
+     5PG Theorems
     </a>
    </li>
    <li class="toctree-l2">
@@ -131,27 +146,32 @@
      Incidence Geometries
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="5.html#theorems-for-incidence-geometry">
+     Theorems for Incidence Geometry
+    </a>
+   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+  <a class="reference internal" href="../NG/N0.html">
    Neutral Geometry
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+    <a class="reference internal" href="../NG/N1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="../NG/N2.html">
      2.2 Triangles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/3.html">
+    <a class="reference internal" href="../NG/N3.html">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -200,7 +220,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../CN/C1.html">
-     Constructions
+     C.1
     </a>
    </li>
    <li class="toctree-l2">
@@ -323,6 +343,25 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   1.2 Five Point Geometry
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pg-theorems">
+   5PG Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -330,15 +369,55 @@
         
               <div>
                 
-  <div class="section" id="the-five-point-geometry">
-<h1>1.2 The Five Point Geometry<a class="headerlink" href="#the-five-point-geometry" title="Permalink to this headline">¶</a></h1>
-<p>The axioms below describe the <em>Five Point Geometry</em> together with the undefined terms (point, line, on). Please note that Axioms (ii) and (iii) of the Five Point Geometry are identical to the Four Point Geometry. Axiom (i) only changes from four points to five. We will use the same defined terms as above. For clarity, here’s the axiom set:</p>
-<blockquote>
-<div><p>   i.   There exist exactly five points.</p>
-<p>  ii.  Any two distinct points have exactly one line on both of them.</p>
-<p>iii. Each line is on exactly two points.</p>
-</div></blockquote>
-<p><strong>Theorems.</strong></p>
+  <div class="section" id="five-point-geometry">
+<h1>1.2 Five Point Geometry<a class="headerlink" href="#five-point-geometry" title="Permalink to this headline">¶</a></h1>
+<p>The Five Point Geometry (5PG) uses the standard undefined and defined terms for finite geometry.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Undefined Terms</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Point, Line and On</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Defined Terms</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Parallel, Intersect and Concurret</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="figure align-default" id="pg">
+<a class="reference internal image-reference" href="../_images/Fig2_5PG.png"><img alt="../_images/Fig2_5PG.png" src="../_images/Fig2_5PG.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Model for the Five Point Geometry</span><a class="headerlink" href="#pg" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Axioms for the 5PG</p>
+<ol class="simple">
+<li><p>There exist exactly four points.</p></li>
+<li><p>Any two distinct points have exactly one line on both of them.</p></li>
+<li><p>Each line is on exactly two points.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The only difference between the axioms for the 4PG and 5PG is the word “four” changing to “five” in the first axiom.</p>
+</div>
+</div>
+<div class="section" id="pg-theorems">
+<h1>5PG Theorems<a class="headerlink" href="#pg-theorems" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
 <li><p>How many distinct lines are in the Five Point Geometry? Prove your conjecture.</p></li>
 <li><p>Prove or disprove: There exists a set of <strong>two</strong> lines in the Five Point Geometry that contain all of the points in the geometry. If you disprove this statement, change the word in bold so that the theorem is true, and prove the new theorem.</p></li>
