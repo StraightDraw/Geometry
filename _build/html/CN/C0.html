@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="C.1" href="C1.html" />
-    <link rel="prev" title="3.4 Triangle Centers and Euler Line" href="../EG/E4.html" />
+    <link rel="next" title="C.1 Construction Theorems" href="C1.html" />
+    <link rel="prev" title="3.8 Homework" href="../EG/E8.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -97,38 +97,38 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../FFG/0.html">
+  <a class="reference internal" href="../FFG/F0.html">
    Foundations and Finite Geometries
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/1.html">
+    <a class="reference internal" href="../FFG/F1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/2.html">
-     1.2 The Five Point Geometry
+    <a class="reference internal" href="../FFG/F2.html">
+     1.2 Four Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/3.html">
-     1.3 Fano’s Geometry
+    <a class="reference internal" href="../FFG/F3.html">
+     1.3 Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/4.html">
-     1.4 Young’s Geometry
+    <a class="reference internal" href="../FFG/F4.html">
+     1.4 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html">
-     1.5  Searching for a Parallel Posutlate
+    <a class="reference internal" href="../FFG/F5.html">
+     1.5 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
-     Incidence Geometries
+    <a class="reference internal" href="../FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
     </a>
    </li>
   </ul>
@@ -136,22 +136,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+  <a class="reference internal" href="../NG/N0.html">
    Neutral Geometry
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+    <a class="reference internal" href="../NG/N1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="../NG/N2.html">
      2.2 Triangles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/3.html">
+    <a class="reference internal" href="../NG/N3.html">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -170,23 +170,38 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E1b.html">
-     3.1b Building Blocks
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../EG/E2.html">
-     3.2 Area and Congruence
+     3.2 Parallel Lines
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../EG/E3.html">
-     3.3 Circles
+     3.3 Area and Similarity
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../EG/E4.html">
-     3.4 Triangle Centers and Euler Line
+     3.4 Right Triangles and the Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E8.html">
+     3.8 Homework
     </a>
    </li>
   </ul>
@@ -200,7 +215,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="C1.html">
-     C.1
+     C.1 Construction Theorems
     </a>
    </li>
    <li class="toctree-l2">
@@ -323,6 +338,32 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compass-and-straightedge-constructions">
+   Compass and Straightedge Constructions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cranks-and-impossible-constructions">
+   Cranks and Impossible Constructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#impossible-constructions">
+     Impossible Constructions.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -332,9 +373,28 @@
                 
   <div class="section" id="constructions">
 <h1>Constructions<a class="headerlink" href="#constructions" title="Permalink to this headline">¶</a></h1>
-<p>The content of this section is being reorganized – still under construction.</p>
-<p>Compass and straightedge constructions form an important part of the Greek’s approach to geometry and proofs.</p>
+<div class="section" id="compass-and-straightedge-constructions">
+<h2>Compass and Straightedge Constructions<a class="headerlink" href="#compass-and-straightedge-constructions" title="Permalink to this headline">¶</a></h2>
+<p>One interesting aspect of Greek geometry was how they idolized compass and straightedge constructions. Not only did they perform constructions as examples, they used them in proofs in two ways. They illustrated proofs with constructions, but they also used the constructions themselves as proofs. If you think about it, these constructions are based on a set of axioms. A compass draws a circle with a given radius, so we have a way to establish congruence of line segments. A straightedge provides for “straightness” so that things like parallel and perpendicular have concrete meaning. And that’s it. Every construction proof relies only on these simple ideas. Therefore, the steps we take during the contruction illustrate a formal proof of the idea.</p>
+<p>No geometry course would be complete without lots of compass and straightedge constructions. For presentation purposes, we can make our constructions in Geogebra, but it’s not nearly as fun. If you wish to have constructions in your notes, you should buy a \textbf{good} compass and a straightedge and bring them class. While traditional compasses can be high quality, the sharp point requires careful use and can rip your paper. The safest and easiest modern alternatives are flat plastic with a slide. The compass pictured below has a brake set so the radius is held in place. You push in the middle of the blue slider to release the brake and adjust the radius. Once the radius set, you release. The brake engages, and you can easily draw several circles or arcs without the fixed radius slipping.</p>
+<p><a class="reference external" href="https://www.amazon.com/EAI-Education-Slide-Measure-Compass/dp/B01GKHFIWQ/">Best Compass to Purchase</a></p>
+<p>A pack of 10 is available on Amazon for less than $15.</p>
+</div>
+<div class="section" id="cranks-and-impossible-constructions">
+<h2>Cranks and Impossible Constructions<a class="headerlink" href="#cranks-and-impossible-constructions" title="Permalink to this headline">¶</a></h2>
+<p>One interesting aspect of compass and straigtedge constructions is that many constructions are simply impossible. The proof of the following theorem requires some rather elegant uses of Abstract Algebra which wasn’t invented until the 18th century. However, we will take the following as true, without offering a proof:</p>
+<div class="section" id="impossible-constructions">
+<h3>Impossible Constructions.<a class="headerlink" href="#impossible-constructions" title="Permalink to this headline">¶</a></h3>
+<p>These three classical constructions are impossible using only a compass and straightedge:</p>
+<ol class="simple">
+<li><p>Trisecting an angle</p></li>
+<li><p>Squaring a circle - constructing a square with the same area as a given circle</p></li>
+<li><p>Doubling a cube - constructing a cube with volume exactly twice that of a given cube</p></li>
+</ol>
+<p>The interesting thing is that, even today, folks refuse to believe they’re impossible and continue to offer “proofs” of one or another. The scientific word for this line of inquiry is “pseudomathematics,” and its practitioners are called “cranks.’ You can check out <a class="reference external" href="http://rationalwiki.org/wiki/Pseudomathematics">Rationalwiki’s Psuedomathematics page</a> and can find many other hilarious stories of mathematical inanity if you use google and the search query “math cranks.” Have fun. But trust me, the proof that these three constructions are impossible is ironclad. No credible mathematician doubts it. Not in the least.</p>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
@@ -366,8 +426,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../EG/E4.html" title="previous page">3.4 Triangle Centers and Euler Line</a>
-    <a class='right-next' id="next-link" href="C1.html" title="next page">C.1</a>
+    <a class='left-prev' id="prev-link" href="../EG/E8.html" title="previous page">3.8 Homework</a>
+    <a class='right-next' id="next-link" href="C1.html" title="next page">C.1 Construction Theorems</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

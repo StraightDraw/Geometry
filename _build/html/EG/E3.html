@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.3 Circles &#8212; Geometry</title>
+    <title>3.3 Area and Similarity &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.4 Triangle Centers and Euler Line" href="E4.html" />
-    <link rel="prev" title="3.2 Area and Congruence" href="E2.html" />
+    <link rel="next" title="3.4 Right Triangles and the Pythagorean Theorem" href="E4.html" />
+    <link rel="prev" title="3.2 Parallel Lines" href="E2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -97,38 +97,38 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../FFG/0.html">
+  <a class="reference internal" href="../FFG/F0.html">
    Foundations and Finite Geometries
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/1.html">
+    <a class="reference internal" href="../FFG/F1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/2.html">
-     1.2 The Five Point Geometry
+    <a class="reference internal" href="../FFG/F2.html">
+     1.2 Four Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/3.html">
-     1.3 Fano’s Geometry
+    <a class="reference internal" href="../FFG/F3.html">
+     1.3 Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/4.html">
-     1.4 Young’s Geometry
+    <a class="reference internal" href="../FFG/F4.html">
+     1.4 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html">
-     1.5  Searching for a Parallel Posutlate
+    <a class="reference internal" href="../FFG/F5.html">
+     1.5 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
-     Incidence Geometries
+    <a class="reference internal" href="../FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
     </a>
    </li>
   </ul>
@@ -136,22 +136,22 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../NG/0.html">
+  <a class="reference internal" href="../NG/N0.html">
    Neutral Geometry
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/1.html">
+    <a class="reference internal" href="../NG/N1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/2.html">
+    <a class="reference internal" href="../NG/N2.html">
      2.2 Triangles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../NG/3.html">
+    <a class="reference internal" href="../NG/N3.html">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -170,23 +170,38 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="E1b.html">
-     3.1b Building Blocks
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="E2.html">
-     3.2 Area and Congruence
+     3.2 Parallel Lines
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     3.3 Circles
+     3.3 Area and Similarity
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="E4.html">
-     3.4 Triangle Centers and Euler Line
+     3.4 Right Triangles and the Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E8.html">
+     3.7 Homework
     </a>
    </li>
   </ul>
@@ -200,7 +215,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../CN/C1.html">
-     Constructions
+     C.1 Construction Theorems
     </a>
    </li>
    <li class="toctree-l2">
@@ -323,20 +338,6 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theorems">
-   Theorems
-  </a>
- </li>
-</ul>
-
-        </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -344,66 +345,52 @@
         
               <div>
                 
-  <div class="section" id="circles">
-<h1>3.3 Circles<a class="headerlink" href="#circles" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="area-and-similarity">
+<h1>3.3 Area and Similarity<a class="headerlink" href="#area-and-similarity" title="Permalink to this headline">¶</a></h1>
+<p>We have discussed several issues with Euclid. We have arrived at another: How do we define area? If rectangular area is defined, then we can calculate the area of triangles. Using triangles and rectangles, we can calcuate polygon areas. Since rectangles don’t exist in neutral geometry, our standard notion of area only exists in Euclidean geometry. In any other geometry, calculating an area will prove troublesome. However, we’re developing Euclidean geometry in this section. Please note that SMSG Axiom 20 states:</p>
+<blockquote>
+<div><p>The area of a rectangle is the product of the length of its base and the length of its altitude.” The following definitions will also be helpful.</p>
+</div></blockquote>
 <dl class="simple myst">
-<dt>Circle</dt><dd><p>A set of points all of which are equidistant from a given point called the <em>center</em>.</p>
+<dt>Parallel Segments</dt><dd><p>We call line segments <em>parallel</em> if they are contained in lines that are parallel.</p>
 </dd>
-<dt>Radius</dt><dd><p>The common distance between points on the circle and center point.</p>
+<dt>Distance from a point to a line</dt><dd><p>Given a point <span class="math notranslate nohighlight">\(P\)</span> not on line <span class="math notranslate nohighlight">\(l\)</span>, the <em>distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(l\)</span></em> is the distance <span class="math notranslate nohighlight">\(PQ\)</span> where <span class="math notranslate nohighlight">\(Q\in l\)</span> and <span class="math notranslate nohighlight">\(\overleftrightarrow{PQ}\perp l\)</span>.</p>
 </dd>
-<dt>Chord</dt><dd><p>A <em>chord</em> of a circle is a line segment joining two of the points on the circle. A <em>secant</em> is a line which contains a chord.</p>
-</dd>
-<dt>Tangent</dt><dd><p>A line which contains exactly one point of a circle.</p>
-</dd>
-<dt>Diameter</dt><dd><p>The length of a chord that contains the center of the circle.</p>
+<dt>Trapezoid</dt><dd><p>A convex quadrilateral with exactly one pair of parallel sides.</p>
 </dd>
 </dl>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The radius and diameter are defined to be <em>distances</em>. Yet, we often refer to relevant line segments as radii or diameters.</p>
+<p>Two definitions of a trapezoid exist: <em>exactly</em> one pair of parallel sides, or <em>at least</em> one pair of parallel sides. The former excludes parallelograms while the latter includes them. Generally, especially in K-12 mathematics, the “<em>exactly</em> one pair of parallel sides” definition is preferred.</p>
 </div>
 <dl class="simple myst">
-<dt>Central Angle</dt><dd><p>Any angle whose vertex is the center of a circle.</p>
+<dt>Kite</dt><dd><p>A convex quadrilateral with two pairs of adjacent sides congruent.</p>
 </dd>
-<dt>Arc</dt><dd><p>The set of points on a circle that lie between two points on the circle, including the points themselves.</p>
+<dt>Rhombus</dt><dd><p>A parallelogram with all sides congruent.</p>
 </dd>
-<dt>Arc Measure</dt><dd><p>The degree measure of an arc is the measure of the central angle corresponding to the arc. Two distinct points on a circle create two arcs, a <em>minor arc</em> and a <em>major arc</em>, with the degree measure of the major arc greater than (or equal to) that of the minor arc.</p>
+<dt>Square</dt><dd><p>A parallelogram with a right angle.</p>
 </dd>
-<dt>Inscribed Angle</dt><dd><p>The angle formed when two secant lines intersect at a point on the circle.</p>
-</dd>
-<dt>Intercepted Arc</dt><dd><p>The part of the circle that lies between two lines that intersect it.</p>
+<dt>Similar Polygons</dt><dd><p>Two polygons are <em>similar</em> provided (i) corresponding sides of each are in the same proportion, and (ii) corresponding interior angles are congruent.</p>
 </dd>
 </dl>
-<div class="section" id="theorems">
-<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<p>Congruence is a more primitice geometric idea than similarity, even though, ironically, similarity has less restrictions. All similarity proofs involve using areas of triangles as numerators or deonominators of triangles to establish the required proportion. Until we have proven some results about area, we cannot prove similarity theorems.</p>
+<p>The parallelogram decomposition theorem stated that we could always create congruent triangles by drawing the diagonal of a parallelogram and considering the two resulting triangles. The theorem is true in the reverse: given any two congruent triangles, they can be joined to create a parallelogram. We will put the following in our toolbox:</p>
 <ol>
-<li><p>In the Euclidean plane, three distinct points uniquely determine a circle.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Requires both an existance proof and a uniqueness proof.</p>
-</div>
-</li>
-<li><p>If <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is a diameter and <span class="math notranslate nohighlight">\(\overline{CD}\)</span> is any other chord of the same circle (which is not a diameter), then <span class="math notranslate nohighlight">\(AB&gt;CD\)</span>.</p></li>
-<li><p>If a diameter of a circle is perpendicular to a chord of the circle, then the diameter bisects the chord.</p></li>
-<li><p>The perpendicular bisector of a chord of a circle contains a diameter of the circle.</p></li>
-<li><p>If a line is tangent to a circle, it is perpendicular to the line joining the point of tangency to the center of the circle.</p></li>
-<li><p><strong>Arc Addition</strong>. If arc <span class="math notranslate nohighlight">\(ABC\)</span> and arc <span class="math notranslate nohighlight">\(CDE\)</span> are arcs sharing only the same endpoint <span class="math notranslate nohighlight">\(C\)</span>, then the measure of arc <span class="math notranslate nohighlight">\(ABC\)</span> plus the measure of  <span class="math notranslate nohighlight">\(\text{Arc}(CDE)\)</span> equals the measure of arc <span class="math notranslate nohighlight">\(\text{Arc}(ACE)\)</span>.</p></li>
-<li><p><strong>Inscribed Angle Theorem</strong>. The measure of an angle inscribed in an arc is one-half the measure of its intercepted arc.</p>
+<li><p>The area of a parallelogram is the product of the lengths of its base and height.</p></li>
+<li><p>Parallelogram Recomposition Theorem. If <span class="math notranslate nohighlight">\(\triangle{ABC}\cong\triangle{XYZ}\)</span> and <span class="math notranslate nohighlight">\(X=B\)</span> and <span class="math notranslate nohighlight">\(Y=A\)</span>, then <span class="math notranslate nohighlight">\(AZBC\)</span> is a parallelogram.</p></li>
+<li><p>The area of a triangle is one-half the product of the any base and the corresponding height.</p></li>
+<li><p>The area of a trapezoid is the product of its height and the arithmetic mean of its bases.</p></li>
+<li><p><strong>Pythagorean Theorem (Area Proof)</strong>. If <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are the lengths of the legs of a right triangle the hypotenuse of which has length <span class="math notranslate nohighlight">\(c\)</span>, then <span class="math notranslate nohighlight">\(a^2+b^2=c^2\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Recall the measure of an arc is equal to the measure of the central angle corresponding to the arc.</p>
+<p>Requirement (i) implies a constant ratio of proportionality for any two pairs of side lengths.</p>
 </div>
 </li>
-<li><p><strong>Two-Chord Angle Theorem</strong>. If two chords interesect in the interior of a circle to determine an angle, the measure of that angle is the average of the measures of the arcs intercepted by the angle and its vertical angles.</p></li>
-<li><p><strong>Two-Secant Angle Theorem</strong>. If two secants interesect in the exterior of a circle to determine an angle, the measure of the angle at the point of intersection is one-half the positive difference of the two intercepted arcs.</p></li>
-<li><p><strong>Tangent-Chord Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overline{AC}\)</span> is a chord of the circle with measure arc <span class="math notranslate nohighlight">\(APC=x^{\circ}\)</span>, then <span class="math notranslate nohighlight">\(m\angle BAC=\frac{x^{\circ}}{2}\)</span>.</p></li>
-<li><p><strong>Tangent-Secant Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overleftrightarrow{BD}\)</span> is a secant of the circle, then <span class="math notranslate nohighlight">\(m\angle ABD\)</span> is half the positive difference of the two intercepted arcs.</p></li>
-<li><p><strong>Two-Tangent Angle Theorem</strong>. The measure of an angle formed by two tangents drawn to a circle is one-half the positive difference of the measures of the intercepted arcs.</p></li>
-<li><p><strong>Corollary</strong>. Tangent segments drawn to a circle from the same (exterior) point are congruent.</p></li>
-<li><p><strong>Chord Segment Product Theorem</strong>. If two chords of a circle intersect, the products of the lengths of the segments of one chord is equal to the product of the lengths of the segments of the other.</p></li>
-<li><p><strong>Secant Segment Product Theorem</strong>. If two secant lines are drawn to a circle from the same exterior point, then the product of the length of the secant segment and the lenth of its exterior portion is the same for both secants.</p></li>
+<li><p><strong>Basic Proportionality Theorem</strong>. A line parallel to one side of a triangle intersects the other two sides in two different points if and only if it divides these sides into segments that are proportional. (The ``two different points” simply requires the point of intersection to not be the vertex.)</p></li>
+<li><p><strong>AAA Triangle Similarity</strong>. If the interior angles of one triangle are congruent to corresponding angles of a second triangle, then the triangles are similar.</p></li>
+<li><p><strong>SAS Triangle Similarity</strong>. If an angle of one triangle is congruent to the corresponding angle of a second triangle, and the corresponding sides adjacent to these angles are in proportion, then the triangles are similar.</p></li>
+<li><p><strong>SAS Triangle Similarity</strong>. If the lengths of the sides of one triangle are proportional to the corresponding side lengths of a second triangle, then the triangles are similar.</p></li>
 </ol>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -434,8 +421,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="E2.html" title="previous page">3.2 Area and Congruence</a>
-    <a class='right-next' id="next-link" href="E4.html" title="next page">3.4 Triangle Centers and Euler Line</a>
+    <a class='left-prev' id="prev-link" href="E2.html" title="previous page">3.2 Parallel Lines</a>
+    <a class='right-next' id="next-link" href="E4.html" title="next page">3.4 Right Triangles and the Pythagorean Theorem</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

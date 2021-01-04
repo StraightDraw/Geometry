@@ -1,24 +1,28 @@
 file: Introduction
 sections:
-- file: FFG/0
+- file: FFG/F0
   sections:
-  - file: FFG/1
-  - file: FFG/2
-  - file: FFG/3
-  - file: FFG/4
-  - file: FFG/5
-- file: NG/0
+  - file: FFG/F1
+  - file: FFG/F2
+  - file: FFG/F3
+  - file: FFG/F4
+  - file: FFG/F5
+  - file: FFG/F6
+- file: NG/N0
   sections:
-  - file: NG/1
-  - file: NG/2 
-  - file: NG/3
+  - file: NG/N1
+  - file: NG/N2 
+  - file: NG/N3
 - file: EG/E0
   sections:
   - file: EG/E1
-  - file: EG/E1b
   - file: EG/E2
   - file: EG/E3
   - file: EG/E4
+  - file: EG/E5
+  - file: EG/E6
+  - file: EG/E7
+  - file: EG/E8
 - file: CN/C0
   sections:
   - file: CN/C1 

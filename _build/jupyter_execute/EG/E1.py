@@ -52,10 +52,14 @@
 # 
 # 6. Corrollary to the Isosceles Triangle Theorem. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.
 # 
-# 7. One diagonal of a quadrilateral is the *perpendicular bisector* of the other if and only if the quadrilateral is a kite.
+# 7. Exactly one diagonal of a quadrilateral is the perpendicular bisector of the other if and only if the quadrilateral is a kite.
 # 
-# 8. The diagonals of a quadrilateral are *perpendicular bisectors* of one another if and only if the quadrilateral is a rhombus.
+#     ````{margin}
+#     ```{seealso}
+#     After Theorem 8, we can prove our {doc}`Second Construction Theorem</CN/C1>`.
+#     ```
+#     ````
 # 
-# 9. The diagonals of a quadrilateral are \emph{congruent perpendicular bisectors} of one another if and only if the quadrilateral is a square.
+# 8. The diagonals of a quadrilateral are perpendicular bisectors of one another if and only if the quadrilateral is a rhombus.
 # 
-# **CCT1** Consider two circles $p$ and $q$ with centers $P$ and $Q$ respectively. If $p$ and $q$ intersect in exactly two points, say, $R$ and $S$, then quadrilateral $PRQS$ is a kite. If $p\cong q$, $PQRS$ is a rhombus. If $p\in Q$ and $q\in P$, $\triangle{PRQ}$ is equilateral, as is $\triangle{PSQ}$.
+# 9. The diagonals of a quadrilateral are congruent perpendicular bisectors of one another if and only if the quadrilateral is a square.

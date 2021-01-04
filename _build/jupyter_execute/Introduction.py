@@ -4,7 +4,7 @@
 # # Geometry
 
 # ## Course Notes for College Geometry
-# Developed by Robb Sinn for use in UNG's MATH 3120.
+# Developed by Robb Sinn for use in UNG's [MATH 3120](https://catalog.ung.edu/preview_course_nopop.php?catoid=12&coid=13311).
 
 # For the last 25 centuries, students learned logic and proof while studying geometry. At its best, Geometry is an axiomatic playground where students prove each theorem from first principles.
 # 
@@ -20,6 +20,10 @@
 # 
 # Romance can pair with rigor if we search out the ancient mysteries. Why was Euclid's Fith Postulate controversial? Why did the controversy last more than twenty centuries? Who solved it? 
 # 
+# ````{margin}
+# [Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A) produces excellent math videos. They are short, professional and intended for a wide audience like this embedded video about [Euclide's Fifth Postulate](https://www.youtube.com/embed/PnW5IRvgvLY).
+# ````
+# 
 # <iframe width="560" height="315" src="https://www.youtube.com/embed/PnW5IRvgvLY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # 
 # Greeks loved quadrature, the act of using a compass and straigtedge to create a square with the same area as given figure. Certain quadratures are impossible, like the classic "squaring the circle," yet it was centuries before anyone proved it to be impossible. 
@@ -32,8 +36,8 @@
 # :titlesonly:
 # 
 # 
-# FFG/0
-# NG/0
+# FFG/F0
+# NG/N0
 # EG/E0
 # CN/C0
 # AX/A0
