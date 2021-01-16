@@ -88,15 +88,3 @@
 # 15. **Side Angle Side Postulate**. Given a one-to-one correspondence between two triangles (or between a triangle and itself), if two sides and the included angle of the first triangle are congruent to the corresponding parts of the second triangle, the correspondence is a congruence.
 
 # [^1]: A version of Pasch's Axiom.
-
-# 
-# ```{toctree}
-# :hidden:
-# :titlesonly:
-# 
-# 
-# 1
-# 2
-# 3
-# ```
-# 

@@ -57,8 +57,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Euclidean Geometry" href="../EG/E0.html" />
-    <link rel="prev" title="2.2 Triangles" href="2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,63 +93,63 @@
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../FFG/0.html">
+  <a class="reference internal" href="../FFG/F0.html">
    Foundations and Finite Geometries
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/1.html">
+    <a class="reference internal" href="../FFG/F1.html">
      1.1 Finite Geometries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/2.html">
-     1.2 The Five Point Geometry
+    <a class="reference internal" href="../FFG/F2.html">
+     1.2 Four Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/3.html">
-     1.3 Fano’s Geometry
+    <a class="reference internal" href="../FFG/F3.html">
+     1.3 Five Point Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/4.html">
-     1.4 Young’s Geometry
+    <a class="reference internal" href="../FFG/F4.html">
+     1.4 Fano’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html">
-     1.5  Searching for a Parallel Posutlate
+    <a class="reference internal" href="../FFG/F5.html">
+     1.5 Young’s Geometry
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../FFG/5.html#incidence-geometries">
-     Incidence Geometries
+    <a class="reference internal" href="../FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
     </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="0.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="N0.html">
    Neutral Geometry
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="1.html">
+    <a class="reference internal" href="N1.html">
      2.1 Congruence, Lines and Angles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="2.html">
+    <a class="reference internal" href="N2.html">
      2.2 Triangles
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="N3.html">
      2.3 Quadrilaterals
     </a>
    </li>
@@ -170,23 +168,38 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../EG/E1b.html">
-     3.1b Building Blocks
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../EG/E2.html">
-     3.2 Area and Congruence
+     3.2 Parallel Lines
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../EG/E3.html">
-     3.3 Circles
+     3.3 Area and Similarity
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../EG/E4.html">
-     3.4 Triangle Centers and Euler Line
+     3.4 Right Triangles and the Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../EG/E8.html">
+     3.8 Homework
     </a>
    </li>
   </ul>
@@ -200,7 +213,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../CN/C1.html">
-     Constructions
+     C.1 Construction Theorems
     </a>
    </li>
    <li class="toctree-l2">
@@ -359,16 +372,14 @@ Multiple lines through a single point parallel to blue line.</p>
 </div>
 <p>The problem is that, without a <a class="reference external" href="https://mathworld.wolfram.com/ParallelPostulate.html">parallel postulate</a>, there is nothing preventing geometric lines from having a slight curvature (see figure at right). If lines are not straight, the angle sums of triangles are not <span class="math notranslate nohighlight">\(180^\circ\)</span> and rectangles do not even exist.</p>
 <p>Presenting the standard definitions of polygons and quadrilaterals will help us explore why our current structure is insufficient to guarantee Euclidean results.</p>
-<dl class="simple myst">
-<dt>Polygon</dt><dd><p>A simple, closed curve comprised entirely of line segments.</p>
-</dd>
-<dt>Quadrilateral</dt><dd><p>A polygon containing exactly four line segments.</p>
-</dd>
-<dt>Parallelogram:</dt><dd><p>A convex quadrilateral with two pairs of parallel sides.</p>
-</dd>
-<dt>Rectangle</dt><dd><p>A rectangle is a parallelogram with a right angle.</p>
-</dd>
-</dl>
+<p>Polygon
+: A simple, closed curve comprised entirely of line segments.</p>
+<p>Quadrilateral
+: A polygon containing exactly four line segments.</p>
+<p>Parallelogram:
+: A convex quadrilateral with two pairs of parallel sides.</p>
+<p>Rectangle
+: A rectangle is a parallelogram with a right angle.</p>
 <div class="section" id="the-rectangle-quest">
 <h2>The Rectangle Quest<a class="headerlink" href="#the-rectangle-quest" title="Permalink to this headline">¶</a></h2>
 <p>Two pioneers attempted to leverage the ideas of perpendicularity to prove rectangles exist without invoking Euclid’s Fifth Postulate: <a class="reference external" href="https://en.wikipedia.org/wiki/Giovanni_Girolamo_Saccheri">Giovanni Saccheri</a> (1667 - 1733) and <a class="reference external" href="https://en.wikipedia.org/wiki/Johann_Heinrich_Lambert">Johann Lambert</a> (1728 – 1777).</p>
@@ -425,16 +436,14 @@ is elliptical</p>
 </div>
 </div>
 <p>Lambert’s work in spherical and elliptical geometries helped him understand and produce projections from a globe to a two-dimensional map. He showed that triangles on curved surfaces like spheres and saddles do not have angle sums equal to <span class="math notranslate nohighlight">\(180^\circ\)</span>. Like Saccheri, he proved several hyperbolic geometry theorems including that triangular area in hyperbolic geometry can be calculated using angle measure only.</p>
-<dl class="simple myst">
-<dt><a class="reference external" href="https://en.wikipedia.org/wiki/Saccheri_quadrilateral">Saccheri Quadrilateral</a></dt><dd><p>A quadrilateral with two congruent sides, called <em>legs</em>, which are both perpendicular to a third side, called the <em>base</em>.</p>
-</dd>
-<dt><a class="reference external" href="https://en.wikipedia.org/wiki/Lambert_quadrilateral">Lambert Quadrilateral</a></dt><dd><p>A quadrilateral with at least three right angles.</p>
-</dd>
-<dt>Summit</dt><dd><p>The line segment opposite the base of a Saccheri quadrilateral.</p>
-</dd>
-<dt>Summit Angles</dt><dd><p>The angles in a Saccheri quadrilateral that are adjacent to the summit.</p>
-</dd>
-</dl>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Saccheri_quadrilateral">Saccheri Quadrilateral</a>
+: A quadrilateral with two congruent sides, called <em>legs</em>, which are both perpendicular to a third side, called the <em>base</em>.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Lambert_quadrilateral">Lambert Quadrilateral</a>
+: A quadrilateral with at least three right angles.</p>
+<p>Summit
+: The line segment opposite the base of a Saccheri quadrilateral.</p>
+<p>Summit Angles
+: The angles in a Saccheri quadrilateral that are adjacent to the summit.</p>
 </div>
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
@@ -516,8 +525,6 @@ is elliptical</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="2.html" title="previous page">2.2 Triangles</a>
-    <a class='right-next' id="next-link" href="../EG/E0.html" title="next page">Euclidean Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

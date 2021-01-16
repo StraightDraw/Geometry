@@ -1,66 +1,35 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # 1.3 Fano's Geometry
+# ## 1.3 Fano's Geometry
 
-# ````{margin}
-# ![Image: Gino Fano](https://upload.wikimedia.org/wikipedia/commons/d/d2/Gino_Fano.jpg)
-# Gino Fano (1871 - 1952)
-# ````
+# Our approach will be very similar to the Four and Five Point Geometries using the same undefined terms. Here are the axioms for Fano's Geometry:
 # 
-# Gino Fano was the founder of finite geometry. He created and explored the projective geometry of order 2 which bears his name. The [Fano Plane](https://en.wikipedia.org/wiki/Fano_plane) is the smallest possible finite projective geometry, the one with the fewest points and lines.
+# > &nbsp;&nbsp; i.   There exists at least one line.
+# >
+# > &nbsp; ii.  There are exactly three points on each line.
+# >
+# >iii. Not all points are on the same line.
+# >
+# >iv.  There is exactly one line on any two distinct points.
+# >
+# >&nbsp; v.   There is at least one point on any two distinct lines. 
 # 
-# We use the standard undefined terms and defined terms for finite geometry, just as with the 4PG and 5PG.
-# 
-# ````{panels}
-# **Undefined Terms**
-# ^^^
-# Point, Line and On
-# ---
-# 
-# **Defined Terms**
-# ^^^
-# Parallel, Intersect and Concurret
-# ````
-# 
-# ````{admonition} Axioms for Fano's Geometry
-# :class: note
-# 1. There exists at least one line.
-# 2. There are exactly three points on each line.
-# 3. Not all points are on the same line.
-# 4. There is exactly one line on any two distinct points.
-# 5. There is at least one point on any two distinct lines. 
-# ````
+# We will also use the same defined terms as before: intersect, parallel and concurrent.
 
-# ## Theorems
-# 
-# ````{margin}
-# ```{figure} Fig3_Fano.png
-# ---
-# width: 100%
-# name: Fano's Geometry
-# ---
-# Model for Fano's Geometry
-# ```
-# ````
+# **Theorems.**
 # 
 # 1. In Fano's Geometry, there exist at least four points.
-# 2. Lindsey's Lemma. [^1] For every point $P$ in Fano's Geometry, there exists a line that does not contain it.
-#     * Lemma 1. Fano's Geometry contains *at least* seven points.
-#     * Lemma 2. Fano's Geometry contains *no more than* seven points.
+# 2. Lindsey's Lemma. For every point $P$ in Fano's Geometry, there exists a line that does not contain it.
+# 3. Fano's Geometry contains *at least* seven points.
+# 4. Fano's Geometry contains *no more than* seven points.
 # 
-#     ````{note} Lemmas 1 and 2 together prove Theorem 3, that Fano's Geometry contains *exactly seven points*.
-#     ````
+#     Note that Theorems 10 and 11 are actually two lemmas needed to prove that Fano's Geometry contains *exactly* seven points.
 # 
-# 3. Fano's Geometry contains *exactly* seven points.
-# 4. Fano's Geometry contains *exactly* seven lines.
-#     ````{admonition} Hint
-#     :class: tip
-#     Use two different proofs, like the lemma approach above.
-#     ````
-# 5. In Fano's Geometry, each line is on exactly three points.
-# 6. In Fano's Geometry, the set of all lines on a single point contains all the points in the geometry. 
-# 7. In Fano's Geometry, for every pair of points, there exist exactly two lines containing neither point.
-# 8. In Fano's Geometry, each point is on exactly three lines.
-
-# [^1]: Helpful theorem proposed and proved by a former student at UNG.
+# 5. Fano's Geometry contains \textbf{exactly} seven points.
+# 6. Fano's Geometry contains \textbf{exactly} seven lines.
+# 7. In Fano's Geometry, each line is on exactly three points.
+# 8. In Fano's Geometry, the set of all lines on a single point contains all the points in the geometry. 
+# 9. In Fano's Geometry, for every pair of points, there exist exactly two lines containing neither point.
+# 10. In Fano's Geometry, each point is on exactly three lines.
+# 

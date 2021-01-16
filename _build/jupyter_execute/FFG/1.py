@@ -5,51 +5,24 @@
 
 # Finite geometries are the most primitive axiomatic systems with a finite set of points and lines. The geometric ideas we meet studying finite geometry are robust and apply to more sophisticated geometries. The Incidence Axioms (see below) govern the relationship between points and lines and provide the building blocks necessary for ideas like *intersect* and *parallel*. 
 # 
-# ````{admonition} Important
-# :class: warning
-# All finite geometries in this course will have the same three and the same defined terms *intersect*, *parallel* and *concurrent*.
-# ````
+# <span style="color:red">**Important**.</span> All finite geometries in this course will have the same three and the same defined terms *intersect*, *parallel* and *concurrent* the definitions for which are given below.
 # 
-# We can define several basic geometry terms.
+# * Two lines on the same point are said to *intersect* at that point and are called *intersecting lines*.
+# * Two lines that do not intersect are called *parallel* lines.
+# * Three or more lines that intersect at the same point are called *concurrent*.
 # 
-# Intersect
-# : Two lines on the same point are said to *intersect* at that point and are called *intersecting lines*.
+# #### Four Point Geometry
+# The axioms below together with the undefined terms describe the Four Point Geometry.
 # 
-# Parallel
-# : Two lines that do not intersect are called *parallel* lines.
+# >&nbsp;&nbsp;  i. There exist exactly four points.
+# >
+# >&nbsp; ii. Any two distinct points have exactly one line on both of them.
+# >
+# >iii. Each line is on exactly two points.
 # 
-# Concurrent
-# : Three or more lines that intersect at the same point are called *concurrent*.
-# 
-# 
-# ````{tip}
-# We used the exact same definitions above that will be used throughout this book.
-# ````
-# 
-
-# ## Four Point Geometry
-# 
-# ````{margin}
-# ```{figure} Fig1_4PG.png
-# ---
-# width: 90%
-# name: 4PG
-# ---
-# Model for the Four Point Geometry
-# ```
-# ````
-
-# The axioms below together with the standard undefined terms for finite geometry describe the Four Point Geometry (4PG).
-# 
-# ````{admonition} Axioms for the 4PG
-# :class: note
-# 1. There exist exactly four points.
-# 2. Any two distinct points have exactly one line on both of them.
-# 3. Each line is on exactly two points.
-# ````
 # We would normally say two lines intersect if they contain the same point. However, we have not defined what *contain* means. We use the undefined term "on" to refer both to a line being on some points and to points being on a line.
 
-# ## 4PG Theorems
+# **Theorems.**
 # 
 # 1. In the Four Point Geometry, if two lines intersect, they have exactly one point in common.
 # 2. The Four Point Geometry has exactly six lines.
