@@ -39,22 +39,27 @@
 # Model for Young's Geometry
 # ```
 # 
-# 
 
 # ## Theorems for Young's Geometry
 # 
 # 1. In Young's Geometry, there exist at least four points.
 # 2. Laurel's Lemma. [^1] In Young's Geometry, for each point $P$ there exists least one line $l$ that does not contain it.
-# 3. In Young's Geometry, every point is on exactly four lines.
-# 4. In Young's Geometry, if lines $l$ and $m$ intersect at a point $P$, and if line $l$ is parallel to line $n$, then lines $m$ and $n$ share a common point $Q$.
-# 5. In Young's Geometry, two lines parallel to a third line are parallel to each other.
-# 6. In Young's Geometry, every line has exactly two distinct lines that are parallel to it. 
-# 7. Young's Geometry contains exactly twelve lines.
+# 3. In Young's Geometry, every point is on at least four lines.
+# 4. In Young's Geometry, every point is on at most four lines
+# 
+#     ````{Note}
+#     Theorems 3 and 4 together show how to prove every point is on *exactly* four lines.
+#     ````
+# 
+# 5. In Young's Geometry, if lines $l$ and $m$ intersect at a point $P$, and if line $l$ is parallel to line $n$, then lines $m$ and $n$ share a common point $Q$.
+# 6. In Young's Geometry, two lines parallel to a third line are parallel to each other.
+# 7. In Young's Geometry, every line has exactly two distinct lines that are parallel to it. 
+# 8. Young's Geometry contains exactly twelve lines.
 #     ````{admonition} Hint
 #     :class: tip
 #     Prove first that *at least* 12 lines exist. Next, that *no more than* 12 lines exist.
 #     ````
-# 8. Young's Geometry contains exactly nine points.
+# 9. Young's Geometry contains exactly nine points.
 #     ````{admonition} Hint
 #     :class: tip
 #     Same hint as above.

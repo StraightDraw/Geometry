@@ -10,10 +10,9 @@ logo: logo.png
 execute:
   execute_notebooks: 'auto'
 
-# Define the name of the latex output file for PDF builds
-#latex:
-#  latex_documents:
-#    targetname: Geo.tex
+parse:
+  myst_extended_syntax: true  
+
 
 # Information about where the book exists on the web
 #repository:

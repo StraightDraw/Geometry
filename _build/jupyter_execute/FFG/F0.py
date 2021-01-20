@@ -26,12 +26,14 @@
 # : All other technical terms of the system are *defined terms* the definitions of which rely upon the undefined terms.
 # 
 # Axioms
+# 
 # : The *axioms* of the system are a set of statements dealing with the defined and undefined terms and will remain unproven. 
 # 
 # ````{admonition} Postulate
 # :class: warning
 # A synonym for axiom that is often used in its place. Euclid, for example, stated postulates.
 # ````
+# 
 # 
 # Theorems 
 # : All other statements must be logical consequences of the axioms. These derived statements are called the *theorems* of the axiomatic system.
