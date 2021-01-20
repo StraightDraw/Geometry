@@ -31,6 +31,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -374,14 +376,16 @@ Multiple lines through a single point parallel to blue line.</p>
 </div>
 <p>The problem is that, without a <a class="reference external" href="https://mathworld.wolfram.com/ParallelPostulate.html">parallel postulate</a>, there is nothing preventing geometric lines from having a slight curvature (see figure at right). If lines are not straight, the angle sums of triangles are not <span class="math notranslate nohighlight">\(180^\circ\)</span> and rectangles do not even exist.</p>
 <p>Presenting the standard definitions of polygons and quadrilaterals will help us explore why our current structure is insufficient to guarantee Euclidean results.</p>
-<p>Polygon
-: A simple, closed curve comprised entirely of line segments.</p>
-<p>Quadrilateral
-: A polygon containing exactly four line segments.</p>
-<p>Parallelogram:
-: A convex quadrilateral with two pairs of parallel sides.</p>
-<p>Rectangle
-: A rectangle is a parallelogram with a right angle.</p>
+<dl class="simple myst">
+<dt>Polygon</dt><dd><p>A simple, closed curve comprised entirely of line segments.</p>
+</dd>
+<dt>Quadrilateral</dt><dd><p>A polygon containing exactly four line segments.</p>
+</dd>
+<dt>Parallelogram:</dt><dd><p>A convex quadrilateral with two pairs of parallel sides.</p>
+</dd>
+<dt>Rectangle</dt><dd><p>A rectangle is a parallelogram with a right angle.</p>
+</dd>
+</dl>
 <div class="section" id="the-rectangle-quest">
 <h2>The Rectangle Quest<a class="headerlink" href="#the-rectangle-quest" title="Permalink to this headline">¶</a></h2>
 <p>Two pioneers attempted to leverage the ideas of perpendicularity to prove rectangles exist without invoking Euclid’s Fifth Postulate: <a class="reference external" href="https://en.wikipedia.org/wiki/Giovanni_Girolamo_Saccheri">Giovanni Saccheri</a> (1667 - 1733) and <a class="reference external" href="https://en.wikipedia.org/wiki/Johann_Heinrich_Lambert">Johann Lambert</a> (1728 – 1777).</p>
@@ -442,14 +446,16 @@ is elliptical</p>
 </div>
 </div>
 <p>Lambert’s work in spherical and elliptical geometries helped him understand and produce projections from a globe to a two-dimensional map. He showed that triangles on curved surfaces like spheres and saddles do not have angle sums equal to <span class="math notranslate nohighlight">\(180^\circ\)</span>. Like Saccheri, he proved several hyperbolic geometry theorems including that triangular area in hyperbolic geometry can be calculated using angle measure only.</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Saccheri_quadrilateral">Saccheri Quadrilateral</a>
-: A quadrilateral with two congruent sides, called <em>legs</em>, which are both perpendicular to a third side, called the <em>base</em>.</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Lambert_quadrilateral">Lambert Quadrilateral</a>
-: A quadrilateral with at least three right angles.</p>
-<p>Summit
-: The line segment opposite the base of a Saccheri quadrilateral.</p>
-<p>Summit Angles
-: The angles in a Saccheri quadrilateral that are adjacent to the summit.</p>
+<dl class="simple myst">
+<dt><a class="reference external" href="https://en.wikipedia.org/wiki/Saccheri_quadrilateral">Saccheri Quadrilateral</a></dt><dd><p>A quadrilateral with two congruent sides, called <em>legs</em>, which are both perpendicular to a third side, called the <em>base</em>.</p>
+</dd>
+<dt><a class="reference external" href="https://en.wikipedia.org/wiki/Lambert_quadrilateral">Lambert Quadrilateral</a></dt><dd><p>A quadrilateral with at least three right angles.</p>
+</dd>
+<dt>Summit</dt><dd><p>The line segment opposite the base of a Saccheri quadrilateral.</p>
+</dd>
+<dt>Summit Angles</dt><dd><p>The angles in a Saccheri quadrilateral that are adjacent to the summit.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
