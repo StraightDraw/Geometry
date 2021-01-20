@@ -13,7 +13,7 @@
 # 
 # **Defined Terms**
 # ^^^
-# Parallel, Intersect and Concurret
+# Parallel, Intersect and Concurrent
 # ````
 
 # ````{margin}
@@ -28,7 +28,7 @@
 
 # ````{admonition} Axioms for the 5PG
 # :class: note
-# 1. There exist exactly four points.
+# 1. There exist exactly five points.
 # 2. Any two distinct points have exactly one line on both of them.
 # 3. Each line is on exactly two points.
 # ````

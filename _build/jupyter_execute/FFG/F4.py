@@ -20,7 +20,7 @@
 # 
 # **Defined Terms**
 # ^^^
-# Parallel, Intersect and Concurret
+# Parallel, Intersect and Concurrent
 # ````
 # 
 # ````{admonition} Axioms for Fano's Geometry
