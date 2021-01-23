@@ -212,5 +212,38 @@
 # 
 # ````
 # 
+# ## DSM Code for Quantifiers and Implications
+# 
+# ````{panels}
+# :column: col-3
+# There exists
+# ^^^
+# $\exists$
+# ```
+# \exists
+# ```
+# ---
+# For every
+# ^^^
+# $\forall$
+# ```
+# \forall
+# ```
+# ---
+# Implies
+# ^^^
+# $\implies$
+# ```
+# \implies
+# ```
+# ---
+# Therefore
+# ^^^
+# $\therefore$
+# ```
+# \therefore
+# ```
+# 
+# ````
 # 
 # 
