@@ -53,11 +53,11 @@
 # 
 # 5. In Young's Geometry, let $l \parallel m$. If line $n$ intersects $l$, it intersects $m$ also.
 # 6. In Young's Geometry, two lines parallel to a third line are parallel to each other.
-# 7. In Young's Geometry, every line has exactly two distinct lines that are parallel to it. 
-# 8. Young's Geometry contains exactly nine points.
+# 7. Young's Geometry contains exactly nine points.
 #     ````{hint}
 #     Prove first that *at least* 9 points exist. Next, that *no more than* 9 points exist.
 #     ````
+# 8. In Young's Geometry, every line has exactly two distinct lines that are parallel to it. 
 # 9. Young's Geometry contains exactly twelve lines.
 #     ````{hint}
 #     Same hint as above.
