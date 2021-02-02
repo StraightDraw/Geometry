@@ -59,8 +59,5 @@
 #     ````
 # 8. In Young's Geometry, every line has exactly two distinct lines that are parallel to it. 
 # 9. Young's Geometry contains exactly twelve lines.
-#     ````{hint}
-#     Same hint as above.
-#     ````
 
 # [^1]: Helpful theorem proposed and proved by a former student at UNG.
