@@ -32,9 +32,9 @@
 # ## Theorems
 # 1. **Isosceles Triangle Theorem**. Two sides of a triangle are congruent if and only if the angles opposite these sides are congruent ($\impliedby$ only).
 # 
-# ````{warning}
-# Proving that an isosceles triangle has congruent angles is easy ($\impliedby$). Proving the converse, that a triangle with two congruent angles is isosceles ($\implies$) is much easier after we have a congruence theorem.
-# ````
+#     ````{warning}
+#     Proving that an isosceles triangle has congruent angles is easy ($\impliedby$). Proving the converse, that a triangle with two congruent angles is isosceles ($\implies$) is much easier after we have a congruence theorem.
+#     ````
 # 
 # 2. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.
 # 

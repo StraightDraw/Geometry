@@ -61,22 +61,23 @@
 # **If the fourth angle is:**
 # 
 # ````{panels}
+# :column: col-4
 # Acute
 # ^^^
 # The geometry
-# is hyperbolic
+# is **hyperbolic**
 # ---
 # 
 # Right
 # ^^^
 # The geometry
-# is Euclidean
+# is **Euclidean**
 # ---
 # 
 # Obtuse
 # ^^^
 # The geometry
-# is elliptical
+# is **elliptical**
 # ````
 # Lambert's work in spherical and elliptical geometries helped him understand and produce projections from a globe to a two-dimensional map. He showed that triangles on curved surfaces like spheres and saddles do not have angle sums equal to $180^\circ$. Like Saccheri, he proved several hyperbolic geometry theorems including that triangular area in hyperbolic geometry can be calculated using angle measure only.
 

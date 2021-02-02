@@ -4,14 +4,29 @@
 # # 2.1 Congruence, Lines and Angles
 
 # ````{warning}
-# Some of the definitions below are **not** the standard ones you're used to.
+# The concepts included in our SMSG Axioms jump far ahead of our definitions, so we gain ideas about objects before they are even defined.
 # ````
+# 
 # ````{margin}
 # ```{seealso}
 # Distances are defined by the {doc}`SMSG</AX/A4>` Distance Postulate, Axiom 2, so we can immediately define segment congruence, circles and other terms that rely upon distance.
 # ```
 # ````
+# 
 # Definitions depend heavily upon the set of axioms and undefined terms. Read each definition below and make note of the ones that feel awkward. All definitions have to work within the set of axioms, so be sure to check out the {doc}`SMSG Axioms</AX/A4>` page.
+# 
+# Segment
+# : A *segment* $\overline{AB}$ is the set of points $A$, $B$ and all points $P$ such that $P\in\overleftrightarrow{AB}$ and $AP+PB=AB$.
+# 
+# ````{warning}
+# Segments are often defined as "all points on a line **between** $A$ and $B$" (plus endpoints). But we haven't defined *between* yet. That requires knowing what a segment is.
+# ````
+# Between
+# : A point $B$ is *between* $A$ and $C$ if $B\in \overline{AC}$ but $B\neq A,C$.
+# 
+# ````{note}
+# Saying point $P$ is *between* two points requires it to be on a line or segement that joins those two points. We use the idea of *between* to define rays (see below).
+# ````
 # 
 # Segment Congruence
 # : Two segments are congruent if the distances between their endpoints are equal.
@@ -46,15 +61,6 @@
 # 
 # Concurrent Lines
 # : Three or more coplanar lines that have a point in common.
-# 
-# Segment
-# : A *segment* $\overline{AB}$ is the set of points $A$, $B$ and all points $P$ such that $P\in\overleftrightarrow{AB}$ and $AP+PB=AB$.
-# 
-# ````{warning}
-# Segments are often defined as "all points on a line **between** $A$ and $B$" (plus endpoints). But we haven't defined *between* yet. That requires knowing what a segment is.
-# ````
-# Between
-# : A point $B$ is *between* $A$ and $C$ if $B\in \overline{AC}$ but $B\neq A,C$.
 
 # ````{note}
 # Defining a ray can be tricky. The one below was inspired by Hilbert and his use of "betweeness" axioms.
