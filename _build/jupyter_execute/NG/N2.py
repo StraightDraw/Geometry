@@ -81,7 +81,7 @@
 #     ````
 # 
 # 14. The sum of the measures of any two angles of a triangle is less than $180^\circ$.
-# 15. For any $\triangle ABC$ there exists $\triangle A'B'C'$ having the same angle sum as $\triangle ABC$ but where $m\angle A'\leq\frac{1}{2}m\angle A$.
+# 15. For any $\triangle ABC$ there exists $\triangle A'B'C'$ having the same angle sum as $\triangle ABC$ but where $\measuredangle A'\leq\frac{1}{2}m\measuredangle A$.
 # 
 #     ````{hint}
 #     Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.
