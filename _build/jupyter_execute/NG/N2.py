@@ -71,7 +71,7 @@
 # 12. **Alternate Interior Angle Theorem**. If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.
 # 
 #     ````{tip}
-#     The Alternate Interior Angle Theorem is so important, it gets an acronym: the **AIA** theorem.
+#     The Alternate Interior Angle Theorem is so important, it gets an acronym: the **AIA** theorem. Its converse is equivalent to the Euclidean parallel condition and is also acronym worthy: **CAIA**.
 #     ````
 #     
 # 13. *Corollary to AIA*. Two lines perpendicular to the same line are parallel.
