@@ -100,16 +100,20 @@
 # 3. The summit angles of a Saccheri quadrilateral are not obtuse and thus are either right or acute.
 # 4. The line joining the midpoints of the summit and base of a Saccheri quadrilateral are perpendicular to both.
 # 5. The summit and base of a Saccheri quadrilateral are parallel.
-# 6. In any Saccheri quadrilateral, the length of the summit is greater than or equal the length of the base. 
+# 6. In any Saccheri quadrilateral, the length of the summit is greater than or equal to the length of the base. 
 # 7. The fourth angle of a Lambert quadrilateral is not obtuse, and is therefore either right or acute.
 # 8. The measure of the side included between two right angles of a Lambert quadrilateral is less than or equal to the measure of the side opposite it.
 
 # The last chapter of the rectangle quest features [Johann Bolyai](https://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai) and [Nikolai Lobachevsky](https://en.wikipedia.org/wiki/Nikolai_Lobachevsky) who, independently of one another, developed, explored and proved the theorems of non-Euclidean geometry.
 # 
 # ````{warning}
-# [Bolyai's father](https://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai#Career), a mathematician, begged his son to not pursue the quest at all. 
-# > You must not attempt this approach to parallels. I know this way to the very end. I have traversed this bottomless night, which **extinguished all light and joy in my life**. I entreat you, leave the science of parallels alone...Learn from my example."
-# (Emphasis added.)
+# [Bolyai's father](https://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai#Career), a mathematician named Farkas, begged his son to not pursue the quest at all.
+# 
+# ```{epigraph}
+# You must not attempt this approach to parallels. I know this way to the very end. I have traversed this bottomless night, which **extinguished all light and joy in my life**. I entreat you, leave the science of parallels alone...Learn from my example" (emphasis added).
+# 
+# -- Farkas Bolyai
+# ```
 # ````
 # 
 # Lobachevsky assumed Playfair's Postulate was false and that, instead of unique parallels through a point for a given line, that multiple parallels were possible. He proceeded to develop and prove the theorems of hyperbolic goemetry and establish it as a logical and consistent system.
