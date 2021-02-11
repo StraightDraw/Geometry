@@ -95,6 +95,12 @@
 
 # ## Theorems
 # 
+# ````{margin}
+# ```{note}
+# A Saccheri quadrilateral divided along the segment through the midpoints of its base and summit forms two Lambert quadrilaterials. A Lambert quadrilateral and its mirror image can be joined to form a Saccheri quadrilateral.
+# ```
+# ````
+# 
 # 1. The diagonals of a Saccheri quadrilateral are congruent.
 # 2. The summit angles of a Saccheri quadrilateral are congruent.
 # 3. The summit angles of a Saccheri quadrilateral are not obtuse and thus are either right or acute.

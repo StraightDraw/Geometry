@@ -57,7 +57,7 @@
 # : Two lines *intersect* if there exists a point that is on both lines.
 # 
 # Parallel Lines
-# : Two lines in the same plan which do not intersect.
+# : Two lines in the same plane which do not intersect.
 # 
 # Concurrent Lines
 # : Three or more coplanar lines that have a point in common.
@@ -82,7 +82,7 @@
 
 # Angle Interior
 # : A point $P$ is in the *interior* of $\angle{ABC}$ provided:
-#  + $m\angle{ABC}<180^\circ$
+#  + $\measuredangle{ABC}<180^\circ$
 #  + there exist points $X,Y$ such that
 #    + $X\in\overrightarrow{BA}$,
 #    + $Y\in\overrightarrow{BC}$, and
@@ -108,7 +108,7 @@
 # : The *midpoint* $C$ of $\overline{AB}$ lies on $\overline{AB}$ such that $AC = CB$.
 # 
 # Angle Bisector
-# : The ray $\overrightarrow{BD}$ is the angle bisector of $\angle{ABC}$ if $m\angle ABD = m\angle DBC$.
+# : The ray $\overrightarrow{BD}$ is the angle bisector of $\angle{ABC}$ if $\measuredangle ABD = m\measuredangle DBC$.
 # 
 # Right Angle
 # : An angle with angle measure $90^\circ$ (see SMSG Axiom 11).

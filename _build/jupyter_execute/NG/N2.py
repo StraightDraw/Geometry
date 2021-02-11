@@ -30,10 +30,10 @@
 # : The sum of the measures of all three angles in a triangle.
 
 # ## Theorems
-# 1. **Isosceles Triangle Theorem**. Two sides of a triangle are congruent if and only if the angles opposite these sides are congruent ($\impliedby$ only).
+# 1. **Isosceles Triangle Theorem**. If two sides of a triangle are congruent, the angles opposite these sides are congruent ($\implies$).
 # 
 #     ````{warning}
-#     Proving that an isosceles triangle has congruent angles is easy ($\impliedby$). Proving the converse, that a triangle with two congruent angles is isosceles ($\implies$) is much easier after we have a congruence theorem.
+#     Proving that an isosceles triangle has congruent angles ($\implies$) is easier than proving the converse, that a triangle with two congruent angles is isosceles ($\implies$). The latter proof works better after a few other theorems have been established.
 #     ````
 # 
 # 2. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.
@@ -47,7 +47,13 @@
 # 3. **Exterior Angle Theorem**. Each exterior angle of a triangle is greater in measure than either of the nonadjacent interior angles of the triangle.
 # 4. **ASA Triangle Congruence**. If two angles and the included side of one triangle are congruent, repsectively, to two angles and the included side of a second triangle, then the triangles are congruent.
 # 5. **AAS Triangle Congruence**. If the vertices of two triangles are in one-to-one correspondence such that two angles and a non-included side in one triangle are congruent to their corresponding parts of a second triangle, then the triangles are congruent.
-# 6. **Isosceles Triangle Theorem**. If two angles of a triangle are congruent, then the sides opposite these angles are congruent ($\implies$).
+# 6. **Isosceles Triangle Theorem**. If two angles of a triangle are congruent, then the sides opposite these angles are congruent ($\impliedby$).
+# 
+#     ````{margin}
+#     ```{note}
+#     Theorem 10 is needed to prove the Triangle Inequality (Theorem 7). The theorems are out of order, here, but we can prove them in the correct order. 
+#     ```
+#     ````
 #    
 # 7. **Triangle Inequality**. The sum of the measures of two sides of a triangle is greater than the measure of the third side.
 # 8. **Hinge Theorem**. If two sides of one triangle are congruent to two sides of another triangle, and the included angle of the first is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second triangle. 
@@ -72,12 +78,18 @@
 # 
 #     ````{tip}
 #     The Alternate Interior Angle Theorem is so important, it gets an acronym: the **AIA** theorem. Its converse is equivalent to the Euclidean parallel condition and is also acronym worthy: **CAIA**.
+#     
+#     ```{admonition} Be Careful
+#     :class: warning
+#     The CAIA theorem is **not true** in neutral geometry, only in Eclidean.
+#     ```
+#     
 #     ````
 #     
 # 13. *Corollary to AIA*. Two lines perpendicular to the same line are parallel.
 # 
 #     ````{warning}
-#     Parall lines are a hot mess in neutral geometry, but perpendicularity and right angles work well. 
+#     Parall lines are a hot mess in neutral geometry, but perpendicularity and right angles work pretty well. 
 #     ````
 # 
 # 14. The sum of the measures of any two angles of a triangle is less than $180^\circ$.

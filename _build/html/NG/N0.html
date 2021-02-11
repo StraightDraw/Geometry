@@ -399,7 +399,7 @@ Poincare Disk Model of Hyperbolic Geometry (GIF)<div class="summary-down docutil
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Geometric notation has conventions we need to follow. The notation <span class="math notranslate nohighlight">\(\overline{AB}\)</span> describes a <strong>line segment</strong> but <span class="math notranslate nohighlight">\(AB\)</span> indicates <strong>length</strong> or the distance between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. We refer to the angle as <span class="math notranslate nohighlight">\(\angle BAC\)</span> (with vertex <span class="math notranslate nohighlight">\(A\)</span>), but <span class="math notranslate nohighlight">\(m\angle BAC\)</span> indicates its measure.</p>
+<p>Geometric notation has conventions we need to follow. The notation <span class="math notranslate nohighlight">\(\overline{AB}\)</span> describes a <strong>line segment</strong> but <span class="math notranslate nohighlight">\(AB\)</span> indicates <strong>length</strong> or the distance between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. We refer to the angle as <span class="math notranslate nohighlight">\(\angle BAC\)</span> (with vertex <span class="math notranslate nohighlight">\(A\)</span>), but <span class="math notranslate nohighlight">\(\measuredangle BAC\)</span> indicates its measure.</p>
 </div>
 </div>
 <div class="section" id="axiomatics-of-neutral-geometry">
@@ -445,9 +445,17 @@ Problem of Completeness<div class="summary-down docutils">
 <p>In the Ruler Postulate below, every line in our geometry inherits all the properties of the real number line. <em>Cotinuity</em> and <em>completeness</em> come along, too. Any real number we can imagine exists and can be placed precisely in relation to any other quantity. SMSG axioms like the Distance Postulate and Angle Measurement Postulate leverage the properties of real numbers so that we can construct things like midpoints of segments and bisectors of angles. Defined terms like <em>angle measure</em>, <em>area</em> and <em>volume</em> make sense only because they correspond to real number quanities.</p>
 <div class="section" id="smsg-axioms-1-to-15">
 <h3>SMSG Axioms 1 to 15<a class="headerlink" href="#smsg-axioms-1-to-15" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
+<ol>
 <li><p><strong>Line Uniqueness</strong>. Given any two different points, there is exactly one line which contains both of them.</p></li>
-<li><p><strong>Distance Postulate</strong>. To every pair of different points there corresponds a unique positive number.</p></li>
+<li><p><strong>Distance Postulate</strong>. To every pair of different points there corresponds a unique positive number.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="note admonition">
+<p class="admonition-title">Neutral geometry is infinite.</p>
+<p>Axiom 5 guarantees at least 3 non-collinear points on which there are at least three lines (Axiom 1). Each of these lines has infinitely many points (Ruler Postulate, part 2). By Axiom 1, any pair of points has a unique line on it, so the geometry has infinitely many lines, too.</p>
+</div>
+</div>
+</li>
 <li><p><strong>Ruler Postulate</strong>. The points of a line can be placed in correspondence with the real numbers in such a way that:</p>
 <ol class="simple">
 <li><p>To every point of the line there corresponds exactly one real number,</p></li>
@@ -479,7 +487,7 @@ Problem of Completeness<div class="summary-down docutils">
 </li>
 <li><p><strong>Angle Measurement Postulate</strong>. To every angle there corresponds a real number between <span class="math notranslate nohighlight">\(0^{\circ}\)</span> and <span class="math notranslate nohighlight">\(180^{\circ}\)</span>.</p></li>
 <li><p><strong>Angle Construction Postulate</strong>. Let <span class="math notranslate nohighlight">\(\overrightarrow{AB}\)</span> be a ray on the edge of the half-plane <span class="math notranslate nohighlight">\(H\)</span>. For every <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(180\)</span> there is exactly one ray <span class="math notranslate nohighlight">\(\overrightarrow{AP}\)</span> with <span class="math notranslate nohighlight">\(P\)</span> in <span class="math notranslate nohighlight">\(H\)</span> such that <span class="math notranslate nohighlight">\(m\angle PAB = r\)</span>.</p></li>
-<li><p><strong>Angle Addition Postulate</strong>. If <span class="math notranslate nohighlight">\(D\)</span> is a point in the interior of <span class="math notranslate nohighlight">\(m\angle BAC\)</span>, then <span class="math notranslate nohighlight">\(m\angle BAC = m\angle BAD + m\angle DAC\)</span>.</p></li>
+<li><p><strong>Angle Addition Postulate</strong>. If <span class="math notranslate nohighlight">\(D\)</span> is a point in the interior of <span class="math notranslate nohighlight">\(\measuredangle BAC\)</span>, then <span class="math notranslate nohighlight">\(\measuredangle BAC = \measuredangle BAD + \measuredangle DAC\)</span>.</p></li>
 <li><p><strong>Supplementary Postulate</strong>. If two angles form a linear pair, then they are supplementary.</p></li>
 <li><p><strong>Side Angle Side Postulate</strong>. Given a one-to-one correspondence between two triangles (or between a triangle and itself), if two sides and the included angle of the first triangle are congruent to the corresponding parts of the second triangle, the correspondence is a congruence.</p></li>
 </ol>

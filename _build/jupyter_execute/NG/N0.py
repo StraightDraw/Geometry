@@ -21,9 +21,8 @@
 # Visual Comparison of Euclidean, Hyperbolic and Elliptical Geometries
 # ````
 # 
-# 
 # ````{warning}
-# Geometric notation has conventions we need to follow. The notation $\overline{AB}$ describes a **line segment** but $AB$ indicates **length** or the distance between $A$ and $B$. We refer to the angle as $\angle BAC$ (with vertex $A$), but $m\angle BAC$ indicates its measure.
+# Geometric notation has conventions we need to follow. The notation $\overline{AB}$ describes a **line segment** but $AB$ indicates **length** or the distance between $A$ and $B$. We refer to the angle as $\angle BAC$ (with vertex $A$), but $\measuredangle BAC$ indicates its measure.
 # ````
 
 # ## Axiomatics of Neutral Geometry
@@ -74,6 +73,14 @@
 # 
 # 1. **Line Uniqueness**. Given any two different points, there is exactly one line which contains both of them.
 # 2. **Distance Postulate**. To every pair of different points there corresponds a unique positive number.
+# 
+#     ````{margin}
+#     ```{admonition} Neutral geometry is infinite.
+#     :class: note
+#     Axiom 5 guarantees at least 3 non-collinear points on which there are at least three lines (Axiom 1). Each of these lines has infinitely many points (Ruler Postulate, part 2). By Axiom 1, any pair of points has a unique line on it, so the geometry has infinitely many lines, too. 
+#     ```
+#     ````
+# 
 # 3. **Ruler Postulate**. The points of a line can be placed in correspondence with the real numbers in such a way that:
 #     1. To every point of the line there corresponds exactly one real number,
 #     2. To every real number there corresponds exactly one point of the line, and
@@ -101,7 +108,7 @@
 # 
 # 11. **Angle Measurement Postulate**. To every angle there corresponds a real number between $0^{\circ}$ and $180^{\circ}$.
 # 12. **Angle Construction Postulate**. Let $\overrightarrow{AB}$ be a ray on the edge of the half-plane $H$. For every $r$ between $0$ and $180$ there is exactly one ray $\overrightarrow{AP}$ with $P$ in $H$ such that $m\angle PAB = r$.
-# 13. **Angle Addition Postulate**. If $D$ is a point in the interior of $m\angle BAC$, then $m\angle BAC = m\angle BAD + m\angle DAC$.
+# 13. **Angle Addition Postulate**. If $D$ is a point in the interior of $\measuredangle BAC$, then $\measuredangle BAC = \measuredangle BAD + \measuredangle DAC$.
 # 14. **Supplementary Postulate**. If two angles form a linear pair, then they are supplementary.
 # 15. **Side Angle Side Postulate**. Given a one-to-one correspondence between two triangles (or between a triangle and itself), if two sides and the included angle of the first triangle are congruent to the corresponding parts of the second triangle, the correspondence is a congruence.
 
