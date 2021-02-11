@@ -391,10 +391,10 @@
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p><strong>Isosceles Triangle Theorem</strong>. Two sides of a triangle are congruent if and only if the angles opposite these sides are congruent (<span class="math notranslate nohighlight">\(\impliedby\)</span> only).</p>
+<li><p><strong>Isosceles Triangle Theorem</strong>. If two sides of a triangle are congruent, the angles opposite these sides are congruent (<span class="math notranslate nohighlight">\(\implies\)</span>).</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Proving that an isosceles triangle has congruent angles is easy (<span class="math notranslate nohighlight">\(\impliedby\)</span>). Proving the converse, that a triangle with two congruent angles is isosceles (<span class="math notranslate nohighlight">\(\implies\)</span>) is much easier after we have a congruence theorem.</p>
+<p>Proving that an isosceles triangle has congruent angles (<span class="math notranslate nohighlight">\(\implies\)</span>) is easier than proving the converse, that a triangle with two congruent angles is isosceles (<span class="math notranslate nohighlight">\(\implies\)</span>). The latter proof works better after a few other theorems have been established.</p>
 </div>
 </li>
 <li><p>A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.</p>
@@ -407,7 +407,15 @@
 <li><p><strong>Exterior Angle Theorem</strong>. Each exterior angle of a triangle is greater in measure than either of the nonadjacent interior angles of the triangle.</p></li>
 <li><p><strong>ASA Triangle Congruence</strong>. If two angles and the included side of one triangle are congruent, repsectively, to two angles and the included side of a second triangle, then the triangles are congruent.</p></li>
 <li><p><strong>AAS Triangle Congruence</strong>. If the vertices of two triangles are in one-to-one correspondence such that two angles and a non-included side in one triangle are congruent to their corresponding parts of a second triangle, then the triangles are congruent.</p></li>
-<li><p><strong>Isosceles Triangle Theorem</strong>. If two angles of a triangle are congruent, then the sides opposite these angles are congruent (<span class="math notranslate nohighlight">\(\implies\)</span>).</p></li>
+<li><p><strong>Isosceles Triangle Theorem</strong>. If two angles of a triangle are congruent, then the sides opposite these angles are congruent (<span class="math notranslate nohighlight">\(\impliedby\)</span>).</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Theorem 10 is needed to prove the Triangle Inequality (Theorem 7). The theorems are out of order, here, but we can prove them in the correct order.</p>
+</div>
+</div>
+</li>
 <li><p><strong>Triangle Inequality</strong>. The sum of the measures of two sides of a triangle is greater than the measure of the third side.</p></li>
 <li><p><strong>Hinge Theorem</strong>. If two sides of one triangle are congruent to two sides of another triangle, and the included angle of the first is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second triangle.</p>
 <div class="admonition note">
@@ -432,12 +440,16 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The Alternate Interior Angle Theorem is so important, it gets an acronym: the <strong>AIA</strong> theorem. Its converse is equivalent to the Euclidean parallel condition and is also acronym worthy: <strong>CAIA</strong>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Be Careful</p>
+<p>The CAIA theorem is <strong>not true</strong> in neutral geometry, only in Eclidean.</p>
+</div>
 </div>
 </li>
 <li><p><em>Corollary to AIA</em>. Two lines perpendicular to the same line are parallel.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Parall lines are a hot mess in neutral geometry, but perpendicularity and right angles work well.</p>
+<p>Parall lines are a hot mess in neutral geometry, but perpendicularity and right angles work pretty well.</p>
 </div>
 </li>
 <li><p>The sum of the measures of any two angles of a triangle is less than <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p></li>
