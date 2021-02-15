@@ -1,8 +1,9 @@
-# Book settings
+# Book settings: testing save from notebook++
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Geometry
 author: Robb Sinn
+copyright: "2021"  # Copyright year to be placed in the footer
 logo: UNG.logo.png
 
 # Force re-execution of notebooks on each build.
@@ -10,12 +11,27 @@ logo: UNG.logo.png
 execute:
   execute_notebooks: 'auto'
 
+#######################################################################################
+# Parse and render settings
 parse:
-  myst_extended_syntax: true  
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    # - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
 
+  myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
+
+#######################################################################################
 
 # Information about where the book exists on the web
-#repository:
+# Repository:
 #  url: https://github.com/StraightDraw/Geometry  # Online location of your book
 #  branch: master  # Which branch of the repository should be used when creating links (optional)
 
