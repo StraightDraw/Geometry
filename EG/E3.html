@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3.3 Area and Similarity &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -25,8 +25,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,14 +42,11 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -57,6 +54,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.4 Right Triangles and the Pythagorean Theorem" href="E4.html" />
@@ -358,24 +357,28 @@
 <blockquote>
 <div><p>The area of a rectangle is the product of the length of its base and the length of its altitude.” The following definitions will also be helpful.</p>
 </div></blockquote>
-<p>Parallel Segments
-: We call line segments <em>parallel</em> if they are contained in lines that are parallel.</p>
-<p>Distance from a point to a line
-: Given a point <span class="math notranslate nohighlight">\(P\)</span> not on line <span class="math notranslate nohighlight">\(l\)</span>, the <em>distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(l\)</span></em> is the distance <span class="math notranslate nohighlight">\(PQ\)</span> where <span class="math notranslate nohighlight">\(Q\in l\)</span> and <span class="math notranslate nohighlight">\(\overleftrightarrow{PQ}\perp l\)</span>.</p>
-<p>Trapezoid
-: A convex quadrilateral with exactly one pair of parallel sides.</p>
+<dl class="simple myst">
+<dt>Parallel Segments</dt><dd><p>We call line segments <em>parallel</em> if they are contained in lines that are parallel.</p>
+</dd>
+<dt>Distance from a point to a line</dt><dd><p>Given a point <span class="math notranslate nohighlight">\(P\)</span> not on line <span class="math notranslate nohighlight">\(l\)</span>, the <em>distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(l\)</span></em> is the distance <span class="math notranslate nohighlight">\(PQ\)</span> where <span class="math notranslate nohighlight">\(Q\in l\)</span> and <span class="math notranslate nohighlight">\(\overleftrightarrow{PQ}\perp l\)</span>.</p>
+</dd>
+<dt>Trapezoid</dt><dd><p>A convex quadrilateral with exactly one pair of parallel sides.</p>
+</dd>
+</dl>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Two definitions of a trapezoid exist: <em>exactly</em> one pair of parallel sides, or <em>at least</em> one pair of parallel sides. The former excludes parallelograms while the latter includes them. Generally, especially in K-12 mathematics, the “<em>exactly</em> one pair of parallel sides” definition is preferred.</p>
 </div>
-<p>Kite
-: A convex quadrilateral with two pairs of adjacent sides congruent.</p>
-<p>Rhombus
-: A parallelogram with all sides congruent.</p>
-<p>Square
-: A parallelogram with a right angle.</p>
-<p>Similar Polygons
-: Two polygons are <em>similar</em> provided (i) corresponding sides of each are in the same proportion, and (ii) corresponding interior angles are congruent.</p>
+<dl class="simple myst">
+<dt>Kite</dt><dd><p>A convex quadrilateral with two pairs of adjacent sides congruent.</p>
+</dd>
+<dt>Rhombus</dt><dd><p>A parallelogram with all sides congruent.</p>
+</dd>
+<dt>Square</dt><dd><p>A parallelogram with a right angle.</p>
+</dd>
+<dt>Similar Polygons</dt><dd><p>Two polygons are <em>similar</em> provided (i) corresponding sides of each are in the same proportion, and (ii) corresponding interior angles are congruent.</p>
+</dd>
+</dl>
 <p>Congruence is a more primitice geometric idea than similarity, even though, ironically, similarity has less restrictions. All similarity proofs involve using areas of triangles as numerators or deonominators of triangles to establish the required proportion. Until we have proven some results about area, we cannot prove similarity theorems.</p>
 <p>The parallelogram decomposition theorem stated that we could always create congruent triangles by drawing the diagonal of a parallelogram and considering the two resulting triangles. The theorem is true in the reverse: given any two congruent triangles, they can be joined to create a parallelogram. We will put the following in our toolbox:</p>
 <ol>
@@ -434,7 +437,7 @@
         
           By Robb Sinn<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
