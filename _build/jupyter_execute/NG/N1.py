@@ -127,7 +127,7 @@ Vertical Angles
 : The angles opposite each other when two lines cross.
 
 Linear Pair
-: Two distinct angles that share a ray whose non-shared rays are colinear.
+: Two distinct angles that share a ray whose non-shared rays are colinear. The angle-sum of a linear pair is $180^\circ$
 
 ````{hint}
 The SMSG Supplementary Postulate (Axiom 14) uses the term *linear pair* which we must define, else the term *supplementary* will have no meaning.
