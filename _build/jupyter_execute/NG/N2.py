@@ -96,6 +96,12 @@ Angle Sum of a Triangle
     Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.
     ````
 
+    ````{margin}
+    ```{seealso}
+    Watch a [video proof](https://www.youtube.com/watch?v=ZE3_I2f_Bls) that situates the Saccheri-Legendre theorem in context of two thousand year quest to solve the parallelism puzzle.
+    ```
+    ````
+
 15. **Saccheri-Legendre Theorem**. The angle sum of any triangle is less than or equal to $180^\circ$. 
 
 
