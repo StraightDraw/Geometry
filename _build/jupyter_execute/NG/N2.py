@@ -53,7 +53,11 @@ Angle Sum of a Triangle
 
 6. **Isosceles Triangle Theorem**. If two angles of a triangle are congruent, then the sides opposite these angles are congruent ($\impliedby$).
 
-    ````{**Triangle Inequality.** View a GeoGebra [dynamic proof](https://www.geogebra.org/m/werd2fyr) or watch a YouTube [video proof](https://www.youtube.com/watch?v=KIOY9Hk7PWk).}
+    ````{margine}
+    ```{seealso}
+    **Triangle Inequality.** View a GeoGebra [dynamic proof](https://www.geogebra.org/m/werd2fyr) or watch a YouTube [video proof](https://www.youtube.com/watch?v=KIOY9Hk7PWk).}
+    ```
+    ````
 
 7. **Triangle Inequality**. The sum of the measures of two sides of a triangle is greater than the measure of the third side.
 8. **Hinge Theorem**. If two sides of one triangle are congruent to two sides of another triangle, and the included angle of the first is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second triangle. 
