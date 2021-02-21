@@ -57,6 +57,12 @@ Angle Sum of a Triangle
     ````
 
 7. **Triangle Inequality**. The sum of the measures of two sides of a triangle is greater than the measure of the third side.
+
+    ````{margin}
+    ```{seealso}
+    **Hinge Theorem.** View a GeoGebra [dynamic proof](https://www.geogebra.org/m/nn5jz84v) or watch a YouTube [video proof](https://www.youtube.com/watch?v=-A6LXkrgQcc).}
+    ```
+
 8. **Hinge Theorem**. If two sides of one triangle are congruent to two sides of another triangle, and the included angle of the first is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second triangle. 
     
     ````{note}
