@@ -92,14 +92,14 @@ Angle Sum of a Triangle
 14. The sum of the measures of any two angles of a triangle is less than $180^\circ$.
 15. For any $\triangle ABC$ there exists $\triangle A'B'C'$ having the same angle sum as $\triangle ABC$ but where $\measuredangle A'\leq\frac{1}{2}\measuredangle A$.
 
-    ````{hint}
-    Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.
-    ````
-
     ````{margin}
     ```{seealso}
-    Watch a [video proof](https://www.youtube.com/watch?v=ZE3_I2f_Bls) that situates the Saccheri-Legendre theorem in context of two thousand year quest to solve the parallelism puzzle.
+    Watch a [video proof](https://www.youtube.com/watch?v=ZE3_I2f_Bls) that situates the **Saccheri-Legendre Theorem** in context of the two thousand year quest to solve the parallelism puzzle.
     ```
+    ````
+
+    ````{hint}
+    Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.
     ````
 
 15. **Saccheri-Legendre Theorem**. The angle sum of any triangle is less than or equal to $180^\circ$. 
