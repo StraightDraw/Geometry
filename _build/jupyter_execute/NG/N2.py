@@ -44,19 +44,16 @@ Angle Sum of a Triangle
 3. **Exterior Angle Theorem**. Each exterior angle of a triangle is greater in measure than either of the nonadjacent interior angles of the triangle.
 4. **ASA Triangle Congruence**. If two angles and the included side of one triangle are congruent, repsectively, to two angles and the included side of a second triangle, then the triangles are congruent.
 5. **AAS Triangle Congruence**. If the vertices of two triangles are in one-to-one correspondence such that two angles and a non-included side in one triangle are congruent to their corresponding parts of a second triangle, then the triangles are congruent.
-
-    ````{margin}
-    ```{note}
-    Theorem 10 is needed to prove the Triangle Inequality (Theorem 7). The theorems are out of order, here, but we can prove them in the correct order. 
-    ```
-    ````
-
 6. **Isosceles Triangle Theorem**. If two angles of a triangle are congruent, then the sides opposite these angles are congruent ($\impliedby$).
 
     ````{margin}
     ```{seealso}
     **Triangle Inequality.** View a GeoGebra [dynamic proof](https://www.geogebra.org/m/werd2fyr) or watch a YouTube [video proof](https://www.youtube.com/watch?v=KIOY9Hk7PWk).}
     ```
+    ````
+
+    ````{note}
+    Theorem 10 is needed to prove the Triangle Inequality (Theorem 7). The theorems are out of order, here, but we can prove them in the correct order.
     ````
 
 7. **Triangle Inequality**. The sum of the measures of two sides of a triangle is greater than the measure of the third side.
