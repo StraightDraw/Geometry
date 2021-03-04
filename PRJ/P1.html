@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Axioms for Euclidean Geometry &#8212; Geometry</title>
+    <title>The Gnomon &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -58,8 +58,8 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A.1 Eculid’s Elements" href="A1.html" />
-    <link rel="prev" title="C.2" href="../CN/C2.html" />
+    <link rel="next" title="Quadrature" href="P2.html" />
+    <link rel="prev" title="Geometry Projects" href="P0.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -228,28 +228,28 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
    Axioms for Euclidean Geometry
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="A1.html">
+    <a class="reference internal" href="../AX/A1.html">
      A.1 Eculid’s Elements
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A2.html">
+    <a class="reference internal" href="../AX/A2.html">
      A.2 Hilbert’s Axioms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A3.html">
+    <a class="reference internal" href="../AX/A3.html">
      A.3 Birkhoff Axioms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="A4.html">
+    <a class="reference internal" href="../AX/A4.html">
      A.4 SMSG Axioms
     </a>
    </li>
@@ -262,28 +262,28 @@
    Dollar Sign Math for Geometry
   </a>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../PRJ/P0.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="P0.html">
    Geometry Projects
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../PRJ/P1.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      The Gnomon
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../PRJ/P2.html">
+    <a class="reference internal" href="P2.html">
      Quadrature
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../PRJ/P3.html">
+    <a class="reference internal" href="P3.html">
      Regular Polygons
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../PRJ/P4.html">
+    <a class="reference internal" href="P4.html">
      Cut the Knot
     </a>
    </li>
@@ -331,7 +331,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/AX/A0.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/PRJ/P1.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -356,7 +356,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/AX/A0.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/PRJ/P1.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -373,6 +373,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#triangular-numbers">
+   Triangular numbers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#geometric-and-harmonic-means">
+   Geometric and Harmonic Means
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-ideas">
+   Project Ideas
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -380,41 +404,67 @@
         
               <div>
                 
-  <div class="section" id="axioms-for-euclidean-geometry">
-<h1>Axioms for Euclidean Geometry<a class="headerlink" href="#axioms-for-euclidean-geometry" title="Permalink to this headline">¶</a></h1>
-<p>This section includes four important sets of axioms that will produce Euclidean geometry.</p>
-<ul class="simple">
-<li><p>Euclid’s <em>Elements</em></p></li>
-<li><p>Hilbert</p></li>
-<li><p>Birkhoff</p></li>
-<li><p>School Mathematics Study Group (SMSG)</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Our course will use the <strong>SMSG Axioms</strong> for Neutral, Euclidean and Analytic Geometry.</p>
+  <div class="section" id="the-gnomon">
+<h1>The Gnomon<a class="headerlink" href="#the-gnomon" title="Permalink to this headline">¶</a></h1>
+<p>Greek mathematicians were fascinated with the idea of similar figures and patterns. Heron of Alexandria offered the following definition of <em>gnomons</em>.</p>
+<dl class="simple myst">
+<dt>Gnomon</dt><dd><p>That which, when added to anything, either number or figure, makes the whole similar to that to which it is added.</p>
+</dd>
+</dl>
+<div class="section" id="triangular-numbers">
+<h2>Triangular numbers<a class="headerlink" href="#triangular-numbers" title="Permalink to this headline">¶</a></h2>
+<p>The Pythagoreans had worked out most of the details regarding triangular numbers and square numbers. They were interested in the shape of certain numbers. The triangular numbers are shown below.</p>
+<p><img alt="Paralllel lines in hyperbolic geometry" src="https://plus.maths.org/content/sites/plus.maths.org/files/articles/2020/triangular/triangular.png" /></p>
+<p>The 3rd and 4th triangular numbers are 6 and 10. Their difference 4 is the gnomon, and we can make a sequence with them. For the triangular numbers, the gnomons are the natural numbers</p>
+<div class="math notranslate nohighlight">
+\[1,2,3,4,\cdots\]</div>
+<p>and the partial sums of the gnomons from 1 to 7, for example, will produce the 7th triangular number.</p>
+<p>There are square numbers, pentagonal numbers. In fact, there are polygonal numbers of all degrees, and the Pythagoreans investigated many of the low-degree polynomias. They developed <a class="reference external" href="https://plus.maths.org/content/maths-minute-triangular-numbers">relationships between them</a> including the sum of the first <span class="math notranslate nohighlight">\(n\)</span> natural numbers</p>
+<div class="math notranslate nohighlight">
+\[1+2+3+\cdots + n = \frac{1}{2}n(n+1)\]</div>
+<p>which is often referred to today as the Gaussian formula. The Pythagoreans probably worked out many of the relationships commonly known today about these relationships.</p>
+<ol class="simple">
+<li><p>Any oblong number is the sum of two equal triangular numbers.</p></li>
+<li><p><strong>Theorem of Theon.</strong> Any square number is the sum of two triangular numbers.</p></li>
+<li><p>Eight times any triangular number plus 1 is a square number.</p></li>
+</ol>
+<p>Project ideas include studying one type of polygonal numbers exclusively, or studying relationships among two or more types. The series created by the gnomons are a common thread in the theorems the Greek developed, and any project should include some of the “dots” drawings the Greeks used to prove them.</p>
 </div>
-<p><em>Elements</em> was the geometry text of choice for two millenia. However, the postulates are stated awkwardly, and huge assumptions are hidden in many statements. Many geometers improved upon Euclid over the years. For example, almost all geometers used the <a class="reference external" href="https://en.wikipedia.org/wiki/Playfair%27s_axiom">Playfair Postulate</a> instead of Euclid’s Fifth.</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Playfair Postulate<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Given a line and a point not on it, at most one line parallel to the given line can be drawn through the point.</p>
+<div class="section" id="geometric-and-harmonic-means">
+<h2>Geometric and Harmonic Means<a class="headerlink" href="#geometric-and-harmonic-means" title="Permalink to this headline">¶</a></h2>
+<p>The Greeks often thought of a mean as completing a pattern, for example the geometric mean where</p>
+<div class="math notranslate nohighlight">
+\[\frac{a}{x} = \frac{x}{b}\]</div>
+<p>is solved by finding a value <span class="math notranslate nohighlight">\(x\)</span> that makes the relationship true. Once found, <span class="math notranslate nohighlight">\(x\)</span> is between <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> and, if <span class="math notranslate nohighlight">\(a&lt;b\)</span>, then <span class="math notranslate nohighlight">\(\dots,a,r,b,\dots\)</span> are consecutive terms of a geometric sequence. The above equation has the solution <span class="math notranslate nohighlight">\(x = \sqrt{ab}\)</span> so that</p>
+<div class="math notranslate nohighlight">
+\[\frac{a}{\sqrt{ab}} = \frac{\sqrt{ab}}{b}\]</div>
+<p>A simple example shows the relationship:</p>
+<div class="math notranslate nohighlight">
+\[\frac{2}{\sqrt{2(8)}} = \frac{\sqrt{2(8)}}{8} \implies \frac{2}{4} = \frac{4}{8}\]</div>
+<p>The common ratio of the geometric sequence can be found by</p>
+<div class="math notranslate nohighlight">
+\[ar = \sqrt{ab} \implies r = \frac{\sqrt{ab}}{a} = \sqrt{\frac{b}{a}}\]</div>
+<p>The geometric mean has interesting and wide ranging applications including <a class="reference external" href="https://www.investopedia.com/terms/g/geometricmean.asp">analyzing investment portfolios</a>. The Greeks developed more than a dozen “means,” several of which are still in use today, including the harmonic mean.</p>
 </div>
-</details><p>The efforts to clarify and correct Euclid’s <em>Elements</em> culminated in the work of two great geometers: David Hilbert and George David Birkhoff.</p>
-<p>Hilbert’s work in the late 1800’s created a precise, complete and independent set of axioms that generate the entirity of Euclidean geometry. Hilbert’s quintessential set of axioms set the standard for work in Euclidean geometry and still influences teaching and research in geometry today. His grouping of axioms established the core concepts for the needed axioms of Eudlidean geometry. His <strong>incidence</strong> axioms described how objects connect to each other. His <strong>betweeness</strong> axioms injected the properties of the real line that need to be true for all lines in the geometry, for example, that for distinct points <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, exacgtly one of the following must be true:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A\)</span> is between <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span>,</p></li>
-<li><p><span class="math notranslate nohighlight">\(B\)</span> is between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(C\)</span>, or</p></li>
-<li><p><span class="math notranslate nohighlight">\(C\)</span> is between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
-</ul>
-<p>Hilbert’s <strong>congruence</strong> axioms established congruence as an equivalence relation and allowed segments and angles of specific distance or measure to be constructed.</p>
-<p>Birkhoff created an independent set of only four axioms which, in fact, produce all of Euclidean geometry. Birkhoff, however, included the algebraic properties of real numbers implicitly within his axioms. Like Hilbert, Birkhoff also viewed objects within the geometry as sets or collections of points. Both Hilbert and Birkhoff specifically include the basics of sets theory as part of their axiomatic system.</p>
-<p>The SMSG axioms are typically used for geometry in K-12 classrooms. They are not independent, which mathematicians consider a flaw. Mathematics educators, especially prior to college, prefer to use them because they avoid tedious discussions about the completeness and continuity of geometric lines. The SMSG axioms includes the Ruler Postulate which brings all the properties of the real number line into the gemetry. Euclidean lines do, in fact, possess the algebraic structure of the real number line, but these ideas – especially continuity and completeness – must be proven in minimalist, independent axiomatic systems which can be quite tedious. The SMSG create a forward staging area for students of geometry with enough power to begin meaningful proofs right away.</p>
-<p>While not stated explicitly in the reference I could find, the SMSG (like Hilbert and Birkhoff) assume that geometric objects are sets, and thus the basics of set theory are included in the system.</p>
-<div class="toctree-wrapper compound">
+<div class="section" id="project-ideas">
+<h2>Project Ideas<a class="headerlink" href="#project-ideas" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Triangular numbers</p></li>
+<li><p>Rectangular numbers</p></li>
+<li><p>Pentagonal numbers</p></li>
+<li><p>Polygonal numbers such as hexagonal, octagonal, etc.</p></li>
+<li><p>Relationships between types of polygonal numbers</p></li>
+<li><p>Geometric mean</p></li>
+<li><p>Harmonic mean</p></li>
+<li><p>The Greek idea of means</p></li>
+<li><p>Gnomons and related ideas (any of these could be a project, and other project ideas related to gnomons exist)</p>
+<ol class="simple">
+<li><p>Spirals</p></li>
+<li><p>Golden Ratio</p></li>
+<li><p>Golden Rectangle</p></li>
+</ol>
+</li>
+</ol>
 </div>
 </div>
 
@@ -431,7 +481,7 @@ Playfair Postulate<div class="summary-down docutils">
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./AX"
+            path: "./PRJ"
         },
         predefinedOutput: true
     }
@@ -446,8 +496,8 @@ Playfair Postulate<div class="summary-down docutils">
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../CN/C2.html" title="previous page">C.2</a>
-    <a class='right-next' id="next-link" href="A1.html" title="next page">A.1 Eculid’s Elements</a>
+    <a class='left-prev' id="prev-link" href="P0.html" title="previous page">Geometry Projects</a>
+    <a class='right-next' id="next-link" href="P2.html" title="next page">Quadrature</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
