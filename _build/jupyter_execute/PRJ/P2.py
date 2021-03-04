@@ -24,9 +24,13 @@ While the Greeks could find the quadrature of many polygons, areas involving cir
 
 Archimedes is regarded as the foremost mathematician of antiquity as well as one of the finest scientists of antiquity. While the Greeks knew many thoerems were true and used them in constructions, Archimedes was the first to rigorously derive formulas for the area of a circle and the volume and surface area of a sphere. He used the method of exhaustion and a primitive idea of infinitesimals to calculate volumes of revoluation, a Calculus II topic in most modern universities. Archimedes' quadrature of the surface area of a sphere and quadrature of a segment of a parabola stand as the most rigorous, analytic achievements of all antiquity.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajztzs8Us48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The lune of Hippocrates is worth considering as well. He defined a lune as the area trapped between circles of different radii. Not all lunes were solved, but many important cases of quadrature of lunes were developed.
 
-### Squaring the Circle and other Impossible Quadratures
+````{warning}
+Squaring the Circle is impossible, as are several other quadrature efforts the Greeks attempted.
+````
 
 While wildly succesful by any modern standard, the Greeks did fail at several quadratures. Most famously, they could not "square the circle" which remains to this day a metaphor for an impossible task. Three constructions have been proven to be impossible if only a compass and straightedge are used with only a finite number of construction steps.
 
@@ -34,7 +38,11 @@ While wildly succesful by any modern standard, the Greeks did fail at several qu
 2. Doubling the cube.
 3. Trisecting an angle.
 
-The history of explorations in these areas continues to this day with a group called **cranks,** geometers who refuse to believe the rigorous proofs of mathematicians are correct. They still search for (and claim every few years to have found) ways to accomplish these tasks. This activity is called *pseudomathematics*.
+````{note}
+**Don't be a crank!** Cranks are faux math geeks who continue to attempt impossible constructions.
+````
+
+The history of explorations in these areas continues to this day with a group called *cranks* whose adherents refuse to believe the rigorous proofs of mathematicians. Assuming luminaries like Gauss were simply mistaken, they still search for and claim every now and again to have found ways to accomplish these tasks. This geometry equivalent of tilting at windmills is part of larger group of Quixotic mathematical efforts known as *pseudomathematics*.
 
 ## Project Ideas
 
@@ -45,3 +53,4 @@ The history of explorations in these areas continues to this day with a group ca
 5. Quadrature of rectangle, triangles and parallelograms
 6. Solving quadratics with quadrature
 7. Method of exhaustion
+8. Impossible constructions and cranks with a focus on the proofs that the circle cannot be squared and why other constructions are impossible.
