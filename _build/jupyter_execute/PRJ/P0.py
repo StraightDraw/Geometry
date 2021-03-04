@@ -28,13 +28,50 @@ My favorite math website [cut-the-knot.org](https://www.cut-the-knot.org/) has l
 
 I have included three pages describing good projects related to Greek geometry and a page about cut-the-knot and how to search its massive set of problems for an interesting project. Below are some general areas of geometry that would be of interest for larger projects (like a UNG mathematics major's senior project).
 
-1. Hyperbolic geometry
-2. Projective geometry
+1. Hyperbolic geometry (see Jonas Bolyai and Nikolai Lobachevsky)
+2. Projective geometry (see Girard Desargues, among others)
 3. Duals and the dual of a geometry
 4. Spherical or elliptical geometry
-5. The Euler line
+5. The Euler line (see Leonhard Euler)
 6. Tessalations and/or wall paper patterns
 7. Icosian calculus (see William Rowan Hamilton)
+8. Regular polyhedra (see Theaetetus)
+9. Differential geometry
+
+One could also choose an important mathematician or geometer and describe that person's contribution to geometry highlighting one or two key results. I've chosen 30 geometers from a [huge list on Wikipedia](https://en.wikipedia.org/wiki/List_of_geometers) that I believe did enough pure geometry for a geometry project to be fashioned using just their works and contributions.
+
+1. Baudhayana (India)
+2. Mozi (China)
+2. Pythagorus
+3. Euclid
+4. Katyayana (India)
+5. Theaetetus
+6. Apollonius of Perga
+7. Archimedes
+8. Eratosthenes 
+9. Pappus of Alexandria
+10. Hero of Alexandria
+11. Al-Abbās ibn Said al-Jawharī (Persia)
+12. Abu'l-Wáfa (Persia)
+13. Omar Khayyam (Persia)
+14. Girard Desargues
+15. René Descartes
+16. Pierre de Fermat
+17. Giovanni Ceva
+18. Giovanni Gerolamo Saccheri
+19. Leonhard Euler
+20. Johann Heinrich Lambert
+21. Jean-Victor Poncelet
+22. August Ferdinand Möbius
+23. Nikolai Ivanovich Lobachevsky 
+24. Carl Frederick Gauss
+25. Janos Boyai
+26. William Rowan Hamilton
+27. Felix Klein
+28. Alicia Boole Stott
+29. Oswald Veblen
+30. Benoit Mandelbrot
+
 
 
 ```{toctree}
