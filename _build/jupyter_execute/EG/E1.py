@@ -70,7 +70,7 @@ Rhombus
 
     ````{margin}
     ```{seealso}
-    After Theorem 7, we can prove our {doc}`Second Construction Theorem</CN/C1>`.
+    After Theorem 8, we can prove our {doc}`Second Construction Theorem</CN/C1>`.
     ```
     ````
 
