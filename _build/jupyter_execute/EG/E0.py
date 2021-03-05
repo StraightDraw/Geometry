@@ -1,23 +1,80 @@
 # Euclidean Geometry
 
-We begin our investigation of Euclidean geometry with all the theorems of neutral geometry already established. We also, at long last, get to use the Playfair's parallel postulate (SMSG Axiom 16).
-    
+Along with Bolyai, we have completed our trek through the controversies of parallelism. Euclid's 5th, indeed, is an axiom. We can now launch a new quest to fully establish Euclidean geometry knowing all neutral geometry theorems true. In additon, we finally get to use a parallel postulate.
 
-The proofs of theorems below can be proven using the SMSG postulates and the neutral geometry theorems provided in the previous section. In the SMSG axiom list, Axiom 16 is the Euclidean parallel postulate. All fifteen prior axioms are used to prove neutral geometry resulsts. Axioms 16 through 22 are needed to fully prove all Euclidean results for plane geometry.
+````{admonition} Playfair's Postulate
+Through a given external point there is at most one line parallel to a given line (SMSG Axiom 16).
+````
 
-The most direct route from Neutral to Euclidean Geometry, after we have a parallel postulate, is through the Alternate Interior Angle Theorem which was proven in the Neutral Geometry Section. Let's give a summary of what was already *proven* true in Neutral Geometry regarding parallel and perpendicular lines:
+The "at most" wording in the parallel postulate rules out hyperbolic geometry where multiple lines through an external point may be parallel to a given line. 
 
-* **Alternate Interior Angle Theorem**. If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.
-* **Perpendicular Uniqueness**. Given a line $l$ and any point $P$ not on $l$, there exists a unique line $m$ such that $P\in m$ and $m\perp l$.
-* Two lines perpendicular to the same line are parallel (corollary to AIA Theorem).
+## Pathways from the Parallel Postulate
 
-Parallel lines exist in neutral geometry. The problem is that, given line $l$, *more than one* line through a point $P$ might be parallel to $l$. With the addition of SMSG Axiom 16, we can prove these very similar statements must be true in Euclidean Geometry:
+Establishing the full power of the Alternate Interior Angles theorem will unlock several important proofs. In neutral geometry, we were only able to prove one direction.
 
-* **Converse of the Alternate Interior Angle Theorem (CAIA)**. If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.
-* **Parallel Uniqueness**. Given a line $l$ and any point $P$ not on $l$, there exists a unique line $m$ such that $P\in m$ and $m\parallel l$.
-* If a line is perpendicular to one of two parallel lines, then it is perpedicular to the other.
+````{admonition} Alternate Interior Angles Theorem (AIA)
+If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.
+````
 
-The fulcrum is focused on alternate interior angles when two lines are cut by a transversal.
+With Axiom 16 ruling out multiple parallels through an external point, we can prove the converse.
+
+````{admonition} Converse of the Alternate Interior Angles Theorem (CAIA)
+If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.
+````
+
+With CAIA as a tool in our kit, we can immediately show that the angle sums of triangles must be $180^\circ$ and that rectangles exist. The parallel postulate has straightened the curves of the geometry.
+
+## Neutral vs. Euclidean Geometry
+
+The following comparisons show the gap -- often just a sliver -- between neutral geometry theorems and important results in Euclidean geometry.
+
+````{panels}
+:column: col-6
+:card: border-2
+Alternate Interior Angle Theorem
+^^^
+If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.
+---
+Converse of the Alternate Interior Angle Theorem
+^^^
+If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.
+````
+
+````{panels}
+:column: col-6
+:card: border-2
+Perpendicular Uniqueness
+^^^
+Given a line $l$ and any point $P$ not on $l$, there exists a unique line $m$ such that $P\in m$ and $m\perp l$.
+---
+Parallel Uniqueness
+^^^
+Given a line $l$ and any point $P$ not on $l$, there exists a unique line $m$ such that $P\in m$ and $m\parallel l$.
+````
+
+````{panels}
+:column: col-6
+:card: border-2
+Corollary to AIA
+^^^
+Two lines perpendicular to the same line are parallel.
+---
+Corollary to CAIA
+^^^
+If a line is perpendicular to one of two parallel lines, then it is perpedicular to the other.
+````
+
+````{panels}
+:column: col-6
+:card: border-2
+Saccheri-Legendre
+^^^
+The angle sum of a triangle is less than or equal to $180^\circ$.
+---
+Corollary to CAIA
+^^^
+The angle sum of a triangle is $180^\circ$.
+````
 
 
 ```{toctree}

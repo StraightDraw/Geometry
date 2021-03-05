@@ -1,6 +1,12 @@
 # 3.1 Building Blocks
 
-Neutral geometry has parallel lines, in fact, too many. Infinitely many are possible. SMSG Axioms 1-15 force parallels to be possible, but the question of unique parallels vs. infintely many remains unanswered until we add SMSG Axiom 16 (Playfair's Postulate). By saying "at most one," we force unique parallels. The possibility of "no parallels at all" has already been eliminated. This restriction immediately allows for the proof of several important theorems. First, let's lay out the definitions we will need.
+We proved parallel lines exist in neutral geometry using only Euclid's first four axioms. 
+
+````{note}
+Right angles and perpendicularity work reasonably well in neutral geometry.
+````
+
+Since two lines perpendicular to the same line are parallel, we know that we construct some parallel lines. Now that we have a parallel postulate, we only need a few definitions to be ready to prove important results.
 
 Median
 : A line passing through a vertex and the midpoint of the side opposite that vertex.
@@ -35,31 +41,40 @@ Rhombus
 
 4. **Parallelogram Decomposition Theorem**. [^1]  In parallelogram $ABCD$, $\triangle{ABD} \cong \triangle{CDB}$ and $\triangle{ABC}\cong\triangle{CDA}$.
 
-    ````{note}
-    Two important corrolaries provide facts about parallelograms that are quite useful in our proofs.
-    ````
-    + Opposite *sides* of a parallelogram are *congruent*.
-    + Opposite *angles* of a parallelogram are *congruent*.
-
+    <iframe scrolling="no" title="Angle Interior" src="https://www.geogebra.org/material/iframe/id/hakjwjtn/width/1000/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%" height="100%" style="border:0px;" allowfullscreen; style="display:block" > </iframe>
 
     ````{note}
-    The next few important theorems identify key relationship about the diagonals of quadrilaterals.
-    ````
-
-5. The diagonals of a quadrilateral bisect each other if and only the quadrilateral is a parallelogram.
-
-    We have enough theorems to formally prove several important theorems that will help prove our compass and straitedge constructions have the required properties. The behavior of the diagonals of kites are the lever we use to create perpendicular lines and find midpoints of segments. The proof for all three relies upon a result of the Isosceles Triangle theorem.
-
-6. Corrollary to the Isosceles Triangle Theorem. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.
-
-7. Exactly one diagonal of a quadrilateral is the perpendicular bisector of the other if and only if the quadrilateral is a kite.
-
-    ````{margin}
-    ```{seealso}
-    After Theorem 8, we can prove our {doc}`Second Construction Theorem</CN/C1>`.
+    Two important corrolaries of the Parallelogram Decomposition theorem will be quite useful.
+    ```{panels}
+    :column: col-6
+    :card: border-2
+    Segments
+    ^^^
+    Opposite *sides* of a parallelogram are *congruent*.
+    ---
+    Angles
+    ^^^
+    Opposite *angles* of a parallelogram are *congruent*.
     ```
     ````
 
-8. The diagonals of a quadrilateral are perpendicular bisectors of one another if and only if the quadrilateral is a rhombus.
+    ````{note}
+    The next few important theorems identify key relationship about the diagonals of quadrilaterals.
+    ```{tip}
+    The Isosceles Triangle theorem and its corollary -- both proved in neutral geometry -- are useful in proving the theorems below.
+    ```
+    ````
+
+5. The diagonals of a quadrilateral bisect each other if and only the quadrilateral is a parallelogram.
+6. Exactly one diagonal of a quadrilateral is the perpendicular bisector of the other if and only if the quadrilateral is a kite.
+
+    ````{margin}
+    ```{seealso}
+    After Theorem 7, we can prove our {doc}`Second Construction Theorem</CN/C1>`.
+    ```
+    ````
+
+7. The diagonals of a quadrilateral are perpendicular bisectors of one another if and only if the quadrilateral is a rhombus.
 
 9. The diagonals of a quadrilateral are congruent perpendicular bisectors of one another if and only if the quadrilateral is a square.
+

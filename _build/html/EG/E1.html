@@ -396,7 +396,12 @@
                 
   <div class="section" id="building-blocks">
 <h1>3.1 Building Blocks<a class="headerlink" href="#building-blocks" title="Permalink to this headline">¶</a></h1>
-<p>Neutral geometry has parallel lines, in fact, too many. Infinitely many are possible. SMSG Axioms 1-15 force parallels to be possible, but the question of unique parallels vs. infintely many remains unanswered until we add SMSG Axiom 16 (Playfair’s Postulate). By saying “at most one,” we force unique parallels. The possibility of “no parallels at all” has already been eliminated. This restriction immediately allows for the proof of several important theorems. First, let’s lay out the definitions we will need.</p>
+<p>We proved parallel lines exist in neutral geometry using only Euclid’s first four axioms.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Right angles and perpendicularity work reasonably well in neutral geometry.</p>
+</div>
+<p>Since two lines perpendicular to the same line are parallel, we know that we construct some parallel lines. Now that we have a parallel postulate, we only need a few definitions to be ready to prove important results.</p>
 <dl class="simple myst">
 <dt>Median</dt><dd><p>A line passing through a vertex and the midpoint of the side opposite that vertex.</p>
 </dd>
@@ -425,29 +430,51 @@
 </li>
 <li><p><strong>Euclidean Exterior Angle Theorem</strong>. The measure of an exterior angle of a triangle is equal to the sum of the measures of the two remote interior angles.</p></li>
 <li><p><strong>Parallelogram Decomposition Theorem</strong>. [^1]  In parallelogram <span class="math notranslate nohighlight">\(ABCD\)</span>, <span class="math notranslate nohighlight">\(\triangle{ABD} \cong \triangle{CDB}\)</span> and <span class="math notranslate nohighlight">\(\triangle{ABC}\cong\triangle{CDA}\)</span>.</p>
+ <iframe scrolling="no" title="Angle Interior" src="https://www.geogebra.org/material/iframe/id/hakjwjtn/width/1000/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%" height="100%" style="border:0px;" allowfullscreen; style="display:block" > </iframe>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Two important corrolaries provide facts about parallelograms that are quite useful in our proofs.</p>
+<p>Two important corrolaries of the Parallelogram Decomposition theorem will be quite useful.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Segments</p>
 </div>
-<ul class="simple">
-<li><p>Opposite <em>sides</em> of a parallelogram are <em>congruent</em>.</p></li>
-<li><p>Opposite <em>angles</em> of a parallelogram are <em>congruent</em>.</p></li>
-</ul>
+<div class="card-body docutils">
+<p class="card-text">Opposite <em>sides</em> of a parallelogram are <em>congruent</em>.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Angles</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Opposite <em>angles</em> of a parallelogram are <em>congruent</em>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The next few important theorems identify key relationship about the diagonals of quadrilaterals.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Isosceles Triangle theorem and its corollary – both proved in neutral geometry – are useful in proving the theorems below.</p>
+</div>
 </div>
 </li>
-<li><p>The diagonals of a quadrilateral bisect each other if and only the quadrilateral is a parallelogram.</p>
-<p>We have enough theorems to formally prove several important theorems that will help prove our compass and straitedge constructions have the required properties. The behavior of the diagonals of kites are the lever we use to create perpendicular lines and find midpoints of segments. The proof for all three relies upon a result of the Isosceles Triangle theorem.</p>
-</li>
-<li><p>Corrollary to the Isosceles Triangle Theorem. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.</p></li>
+<li><p>The diagonals of a quadrilateral bisect each other if and only the quadrilateral is a parallelogram.</p></li>
 <li><p>Exactly one diagonal of a quadrilateral is the perpendicular bisector of the other if and only if the quadrilateral is a kite.</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>After Theorem 8, we can prove our <a class="reference internal" href="../CN/C1.html"><span class="doc">Second Construction Theorem</span></a>.</p>
+<p>After Theorem 7, we can prove our <a class="reference internal" href="../CN/C1.html"><span class="doc">Second Construction Theorem</span></a>.</p>
 </div>
 </div>
 </li>
