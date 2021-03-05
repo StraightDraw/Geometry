@@ -77,4 +77,3 @@ Rhombus
 7. The diagonals of a quadrilateral are perpendicular bisectors of one another if and only if the quadrilateral is a rhombus.
 
 9. The diagonals of a quadrilateral are congruent perpendicular bisectors of one another if and only if the quadrilateral is a square.
-
