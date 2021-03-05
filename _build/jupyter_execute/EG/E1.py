@@ -60,7 +60,7 @@ Rhombus
 
     ````{note}
     The next few important theorems identify key relationship about the diagonals of quadrilaterals.
-    ```{tip}
+    ```{seealso}
     The Isosceles Triangle theorem and its corollary -- both proved in neutral geometry -- are useful in proving the theorems below.
     ```
     ````
