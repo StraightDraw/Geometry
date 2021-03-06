@@ -373,6 +373,20 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -382,10 +396,17 @@
                 
   <div class="section" id="area-and-similarity">
 <h1>3.3 Area and Similarity<a class="headerlink" href="#area-and-similarity" title="Permalink to this headline">¶</a></h1>
-<p>We have discussed several issues with Euclid. We have arrived at another: How do we define area? If rectangular area is defined, then we can calculate the area of triangles. Using triangles and rectangles, we can calcuate polygon areas. Since rectangles don’t exist in neutral geometry, our standard notion of area only exists in Euclidean geometry. In any other geometry, calculating an area will prove troublesome. However, we’re developing Euclidean geometry in this section. Please note that SMSG Axiom 20 states:</p>
-<blockquote>
-<div><p>The area of a rectangle is the product of the length of its base and the length of its altitude.” The following definitions will also be helpful.</p>
+<p>How do we define area? Neutral geometry has right triangles but no rectangles, so the traditional idea of a rectangular (or square) area only exists in Euclidean geometry.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In any non-Eudclidean geometry, calculating the area of a triangle will prove troublesome.</p>
+</div>
+<p>The SMSG axioms have an area postulate.</p>
+<blockquote class="epigraph">
+<div><p>The area of a rectangle is the product of the length of its base and the length of its altitude.</p>
+<p class="attribution">—SMSG Axiom 20</p>
 </div></blockquote>
+<p>The following definitions will also be helpful.</p>
 <dl class="simple myst">
 <dt>Parallel Segments</dt><dd><p>We call line segments <em>parallel</em> if they are contained in lines that are parallel.</p>
 </dd>
@@ -410,6 +431,8 @@
 </dl>
 <p>Congruence is a more primitice geometric idea than similarity, even though, ironically, similarity has less restrictions. All similarity proofs involve using areas of triangles as numerators or deonominators of triangles to establish the required proportion. Until we have proven some results about area, we cannot prove similarity theorems.</p>
 <p>The parallelogram decomposition theorem stated that we could always create congruent triangles by drawing the diagonal of a parallelogram and considering the two resulting triangles. The theorem is true in the reverse: given any two congruent triangles, they can be joined to create a parallelogram. We will put the following in our toolbox:</p>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p>The area of a parallelogram is the product of the lengths of its base and height.</p></li>
 <li><p>Parallelogram Recomposition Theorem. If <span class="math notranslate nohighlight">\(\triangle{ABC}\cong\triangle{XYZ}\)</span> and <span class="math notranslate nohighlight">\(X=B\)</span> and <span class="math notranslate nohighlight">\(Y=A\)</span>, then <span class="math notranslate nohighlight">\(AZBC\)</span> is a parallelogram.</p></li>
@@ -426,6 +449,7 @@
 <li><p><strong>SAS Triangle Similarity</strong>. If an angle of one triangle is congruent to the corresponding angle of a second triangle, and the corresponding sides adjacent to these angles are in proportion, then the triangles are similar.</p></li>
 <li><p><strong>SAS Triangle Similarity</strong>. If the lengths of the sides of one triangle are proportional to the corresponding side lengths of a second triangle, then the triangles are similar.</p></li>
 </ol>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

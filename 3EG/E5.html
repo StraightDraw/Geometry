@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.5 Circles &#8212; Geometry</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.6 Triangles" href="E6.html" />
+    <link rel="prev" title="3.4 Right Triangles" href="E4.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/UNG.logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Geometry</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introduction.html">
+   Geometry
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../1FFG/F0.html">
+   1. Foundations and Finite Geometries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F1.html">
+     1.1 Finite Geometries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F2.html">
+     1.2 Four Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F3.html">
+     1.3 Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F4.html">
+     1.4 Fano’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F5.html">
+     1.5 Young’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../2NG/N0.html">
+   2. Neutral Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N2.html">
+     2.2 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N3.html">
+     2.3 Quadrilaterals
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="E0.html">
+   3. Euclidean Geometry
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="E1.html">
+     3.1 Building Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E2.html">
+     3.2 Parallel Lines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E3.html">
+     3.3 Area and Similarity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E4.html">
+     3.4 Right Triangles
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E8.html">
+     3.8 Homework
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../4CN/C0.html">
+   4. Constructions
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C1.html">
+     C.1 Construction Theorems
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C2.html">
+     C.2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
+   Axioms for Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A1.html">
+     A.1 Eculid’s Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A2.html">
+     A.2 Hilbert’s Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
+     A.3 Birkhoff Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A4.html">
+     A.4 SMSG Axioms
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DSM/D0.html">
+   Dollar Sign Math for Geometry
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../PRJ/P0.html">
+   Geometry Projects
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P1.html">
+     The Gnomon
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P2.html">
+     Quadrature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P3.html">
+     Regular Polygons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P4.html">
+     Cut the Knot
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/3EG/E5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/3EG/E5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="circles">
+<h1>3.5 Circles<a class="headerlink" href="#circles" title="Permalink to this headline">¶</a></h1>
+<dl class="simple myst">
+<dt>Chord</dt><dd><p>A line segment joining two of the points of the circle.</p>
+</dd>
+<dt>Secant</dt><dd><p>A line which contains a chord.</p>
+</dd>
+<dt>Tangent</dt><dd><p>A line which contains exactly one point of a circle.</p>
+</dd>
+<dt>Radius</dt><dd><p>The distance from the center to any point on the circle. Also used to refer to a segment which joins</p>
+</dd>
+<dt>Diameter</dt><dd><p>The length of a chord which passes through the center of the circle.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Radii and diameters are defined primarily as distances. It’s also helpful to refer to line segments that have the corresponding lengths as radii or diameters.</p>
+</div>
+<dl class="simple myst">
+<dt>Central Angle</dt><dd><p>Any angle whose vertex is the center of a circle.</p>
+</dd>
+<dt>Arc</dt><dd><p>The set of points on a circle that lie between two points on the circle, including the points themselves. The degree <em>measure of an arc</em> is the measure of the central angle corresponding to the arc. Each two points on a circle create two arcs, a <em>minor arc</em> and a <em>major arc</em>, with the degree measure of the major arc greater than (or equal to) that of the minor arc.</p>
+</dd>
+<dt>Inscribed Angle</dt><dd><p>The angle formed when two secant lines intersect on the circle.</p>
+</dd>
+<dt>Intercepted Arc</dt><dd><p>The part of the circle that lies between two lines that intersect it.</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>In the Euclidean plane, three distinct points uniquely determine a circle. (Requires both an existance proof and a uniqueness proof.)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\overline{AB}\)</span> is a diameter and <span class="math notranslate nohighlight">\(\overline{CD}\)</span> is any other chord of the same circle (which is not a diameter), then <span class="math notranslate nohighlight">\(AB&gt;CD\)</span>.</p></li>
+<li><p>If a diameter of a circle is perpendicular to a chord of the circle, then the diameter bisects the chord.</p></li>
+<li><p>The perpendicular bisector of a chord of a circle contains a diameter of the circle.</p></li>
+<li><p>If a line is tangent to a circle, it is perpendicular to the line joining the point of tangency to the center of the circle.</p></li>
+<li><p><strong>Arc Addition</strong>. If <span class="math notranslate nohighlight">\(\overset{\Huge\frown}{ABC}\)</span> and <span class="math notranslate nohighlight">\(\overset{\Huge\frown}{CDE}\)</span> are arcs sharing only the same endpoint <span class="math notranslate nohighlight">\(C\)</span>, then <span class="math notranslate nohighlight">\(m\overset{\Huge\frown}{ABC}+m\overset{\Huge\frown}{CDE}=m\overset{\Huge\frown}{ACE}\)</span>.</p></li>
+<li><p><strong>Inscribed Angle Theorem</strong>. The measure of an angle inscribed in an arc is one-half the measure of its intercepted arc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The measure of an arc is equal to the measure of the central angle corresponding to the arc.</p>
+</div>
+</li>
+<li><p><strong>Two-Chord Angle Theorem</strong>. If two chords interesect in the interior of a circle to determine an angle, the measure of that angle is the average of the measures of the arcs intercepted by the angle and its vertical angles.</p></li>
+<li><p><strong>Two-Secant Angle Theorem</strong>. If two secants interesect in the exterior of a circle to determine an angle, the measure of the angle at the point of intersection is one-half the positive difference of the two intercepted arcs.</p></li>
+<li><p><strong>Tangent-Chord Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overline{AC}\)</span> is a chord of the circle with <span class="math notranslate nohighlight">\(m\overset{\Huge\frown}{APC}=x^{\circ}\)</span>, then <span class="math notranslate nohighlight">\(m\angle BAC=\frac{x^{\circ}}{2}\)</span>.</p></li>
+<li><p><strong>Tangent-Secant Angle Theorem</strong>. If <span class="math notranslate nohighlight">\(\overleftrightarrow{AB}\)</span> is tangent to a circle at <span class="math notranslate nohighlight">\(A\)</span>, and if <span class="math notranslate nohighlight">\(\overleftrightarrow{BD}\)</span> is a secant of the circle, then <span class="math notranslate nohighlight">\(m\angle ABD\)</span> is half the positive difference of the two intercepted arcs.</p></li>
+<li><p><strong>Two-Tangent Angle Theorem</strong>. The measure of an angle formed by two tangents drawn to a circle is one-half the positive difference of the measures of the intercepted arcs.</p></li>
+<li><p><strong>Corollary Two-Tangent Angle Theorem</strong>. Tangent segments drawn to a circle from the same (exterior) point are congruent.</p></li>
+<li><p><strong>Chord Segment Product Theorem</strong>. If two chords of a circle intersect, the products of the lengths of the segments of one chord is equal to the product of the lengths of the segments of the other.</p></li>
+<li><p><strong>Secant Segment Product Theorem</strong>. If two secant lines are drawn to a circle from the same exterior point, then the product of the length of the secant segment and the lenth of its exterior portion is the same for both secants.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./3EG"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="E4.html" title="previous page">3.4 Right Triangles</a>
+    <a class='right-next' id="next-link" href="E6.html" title="next page">3.6 Triangles</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Robb Sinn<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

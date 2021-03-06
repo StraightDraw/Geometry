@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.2 Triangles &#8212; Geometry</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.3 Quadrilaterals" href="N3.html" />
+    <link rel="prev" title="2.1 Congruence, Lines and Angles" href="N1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/UNG.logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Geometry</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introduction.html">
+   Geometry
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../1FFG/F0.html">
+   1. Foundations and Finite Geometries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F1.html">
+     1.1 Finite Geometries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F2.html">
+     1.2 Four Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F3.html">
+     1.3 Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F4.html">
+     1.4 Fano’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F5.html">
+     1.5 Young’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="N0.html">
+   2. Neutral Geometry
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="N1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     2.2 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="N3.html">
+     2.3 Quadrilaterals
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../3EG/E0.html">
+   3. Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E1.html">
+     3.1 Building Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E2.html">
+     3.2 Parallel Lines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E3.html">
+     3.3 Area and Similarity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E4.html">
+     3.4 Right Triangles and the Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E8.html">
+     3.8 Homework
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../4CN/C0.html">
+   Constructions
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C1.html">
+     C.1 Construction Theorems
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C2.html">
+     C.2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
+   Axioms for Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A1.html">
+     A.1 Eculid’s Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A2.html">
+     A.2 Hilbert’s Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
+     A.3 Birkhoff Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A4.html">
+     A.4 SMSG Axioms
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DSM/D0.html">
+   Dollar Sign Math for Geometry
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../PRJ/P0.html">
+   Geometry Projects
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P1.html">
+     The Gnomon
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P2.html">
+     Quadrature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P3.html">
+     Regular Polygons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P4.html">
+     Cut the Knot
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/2NG/N2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/2NG/N2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="triangles">
+<h1>2.2 Triangles<a class="headerlink" href="#triangles" title="Permalink to this headline">¶</a></h1>
+<p>Triangles exist in a neutral geometry and have many familiar Euclidean properties from Euclidean geometry.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In neutral geometry, not all triangles have angle sums that are <span class="math notranslate nohighlight">\(180^\circ\)</span>. Crazy, right? We can only prove the <strong>Saccheri-Legendre Theorem</strong> which states that triangles must have angle sums that are <em>less than or equal</em> to <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p>
+</div>
+<p>Since most triangle theorems can be proven without any parallel axiom at all, we can see why the ancients misunderstood and questioned Euclid’s Fifth postulate.</p>
+<dl class="simple myst">
+<dt>Triangle</dt><dd><p>A triangle is the union of three line segments determined by three non-collinear points.</p>
+</dd>
+<dt>Right Triangle</dt><dd><p>A triangle with a right angle.</p>
+</dd>
+<dt>Isosceles Triangle</dt><dd><p>A triangle with a pair of congruent sides.</p>
+</dd>
+<dt>Equilateral Triangle</dt><dd><p>A triangle with all three sides congruent.</p>
+</dd>
+<dt>Scalene Triangle</dt><dd><p>The sides of a scalene triangle all have different lengths.</p>
+</dd>
+<dt>Angle Sum of a Triangle</dt><dd><p>The sum of the measures of all three angles in a triangle.</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p><strong>Isosceles Triangle Theorem</strong>. If two sides of a triangle are congruent, the angles opposite these sides are congruent (<span class="math notranslate nohighlight">\(\implies\)</span>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Proving that an isosceles triangle has congruent angles (<span class="math notranslate nohighlight">\(\implies\)</span>) is easier than proving the converse, that a triangle with two congruent angles is isosceles (<span class="math notranslate nohighlight">\(\implies\)</span>). The latter proof works better after a few other theorems have been established.</p>
+</div>
+</li>
+<li><p>A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Animation demonstrating that points <span class="math notranslate nohighlight">\(P\)</span> on the perpendicular bisector of a segment are equidistant from the endpoints.</p>
+</div>
+<iframe scrolling="no" title="Pasch's Axiom" src="https://www.geogebra.org/material/iframe/id/psw3qjcq/width/1180/height/360/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%" height="100%" style="border:1px;" allowfullscreen; style="display:block" > </iframe> 
+</li>
+<li><p><strong>Exterior Angle Theorem</strong>. Each exterior angle of a triangle is greater in measure than either of the nonadjacent interior angles of the triangle.</p></li>
+<li><p><strong>ASA Triangle Congruence</strong>. If two angles and the included side of one triangle are congruent, repsectively, to two angles and the included side of a second triangle, then the triangles are congruent.</p></li>
+<li><p><strong>AAS Triangle Congruence</strong>. If the vertices of two triangles are in one-to-one correspondence such that two angles and a non-included side in one triangle are congruent to their corresponding parts of a second triangle, then the triangles are congruent.</p></li>
+<li><p><strong>Isosceles Triangle Theorem</strong>. If two angles of a triangle are congruent, then the sides opposite these angles are congruent (<span class="math notranslate nohighlight">\(\impliedby\)</span>).</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><strong>Triangle Inequality.</strong> View a GeoGebra <a class="reference external" href="https://www.geogebra.org/m/werd2fyr">dynamic proof</a> or watch a YouTube <a class="reference external" href="https://www.youtube.com/watch?v=KIOY9Hk7PWk">video proof</a>.}</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Theorem 10 is needed to prove the Triangle Inequality (Theorem 7). The theorems are out of order, here, but we can prove them in the correct order.</p>
+</div>
+</li>
+<li><p><strong>Triangle Inequality</strong>. The sum of the measures of two sides of a triangle is greater than the measure of the third side.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><strong>Hinge Theorem.</strong> View a GeoGebra <a class="reference external" href="https://www.geogebra.org/m/nn5jz84v">dynamic proof</a> or watch a YouTube <a class="reference external" href="https://www.youtube.com/watch?v=-A6LXkrgQcc">video proof</a>.}</p>
+</div>
+</div>
+</li>
+<li><p><strong>Hinge Theorem</strong>. If two sides of one triangle are congruent to two sides of another triangle, and the included angle of the first is larger than the included angle of the second, then the third side of the first triangle is longer than the third side of the second triangle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Hinge Theorem is Euclid’s Proposition 24 and is sometimes called the ``Open Mouth Theorem.”</p>
+</div>
+</li>
+<li><p><strong>SSS Triangle Congruence</strong>. If the sides of one triangle are congruent to corresponding sides of another triangle, the triangles are congruent.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the Hinge Theorem to help prove SSS Triangle Congruence.</p>
+</div>
+</li>
+<li><p>In a scalene triangle, the angle with the largest measure is opposite the side with the largest length, and the angle with the smallest measure is opposite the side with the smallest length.</p></li>
+<li><p>Equilateral trianges are equiangular.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have yet to prove that any parallel lines exist. The next theorem demonstrates that parallel lines do exist in neutral geometry and shows how to locate them.</p>
+</div>
+</li>
+<li><p><strong>Alternate Interior Angle Theorem</strong>. If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Alternate Interior Angle Theorem is so important, it gets an acronym: the <strong>AIA</strong> theorem. Its converse is equivalent to the Euclidean parallel condition and is also acronym worthy: <strong>CAIA</strong>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Be Careful</p>
+<p>The CAIA theorem is <strong>not true</strong> in neutral geometry, only in Eclidean.</p>
+</div>
+</div>
+</li>
+<li><p><em>Corollary to AIA</em>. Two lines perpendicular to the same line are parallel.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Parall lines are a hot mess in neutral geometry, but perpendicularity and right angles work pretty well.</p>
+</div>
+</li>
+<li><p>The sum of the measures of any two angles of a triangle is less than <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p></li>
+<li><p>For any <span class="math notranslate nohighlight">\(\triangle ABC\)</span> there exists <span class="math notranslate nohighlight">\(\triangle A'B'C'\)</span> having the same angle sum as <span class="math notranslate nohighlight">\(\triangle ABC\)</span> but where <span class="math notranslate nohighlight">\(\measuredangle A'\leq\frac{1}{2}\measuredangle A\)</span>.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Watch a <a class="reference external" href="https://www.youtube.com/watch?v=ZE3_I2f_Bls">video proof</a> that situates the <strong>Saccheri-Legendre Theorem</strong> in context of the two thousand year quest to solve the parallelism puzzle.</p>
+</div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use both of the previous two theorems to help you prove the Saccheri-Legendre Theorem.</p>
+</div>
+</li>
+<li><p><strong>Saccheri-Legendre Theorem</strong>. The angle sum of any triangle is less than or equal to <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p></li>
+<li><p>The angle sum of any convex quadrilateral is less than or equal to <span class="math notranslate nohighlight">\(360^\circ\)</span>.</p></li>
+<li><p><strong>Unique Perpendicular</strong>. Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\perp l\)</span>.</p></li>
+</ol>
+<p>If we switched the word “perpendicular” to “parallel” in the theorem above, we would have Playfair’s Postulate which is the Euclidean parallel condition. Perhaps we can emphathize with the ancient geometers who were confused. Tons of Eudlidean geometry goes through just fine without any parallel axiom at all. Perpendicular lines behave nicely, and triangles work really well with the exception of their angle-sums. We even get half of the AIA theorem: congrunet alternate interior angles implies two lines are parallel.</p>
+<p>We have reached the breaking point, however. Rectangles do not even exist in neutral geometry. Parallelograms exist, yet, weirdly, opposite side of parallelograms need not be congruent. The next section explores the weirdness of quadrilaterals that live in a geometry with no parallel axiom.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./2NG"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="N1.html" title="previous page">2.1 Congruence, Lines and Angles</a>
+    <a class='right-next' id="next-link" href="N3.html" title="next page">2.3 Quadrilaterals</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Robb Sinn<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

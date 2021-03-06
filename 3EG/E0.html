@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. Euclidean Geometry &#8212; Geometry</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.1 Building Blocks" href="E1.html" />
+    <link rel="prev" title="2.3 Quadrilaterals" href="../2NG/N3.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/UNG.logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Geometry</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introduction.html">
+   Geometry
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../1FFG/F0.html">
+   1. Foundations and Finite Geometries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F1.html">
+     1.1 Finite Geometries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F2.html">
+     1.2 Four Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F3.html">
+     1.3 Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F4.html">
+     1.4 Fano’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F5.html">
+     1.5 Young’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../2NG/N0.html">
+   2. Neutral Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N2.html">
+     2.2 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N3.html">
+     2.3 Quadrilaterals
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="current reference internal" href="#">
+   3. Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="E1.html">
+     3.1 Building Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E2.html">
+     3.2 Parallel Lines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E3.html">
+     3.3 Area and Similarity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E4.html">
+     3.4 Right Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="E8.html">
+     3.8 Homework
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../4CN/C0.html">
+   4. Constructions
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C1.html">
+     C.1 Construction Theorems
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4CN/C2.html">
+     C.2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
+   Axioms for Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A1.html">
+     A.1 Eculid’s Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A2.html">
+     A.2 Hilbert’s Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
+     A.3 Birkhoff Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A4.html">
+     A.4 SMSG Axioms
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DSM/D0.html">
+   Dollar Sign Math for Geometry
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../PRJ/P0.html">
+   Geometry Projects
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P1.html">
+     The Gnomon
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P2.html">
+     Quadrature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P3.html">
+     Regular Polygons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P4.html">
+     Cut the Knot
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/3EG/E0.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/3EG/E0.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pathways-from-the-parallel-postulate">
+   Pathways from the Parallel Postulate
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neutral-vs-euclidean-geometry">
+   Neutral vs. Euclidean Geometry
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="euclidean-geometry">
+<h1>3. Euclidean Geometry<a class="headerlink" href="#euclidean-geometry" title="Permalink to this headline">¶</a></h1>
+<p>Along with Bolyai, we have completed our trek through the controversies of parallelism. Euclid’s 5th, indeed, is an axiom. We can now launch a new quest to fully establish Euclidean geometry knowing all neutral geometry theorems true. In additon, we finally get to use a parallel postulate.</p>
+<div class="admonition-playfair-s-postulate admonition">
+<p class="admonition-title">Playfair’s Postulate</p>
+<p>Through a given external point there is at most one line parallel to a given line (SMSG Axiom 16).</p>
+</div>
+<p>The “at most” wording in the parallel postulate rules out hyperbolic geometry where multiple lines through an external point may be parallel to a given line.</p>
+<div class="section" id="pathways-from-the-parallel-postulate">
+<h2>Pathways from the Parallel Postulate<a class="headerlink" href="#pathways-from-the-parallel-postulate" title="Permalink to this headline">¶</a></h2>
+<p>Establishing the full power of the Alternate Interior Angles theorem will unlock several important proofs. In neutral geometry, we were only able to prove one direction.</p>
+<div class="admonition-alternate-interior-angles-theorem-aia admonition">
+<p class="admonition-title">Alternate Interior Angles Theorem (AIA)</p>
+<p>If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.</p>
+</div>
+<p>With Axiom 16 ruling out multiple parallels through an external point, we can prove the converse.</p>
+<div class="admonition-converse-of-the-alternate-interior-angles-theorem-caia admonition">
+<p class="admonition-title">Converse of the Alternate Interior Angles Theorem (CAIA)</p>
+<p>If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.</p>
+</div>
+<p>With CAIA as a tool in our kit, we can immediately show that the angle sums of triangles must be <span class="math notranslate nohighlight">\(180^\circ\)</span> and that rectangles exist. The parallel postulate has straightened the curves of the geometry.</p>
+</div>
+<div class="section" id="neutral-vs-euclidean-geometry">
+<h2>Neutral vs. Euclidean Geometry<a class="headerlink" href="#neutral-vs-euclidean-geometry" title="Permalink to this headline">¶</a></h2>
+<p>The following comparisons show the gap – often just a sliver – between neutral geometry theorems and important results in Euclidean geometry.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Alternate Interior Angle Theorem</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Converse of the Alternate Interior Angle Theorem</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Perpendicular Uniqueness</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\perp l\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Parallel Uniqueness</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Given a line <span class="math notranslate nohighlight">\(l\)</span> and any point <span class="math notranslate nohighlight">\(P\)</span> not on <span class="math notranslate nohighlight">\(l\)</span>, there exists a unique line <span class="math notranslate nohighlight">\(m\)</span> such that <span class="math notranslate nohighlight">\(P\in m\)</span> and <span class="math notranslate nohighlight">\(m\parallel l\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Corollary to AIA</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Two lines perpendicular to the same line are parallel.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Corollary to CAIA</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">If a line is perpendicular to one of two parallel lines, then it is perpedicular to the other.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Saccheri-Legendre</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">The angle sum of a triangle is less than or equal to <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-6 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header docutils">
+<p class="card-text">Corollary to CAIA</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">The angle sum of a triangle is <span class="math notranslate nohighlight">\(180^\circ\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./3EG"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../2NG/N3.html" title="previous page">2.3 Quadrilaterals</a>
+    <a class='right-next' id="next-link" href="E1.html" title="next page">3.1 Building Blocks</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Robb Sinn<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
