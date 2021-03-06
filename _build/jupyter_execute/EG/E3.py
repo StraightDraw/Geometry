@@ -1,8 +1,21 @@
 # 3.3 Area and Similarity
 
-We have discussed several issues with Euclid. We have arrived at another: How do we define area? If rectangular area is defined, then we can calculate the area of triangles. Using triangles and rectangles, we can calcuate polygon areas. Since rectangles don't exist in neutral geometry, our standard notion of area only exists in Euclidean geometry. In any other geometry, calculating an area will prove troublesome. However, we're developing Euclidean geometry in this section. Please note that SMSG Axiom 20 states:
+How do we define area? Neutral geometry has right triangles but no rectangles, so the traditional idea of a rectangular (or square) area only exists in Euclidean geometry. 
 
->The area of a rectangle is the product of the length of its base and the length of its altitude." The following definitions will also be helpful.
+````{warning}
+In any non-Eudclidean geometry, calculating the area of a triangle will prove troublesome.
+````
+
+The SMSG axioms have an area postulate.
+
+````{epigraph}
+The area of a rectangle is the product of the length of its base and the length of its altitude.
+
+--SMSG Axiom 20
+````
+
+
+The following definitions will also be helpful.
 
 Parallel Segments
 : We call line segments *parallel* if they are contained in lines that are parallel.
@@ -33,6 +46,7 @@ Congruence is a more primitice geometric idea than similarity, even though, iron
 
 The parallelogram decomposition theorem stated that we could always create congruent triangles by drawing the diagonal of a parallelogram and considering the two resulting triangles. The theorem is true in the reverse: given any two congruent triangles, they can be joined to create a parallelogram. We will put the following in our toolbox:
 
+## Theorems
 1. The area of a parallelogram is the product of the lengths of its base and height.
 
 2. Parallelogram Recomposition Theorem. If $\triangle{ABC}\cong\triangle{XYZ}$ and $X=B$ and $Y=A$, then $AZBC$ is a parallelogram.
@@ -54,5 +68,4 @@ The parallelogram decomposition theorem stated that we could always create congr
 8. **SAS Triangle Similarity**. If an angle of one triangle is congruent to the corresponding angle of a second triangle, and the corresponding sides adjacent to these angles are in proportion, then the triangles are similar.
 
 9. **SAS Triangle Similarity**. If the lengths of the sides of one triangle are proportional to the corresponding side lengths of a second triangle, then the triangles are similar.
-
 
