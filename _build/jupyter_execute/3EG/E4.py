@@ -7,7 +7,7 @@ If a triangle has a right angle, several interesting relationships form. Now tha
 1. If a line segment has as its endpoints the midpoints of two sides of a triangle, then the segment is parallel to and one-half the length of the third side of the triangle. 
 
     ````{note} 
-    The above theorem has a stunning implication: the midpoints of \emph{any} quadrilateral are the vertices of a parallelogram. While it doesn't exactly fit the theme of this section, we'll prove it here because it is a straightforward consequence of the theorem we just proved.
+    The above theorem has a stunning implication: the midpoints of **any quadrilateral** are the vertices of a parallelogram. While it doesn't exactly fit the theme of this section, we'll prove it here because it is a straightforward consequence of the theorem we just proved.
     ````
 2. The midpoints of the sides of a quadrilateral are the vertices of a convex parallelogram.
 

@@ -30,7 +30,7 @@ Rhombus
 : A parallelogram with all sides congruent.
 
 ## Theorems
-1. Converse of the Alternate Interior Angle Theorem. If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.
+1. **Converse of the Alternate Interior Angle Theorem**. If two parallel lines are intersected by a transversal, then the alternate interior angles formed are congruent.
 2.  The sum of the measures of the interior angles of triangle is $180^\circ$. 
 
     ````{tip}

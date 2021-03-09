@@ -29,6 +29,11 @@ A sketch of the proof the Transversal Segment Congruence Lemma.
     ````
 
 3. Two lines parallel to another line are parallel to each other.
-4. If a line intersects one of two parallel llines, then it interesects the other.
+4. If a line intersects one of two parallel lines, then it interesects the other.
+5. Parallel lines are everywhere equidistant.
+
+````{warning}
+Parallel lines are everywhere equidistant **only** in Euclidean geometries. This visualization is often taught to school children as a definition of parallel, but in formal geometry, two lines being parallel simply means that they do not intersect.
+````
 
 [^1]: This theorem name is non-standard, invented and used in this document only.
