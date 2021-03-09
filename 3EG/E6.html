@@ -181,7 +181,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="E4.html">
-     3.4 Right Triangles and the Pythagorean Theorem
+     3.4 Right Triangles
     </a>
    </li>
    <li class="toctree-l2">
@@ -210,7 +210,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../4CN/C0.html">
-   Constructions
+   4. Constructions
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -431,25 +431,41 @@
 </table>
 <hr class="docutils" />
 <dl class="simple myst">
-<dt>Circumscribe.</dt><dd><p>A circle which contains all vertices of a polygon is said to \textbf{circumscribe} it.</p>
+<dt>Circumscribe</dt><dd><p>A circle which contains all vertices of a polygon is said to \textbf{circumscribe} it.</p>
 </dd>
 <dt>Incircle</dt><dd><p>A circle which can be inscribed in a triangle (e.g. tangent to all three sides of the triangle and otherwise interior to the triangle).</p>
 </dd>
 <dt>Altitude</dt><dd><p>The perpendicular line sement from the vertex of an angle to the side opposite.</p>
 </dd>
+<dt>Circumcenter</dt><dd><p>The center of the unique circle that circumscribes a triangle.</p>
+</dd>
+<dt>Incenter</dt><dd><p>The center of the unique circle inscribed in a triangle.</p>
+</dd>
 </dl>
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Proving Concurrence Theorems</p>
+<p>Let two of the lines exist, then prove the third line passes through their intersection point. For the <em>angle bisector concurrence</em>, for example, we would start with an arbitrary <span class="math notranslate nohighlight">\(\triangle ABC\)</span> and <em>construct</em> the angle bisectors of <span class="math notranslate nohighlight">\(\angle A\)</span> and <span class="math notranslate nohighlight">\(\angle B\)</span>. If these two lines are not parallel (you can prove they are not), then they intersect. Label this intersection <span class="math notranslate nohighlight">\(P\)</span> and prove that the angle bisector of <span class="math notranslate nohighlight">\(\angle C\)</span> passes through it.</p>
+</div>
 <ol>
-<li><p><strong>Perpendicular Bisector Concurrence</strong>. The three perpendicular bisectors of the sides a triangle are concurrent. The concurrent point is called the \textbf{circumcenter} of the triangle.</p></li>
-<li><p>The center of the unique circle that circumscribes a triangle is the circumcenter.</p>
+<li><p><strong>Perpendicular Bisector Concurrence</strong>. The three perpendicular bisectors of the sides a triangle are concurrent at the <em>circumcenter</em> of the triangle.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must prove the intersection point of the perpendicular bisectors is also the center of the circumscribing circle. Prove the first result, then see if the relationships you need to prove the second are available.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We often instruct students to think intuitively about the distance from a point to a line as the “minimum distance” from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>. This idea is equivalent to the defition because any other line segment drawn from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span> would be the hypotenuse of a right triangle. The Pythagorean Theorem then implies the new segment has a length greater than the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>.</p>
+<p>We often instruct students to think intuitively about the distance from a point to a line as the “minimum distance” from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>. This idea is equivalent to the definition because any other line segment drawn from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span> would be the hypotenuse of a right triangle. The Triangle Inequality then implies the new segment has a length greater than the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(l\)</span>.</p>
 </div>
 </li>
 <li><p>A point is on the bisector of angle if and only if it is equidistant from both rays of the angle.</p></li>
-<li><p><strong>Angle Bisector Concurrence</strong>. The bisectors of the interior angles of a triangle are concurrent at a point called the <em>incenter</em>.</p></li>
+<li><p><strong>Angle Bisector Concurrence</strong>. The bisectors of the interior angles of a triangle are concurrent at the <em>incenter</em> of the triangle.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must prove the intersection point of the angle bisectors is also the center of the inscribed circle. Prove the first result, then see if the relationships you need to prove the second are available.</p>
+</div>
+</li>
 <li><p><strong>Altitude Concurrence</strong>. The three altitudes of a triangle are concurrent at a point called the <em>orthocenter</em>.</p></li>
 <li><p>An angle bisector of an interior angle of a triangle is concurrent with the angle bisectors of the <em>exterior angles</em> of the two remaining angles of the triangles at a point called the <em>excenter</em>.</p>
 <div class="admonition note">
@@ -461,6 +477,10 @@
 <li><p>In an equilateral triangle, the incenter, circumcenter, centroid and orthocenter are all concurrent.</p></li>
 <li><p><strong>Euler Line</strong>. The orthocenter, centroid and circumcenter of a triangle are collinear. The line that contains these three points is called the <em>Euler Line</em>.</p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Euler Line actually contains several interesting points not mentioned in the above theorem, and investigating the relationships along this line (which are true for all triangles) would make an interesting geometry project.</p>
+</div>
 </div>
 </div>
 
