@@ -57,7 +57,7 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A.2 Proofs using Analytic Geometry" href="A2.html" />
+    <link rel="next" title="A.2 Proofs in Analytic Geometry" href="A2.html" />
     <link rel="prev" title="4. Analytic Geometry" href="A0.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -220,12 +220,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="A2.html">
-     A.2 Proofs using Analytic Geometry
+     A.2 Proofs in Analytic Geometry
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="A3.html">
      A.3 Trigonometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A4.html">
+     A.4 Conic Sections
     </a>
    </li>
   </ul>
@@ -402,6 +407,14 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#distance-in-a-coordinate-system-o-xy">
+   Distance in a Coordinate System
+   <span class="math notranslate nohighlight">
+    \(O_{xy}\)
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#theorems">
    Theorems
   </a>
@@ -419,21 +432,36 @@
                 
   <div class="section" id="a-1-affine-coordinates">
 <h1>A.1 Affine Coordinates.<a class="headerlink" href="#a-1-affine-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>An affine geometry is one in which the Euclidean parallel postulate holds. Affine coordinates can be created for any (non-finite) affine geometry, and they will have the properties we associate with Cartesian Coordinates. We refer to a coordinate system as <span class="math notranslate nohighlight">\(O_{xy}\)</span> where <span class="math notranslate nohighlight">\(O\)</span> is the origin and <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> refer to two mutually perpendicular lines called the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(y\)</span>-axis that intersect at <span class="math notranslate nohighlight">\(O\)</span>. By Theorem 1, these axis lines uniquely determine a plane, specifically, the Cartesian Coordinate Plane. Also included in the definition of this coordinate system is a positive real number <span class="math notranslate nohighlight">\(e\)</span>, the unit measure of distance. To sum up, the SMSG Axioms provide everything needed to create the typical Cartesian Coordinate System which can, with a bit more work, include the <span class="math notranslate nohighlight">\(z\)</span>-axis as well.</p>
-<p><strong>Distance in a Coordinate System <span class="math notranslate nohighlight">\(O_{xy}\)</span></strong>. At the moment, distances have only been defined along the axes. Notice that the value of the coordinates of point <span class="math notranslate nohighlight">\(P(x,y)\)</span> are determined by creating a rectangle and measuring distances on the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-axis using the SMSG Ruler Axioms. The next two theorems will establish the validity of the Euclidean distance metric:</p>
-<p>Eventually, we will need to work lines in our coordinate system that satisfy equations of the form <span class="math notranslate nohighlight">\(y=mx+b\)</span>. Before we can do so, we must define slope.</p>
 <dl class="simple myst">
+<dt>Affine Geometry</dt><dd><p>A geometry in which the Euclidean parallel postulate holds.</p>
+</dd>
 <dt>Slope of line <span class="math notranslate nohighlight">\(l\)</span>:</dt><dd><p>The unique <span class="math notranslate nohighlight">\(m\in\mathbb{R}\)</span> such that, for any two points <span class="math notranslate nohighlight">\(N(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(M(x_2,y_2)\)</span> on <span class="math notranslate nohighlight">\(l\)</span>, $<span class="math notranslate nohighlight">\(m=\frac{y_1-y_2}{x_1-x_2}\)</span>$</p>
 </dd>
 </dl>
+<p>Affine coordinates can be created for any (non-finite) affine geometry, and they will have the properties we associate with Cartesian Coordinates. The SMSG Axioms provide everything needed to create the typical Cartesian Coordinate System which can, with a bit more work, include the <span class="math notranslate nohighlight">\(z\)</span>-axis as well.</p>
+<div class="section" id="distance-in-a-coordinate-system-o-xy">
+<h2>Distance in a Coordinate System <span class="math notranslate nohighlight">\(O_{xy}\)</span><a class="headerlink" href="#distance-in-a-coordinate-system-o-xy" title="Permalink to this headline">¶</a></h2>
+<p>At the moment, distances have only been defined along the axes. Notice that the value of the coordinates of point <span class="math notranslate nohighlight">\(P(x,y)\)</span> are determined by creating a rectangle and measuring distances on the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-axis using the SMSG Ruler Axioms. The next two theorems will establish the validity of the Euclidean distance metric.</p>
+</div>
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p>For two distinct points with the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x_1,y)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|x_1-x_2|\)</span>. For two distinct points with the same <span class="math notranslate nohighlight">\(x\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x,y_2)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|y_1-y_2|\)</span>.</p></li>
-<li><p>For any distinct <span class="math notranslate nohighlight">\(a,b\in\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(|b-a|^2=|a-b|^2=(a-b)^2\)</span>.</p>
-<p>Note that the Ruler Axiom gives linear distance in terms of the absolute value of differences in coordinates, but the Euclidean distance metric is defined in terms of the squares of those differences. The above lemma makes the following theorem easier to prove.</p>
+<li><p>For two distinct points with the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x_1,y)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|x_1-x_2|\)</span>. For two distinct points with the same <span class="math notranslate nohighlight">\(x\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x,y_2)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|y_1-y_2|\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From the algebraic properties of real numbers, we know that for any distinct <span class="math notranslate nohighlight">\(a,b\in\mathbb{R}\)</span></p>
+<div class="math notranslate nohighlight">
+\[|b-a|^2=|a-b|^2=(a-b)^2\]</div>
+<p>which makes the <em>distance formula</em> much easier to establish.</p>
+</div>
 </li>
-<li><p><strong>Distance Formula.</strong> For any two distinct points <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> in the coordinate plane, <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\)</span>.</p></li>
+<li><p><strong>Distance Formula.</strong> For any two distinct points <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> in the coordinate plane, <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\)</span>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The distance formula is simply the anlaytic geometry version of the Pythagorean Theorem.</p>
+</div>
+</li>
+<li><p><strong>Midpoint Formula.</strong> The midpoint <span class="math notranslate nohighlight">\(M\)</span> of line segment <span class="math notranslate nohighlight">\(\overline{AB}\)</span> where <span class="math notranslate nohighlight">\(A(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(B(x_2,y_2)\)</span> is given by:$<span class="math notranslate nohighlight">\(M(x,y)=\left( \frac{x_1+x_2}{2},\frac{y_1+y_2}{2} \right)\)</span>$</p></li>
 <li><p><strong>Linear Equations.</strong> For any line <span class="math notranslate nohighlight">\(l\)</span> not parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis, all points <span class="math notranslate nohighlight">\(P(x,y)\)</span> satisfy the relationship <span class="math notranslate nohighlight">\(y=mx+b\)</span> for some <span class="math notranslate nohighlight">\(m,b\in\mathbb{R}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -474,7 +502,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="A0.html" title="previous page">4. Analytic Geometry</a>
-    <a class='right-next' id="next-link" href="A2.html" title="next page">A.2 Proofs using Analytic Geometry</a>
+    <a class='right-next' id="next-link" href="A2.html" title="next page">A.2 Proofs in Analytic Geometry</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
