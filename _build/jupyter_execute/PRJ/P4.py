@@ -23,4 +23,5 @@ There is so much interesting geometry at the cut-the-knot, it's hard to list a T
 3. Search for anything related to Archimedes
 4. [Sangaku and Egyptian Triangles](https://www.cut-the-knot.org/pythagoras/RopeStretchersSangaku.shtml#tr)
 5. Anything related to Ceva, for example, [Cevian triangles](https://www.cut-the-knot.org/Generalization/ceva.shtml#cevian)
-6. [Morley's mirale](https://www.cut-the-knot.org/triangle/Morley/)
+6. [The Buttefly Theorem](https://www.cut-the-knot.org/pythagoras/Butterfly.shtml)
+7. [Morley's mirale](https://www.cut-the-knot.org/triangle/Morley/)

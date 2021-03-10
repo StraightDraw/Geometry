@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.1 Affine Coordinates. &#8212; Geometry</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="A.2 Proofs using Analytic Geometry" href="A2.html" />
+    <link rel="prev" title="4. Analytic Geometry" href="A0.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/UNG.logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Geometry</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introduction.html">
+   Geometry
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../1FFG/F0.html">
+   1. Foundations and Finite Geometries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F1.html">
+     1.1 Finite Geometries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F2.html">
+     1.2 Four Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F3.html">
+     1.3 Five Point Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F4.html">
+     1.4 Fano’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F5.html">
+     1.5 Young’s Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1FFG/F6.html">
+     1.6  Searching for a Parallel Posutlate
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../2NG/N0.html">
+   2. Neutral Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N1.html">
+     2.1 Congruence, Lines and Angles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N2.html">
+     2.2 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2NG/N3.html">
+     2.3 Quadrilaterals
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../3EG/E0.html">
+   3. Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E1.html">
+     3.1 Building Blocks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E2.html">
+     3.2 Parallel Lines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E3.html">
+     3.3 Area and Similarity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E4.html">
+     3.4 Right Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E5.html">
+     3.5 Circles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E6.html">
+     3.6 Triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E7.html">
+     3.7 Cyclic Quadrilaterals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../3EG/E8.html">
+     3.8 Homework
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="A0.html">
+   4. Analytic Geometry
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     A.1 Affine Coordinates.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A2.html">
+     A.2 Proofs using Analytic Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A3.html">
+     A.3 Trigonometry
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../5CN/C0.html">
+   5. Constructions
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../5CN/C1.html">
+     C.1 Construction Theorems
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../5CN/C2.html">
+     C.2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../AX/A0.html">
+   Axioms for Euclidean Geometry
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A1.html">
+     A.1 Eculid’s Elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A2.html">
+     A.2 Hilbert’s Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A3.html">
+     A.3 Birkhoff Axioms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AX/A4.html">
+     A.4 SMSG Axioms
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DSM/D0.html">
+   Dollar Sign Math for Geometry
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../PRJ/P0.html">
+   Geometry Projects
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P1.html">
+     The Gnomon
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P2.html">
+     Quadrature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P3.html">
+     Regular Polygons
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PRJ/P4.html">
+     Cut the Knot
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/4AG/A1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/4AG/A1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorems">
+   Theorems
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="a-1-affine-coordinates">
+<h1>A.1 Affine Coordinates.<a class="headerlink" href="#a-1-affine-coordinates" title="Permalink to this headline">¶</a></h1>
+<p>An affine geometry is one in which the Euclidean parallel postulate holds. Affine coordinates can be created for any (non-finite) affine geometry, and they will have the properties we associate with Cartesian Coordinates. We refer to a coordinate system as <span class="math notranslate nohighlight">\(O_{xy}\)</span> where <span class="math notranslate nohighlight">\(O\)</span> is the origin and <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> refer to two mutually perpendicular lines called the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(y\)</span>-axis that intersect at <span class="math notranslate nohighlight">\(O\)</span>. By Theorem 1, these axis lines uniquely determine a plane, specifically, the Cartesian Coordinate Plane. Also included in the definition of this coordinate system is a positive real number <span class="math notranslate nohighlight">\(e\)</span>, the unit measure of distance. To sum up, the SMSG Axioms provide everything needed to create the typical Cartesian Coordinate System which can, with a bit more work, include the <span class="math notranslate nohighlight">\(z\)</span>-axis as well.</p>
+<p><strong>Distance in a Coordinate System <span class="math notranslate nohighlight">\(O_{xy}\)</span></strong>. At the moment, distances have only been defined along the axes. Notice that the value of the coordinates of point <span class="math notranslate nohighlight">\(P(x,y)\)</span> are determined by creating a rectangle and measuring distances on the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-axis using the SMSG Ruler Axioms. The next two theorems will establish the validity of the Euclidean distance metric:</p>
+<p>Eventually, we will need to work lines in our coordinate system that satisfy equations of the form <span class="math notranslate nohighlight">\(y=mx+b\)</span>. Before we can do so, we must define slope.</p>
+<dl class="simple myst">
+<dt>Slope of line <span class="math notranslate nohighlight">\(l\)</span>:</dt><dd><p>The unique <span class="math notranslate nohighlight">\(m\in\mathbb{R}\)</span> such that, for any two points <span class="math notranslate nohighlight">\(N(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(M(x_2,y_2)\)</span> on <span class="math notranslate nohighlight">\(l\)</span>, $<span class="math notranslate nohighlight">\(m=\frac{y_1-y_2}{x_1-x_2}\)</span>$</p>
+</dd>
+</dl>
+<div class="section" id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>For two distinct points with the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x_1,y)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|x_1-x_2|\)</span>. For two distinct points with the same <span class="math notranslate nohighlight">\(x\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x,y_2)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|y_1-y_2|\)</span>.</p></li>
+<li><p>For any distinct <span class="math notranslate nohighlight">\(a,b\in\mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(|b-a|^2=|a-b|^2=(a-b)^2\)</span>.</p>
+<p>Note that the Ruler Axiom gives linear distance in terms of the absolute value of differences in coordinates, but the Euclidean distance metric is defined in terms of the squares of those differences. The above lemma makes the following theorem easier to prove.</p>
+</li>
+<li><p><strong>Distance Formula.</strong> For any two distinct points <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> in the coordinate plane, <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\)</span>.</p></li>
+<li><p><strong>Linear Equations.</strong> For any line <span class="math notranslate nohighlight">\(l\)</span> not parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis, all points <span class="math notranslate nohighlight">\(P(x,y)\)</span> satisfy the relationship <span class="math notranslate nohighlight">\(y=mx+b\)</span> for some <span class="math notranslate nohighlight">\(m,b\in\mathbb{R}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lines parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis have equations of the form <span class="math notranslate nohighlight">\(x=k\)</span> for some <span class="math notranslate nohighlight">\(k\in\mathbb{R}\)</span>. We say the slope of such lines is \textbf{undefined}. Some textbooks refer to these types of lines as having “no slope.” This is very confusing especially for high school students: “no slope” seems almost the same as “zero slope” due to how we communicate in real life. In this course, we will always refer to these lines as having <em>undefined slope</em>.</p>
+</div>
+</li>
+<li><p><strong>Equations of Circles.</strong> All points on a circle with center point <span class="math notranslate nohighlight">\(C(h,k)\)</span> and radius <span class="math notranslate nohighlight">\(r&gt;0\)</span> satisfy the relationship $<span class="math notranslate nohighlight">\((x-h)^2+(y-h)^2=r^2\)</span>$</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./4AG"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="A0.html" title="previous page">4. Analytic Geometry</a>
+    <a class='right-next' id="next-link" href="A2.html" title="next page">A.2 Proofs using Analytic Geometry</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Robb Sinn<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
