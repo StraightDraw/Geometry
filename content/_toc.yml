@@ -28,6 +28,7 @@ sections:
   - file: 4AG/A1 
   - file: 4AG/A2
   - file: 4AG/A3
+  - file: 4AG/A4
 - file: 5CN/C0
   sections:
   - file: 5CN/C1 
