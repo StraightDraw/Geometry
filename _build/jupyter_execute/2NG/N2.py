@@ -30,7 +30,7 @@ Angle Sum of a Triangle
 1. **Isosceles Triangle Theorem**. If two sides of a triangle are congruent, the angles opposite these sides are congruent ($\implies$).
 
     ````{warning}
-    Proving that an isosceles triangle has congruent angles ($\implies$) is easier than proving the converse, that a triangle with two congruent angles is isosceles ($\implies$). The latter proof works better after a few other theorems have been established.
+    Proving that an isosceles triangle has congruent angles ($\implies$) is easier than proving the converse, that a triangle with two congruent angles is isosceles ($\impliedby$). The latter proof works better after a few other theorems have been established.
     ````
 
 2. A point is on the perpendicular bisector of a line segment if and only if it is equidistant from the endpoints of the line segment.
