@@ -5,19 +5,29 @@ We know the medians of a triangle are concurrent at a point called the centroid,
 Median
 : A line passing through a vertex and the midpoint of the opposite side.
 
-````{admonition} A Theorem for the Toolbox
-:class: tip
-The Transversal Congruence theorem is used only once, but we need it to prove that the medians of a triangle are conurrent.
+````{figure} ../images/Medians.png
+---
+width: "40%"
+name: Medians of a triangle
+---
+Demonstrating the three median segments of a triangle.
 ````
 
-**Transversal Congruence Lemma**. If a transversal intersects three parallel lines in such a way as to make congruent segments between the paralllels, then every transversal interesecting these parallel lines will do likewise.
+````{admonition} A Theorem for the Toolbox
+:class: tip
+The Transversal Congruence theorem is used only once, but we need it to prove that the medians of a triangle are concurrent.
+````
+
+
+
+**Transversal Congruence Lemma**. If a transversal intersects three parallel lines in such a way as to make congruent segments between the parallels, then every transversal interesecting these parallel lines will do likewise.
 
 ````{figure} Fig1.png
 ---
 width: "40%"
 name: TSCLemma
 ---
-A sketch of the proof the Transversal Segment Congruence Lemma.
+A sketch showing Transversal Segment Congruence with a hint for the proof.
 ````
 
 ## Theorems

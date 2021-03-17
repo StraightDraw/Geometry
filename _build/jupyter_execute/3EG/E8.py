@@ -1,12 +1,8 @@
-# 3.8 Homework
+# 3.8 Exercises
 
-Definitions
-: A quadrilateral with exactly one pair of opposite sides parallel.  The parallel sides of a trapezoid are called the *bases*. The non-parallel sides of a trapezoid are called the *legs*. The *base angles* of a trapezoid refer to a pair of angles whose vertices are the endpoints of the same base segment.
+Prove the following theorems.
 
-Median of a Trapezoid
-: The line segment joining the midpoints of the legs.
 
-## Theorems
 1. The area of a right triangle is one-half the product of the lengths of its legs.
 2. The sum of the measures of the interior angles of a convex $n$-gon is $(n-2)(180^\circ)$.
 3. The sum of the measures of the exterior angles of a convex $n$-gon is $360^\circ$.

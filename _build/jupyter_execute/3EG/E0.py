@@ -31,6 +31,14 @@ The following comparisons show the gap -- often just a sliver -- between neutral
 ````{panels}
 :column: col-6
 :card: border-2
+**True in Neutral Geometry**
+---
+**True in Euclidean Geometry**
+````
+
+````{panels}
+:column: col-6
+:card: border-2
 Alternate Interior Angle Theorem
 ^^^
 If two lines are intersected by a transversal such that a pair of alternate interior angles is congruent, then the lines are parallel.
