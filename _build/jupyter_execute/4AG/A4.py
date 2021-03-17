@@ -25,14 +25,14 @@ Hyperbola
 
     $$(x-h)^2+(y-k)^2=r^2$$
 
-3. Create a segment $FP$ that is perpendicular to the directrix and passes through the focal point $F$. The midpoint of $FP$ is on the parabola.
+3. For a given parabola, drop a perpendicular from the focal point $F$ to the closest point on the directrix $P$. Prove the midpoint of $FP$ is on the parabola.
 
-4. Suppose we have a parabola with a vertical line of symmtery through the origin (e.g. $x=0$) and focal point $F=(0,y_0)$ where $y_0>0$. Prove that the set of all points $P=(x,y)$ on the parabola is equivalent to 
+4. Suppose we have a parabola the direterix of which is the $x$-axis with focal point $F=(0,2)$. Prove that the set of all points $P=(x,y)$ on the parabola is equivalent to 
 
-    $$x^2+(y-y_0)^2=(y+y_0)^2$$
+    $$y - 1 = \frac{1}{4}x^2$$
+    
+5. Suppose we have a parabola the direterix of which is the $x$-axis with focal point $F=(0,k)$. Prove that the set of all points $P=(x,y)$ on the parabola is equivalent to 
 
-    and that the directrix line for the parabola has the equation 
+    $$y - k = \frac{1}{4k}x^2$$ 
 
-    $$y=\frac{1}{y_0}$$
-
-3. Hyperbola...under construction...coming soon.
+3. 

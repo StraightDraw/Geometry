@@ -23,18 +23,15 @@ At the moment, distances have only been defined along the axes. Notice that the 
     
     which makes the *distance formula* much easier to establish.
     ````
-2. **Distance Formula.** For any two distinct points $P$ and $Q$ in the coordinate plane, $\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$.
+2. **Distance Formula.** Prove that, for any two distinct points $P(x_1,y_1)$ and $Q(x_2,y_2)$ in the coordinate plane, $\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$.
 
     ````{hint}
     The distance formula is simply the anlaytic geometry version of the Pythagorean Theorem.
     ````
-3. **Midpoint Formula.** The midpoint $M$ of line segment $\overline{AB}$ where $A(x_1,y_1)$ and $B(x_2,y_2)$ is given by:$$M(x,y)=\left( \frac{x_1+x_2}{2},\frac{y_1+y_2}{2} \right)$$
+3. **Midpoint Formula.** Prove that the midpoint $M$ of line segment $\overline{AB}$ where $A(x_1,y_1)$ and $B(x_2,y_2)$ is given by:$$M(x,y)=\left( \frac{x_1+x_2}{2},\frac{y_1+y_2}{2} \right)$$
 
-4. **Linear Equations.** For any line $l$ not parallel to the $y$-axis, all points $P(x,y)$ satisfy the relationship $y=mx+b$ for some $m,b\in\mathbb{R}$.
+4. **Linear Equations.** For any line $l$ not parallel to the $y$-axis, prove all points $P(x,y)$ satisfy the relationship $y=mx+b$ for some $m,b\in\mathbb{R}$.
 
     ````{note}
     Lines parallel to the $y$-axis have equations of the form $x=k$ for some $k\in\mathbb{R}$. We say the slope of such lines is \textbf{undefined}. Some textbooks refer to these types of lines as having "no slope." This is very confusing especially for high school students: "no slope" seems almost the same as "zero slope" due to how we communicate in real life. In this course, we will always refer to these lines as having *undefined slope*.
     ````
-
-5. **Equations of Circles.** All points on a circle with center point $C(h,k)$ and radius $r>0$ satisfy the relationship $$(x-h)^2+(y-h)^2=r^2$$
-

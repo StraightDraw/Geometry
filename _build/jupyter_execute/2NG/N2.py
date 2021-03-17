@@ -26,6 +26,9 @@ Scalene Triangle
 Angle Sum of a Triangle
 : The sum of the measures of all three angles in a triangle.
 
+Transversal
+: A line that intersects two other distinct lines. Most relevant when the two lines are parallel, but not required.
+
 ## Theorems
 1. **Isosceles Triangle Theorem**. If two sides of a triangle are congruent, the angles opposite these sides are congruent ($\implies$).
 
