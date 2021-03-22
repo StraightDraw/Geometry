@@ -22,13 +22,6 @@ Parallel Segments
 Distance from a point to a line
 : Given a point $P$ not on line $l$, the *distance between $P$ and $l$* is the distance $PQ$ where $Q\in l$ and $\overleftrightarrow{PQ}\perp l$.
 
-Trapezoid
-: A convex quadrilateral with exactly one pair of parallel sides.
-
-````{warning}
-Two definitions of a trapezoid exist: *exactly* one pair of parallel sides, or *at least* one pair of parallel sides. The former excludes parallelograms while the latter includes them. Generally, especially in K-12 mathematics, the "*exactly* one pair of parallel sides" definition is preferred.
-````
-
 Kite
 : A convex quadrilateral with two pairs of adjacent sides congruent.
 
@@ -68,14 +61,22 @@ Area Proof of Pythagorean Theorem
 5. **Pythagorean Theorem (Area Proof)**. If $a$ and $b$ are the lengths of the legs of a right triangle the hypotenuse of which has length $c$, then $a^2+b^2=c^2$.
 
 6. **Basic Proportionality Theorem**. A line parallel to one side of a triangle intersects the other two sides in two different points if and only if it divides these sides into segments that are proportional. 
-    
-    ````{note}
-    The ``two different points" verbiage requires the point of intersection to not be the vertex.
+
+    ````{figure} ../images/Proportion.png
+    ---
+    width: "50%"
+    name: Medians of a triangle
+    ---
+    Proportionality theorem: $\overline{DE}\parallel\overline{BC}\implies \frac{AD}{DB}=\frac{AE}{EC}$.
     ````
 
-7. **AAA Triangle Similarity**. If the interior angles of one triangle are congruent to corresponding angles of a second triangle, then the triangles are similar.
+
+    ````{note}
+    The "two different points" verbiage requires the point of intersection to not be the vertex.
+    ````
+
+7. **AA Triangle Similarity**. If two interior angles of one triangle are congruent to corresponding angles of a second triangle, then the triangles are similar.
 
 8. **SAS Triangle Similarity**. If an angle of one triangle is congruent to the corresponding angle of a second triangle, and the corresponding sides adjacent to these angles are in proportion, then the triangles are similar.
 
 9. **SSS Triangle Similarity**. If the lengths of the sides of one triangle are proportional to the corresponding side lengths of a second triangle, then the triangles are similar.
-

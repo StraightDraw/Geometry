@@ -6,6 +6,15 @@ If a triangle has a right angle, several interesting relationships form. Now tha
 
 1. If a line segment has as its endpoints the midpoints of two sides of a triangle, then the segment is parallel to and one-half the length of the third side of the triangle. 
 
+
+    ````{figure} ../images/TriangleMidpointLine.png
+    ---
+    width: "50%"
+    name: Medians of a triangle
+    ---
+    If $D,E$ midpoints of $\overline{AB},\overline{AC}$ respectively, then $\overline{DE}\parallel\overline{BC}$ and $DE = \frac{1}{2}BC$.
+    ````
+
     ````{note} 
     The above theorem has a stunning implication: the midpoints of **any quadrilateral** are the vertices of a parallelogram. While it doesn't exactly fit the theme of this section, we'll prove it here because it is a straightforward consequence of the theorem we just proved.
     ````

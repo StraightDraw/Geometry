@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C.1 Construction Theorems &#8212; Geometry</title>
+    <title>C.1 Pathways for Constructions &#8212; Geometry</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -57,7 +57,7 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="C.2" href="C2.html" />
+    <link rel="next" title="C.2 Construction Theorems" href="C2.html" />
     <link rel="prev" title="5. Constructions" href="C0.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -201,7 +201,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../3EG/E8.html">
-     3.8 Homework
+     3.8 Exercises
     </a>
    </li>
   </ul>
@@ -244,12 +244,12 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     C.1 Construction Theorems
+     C.1 Pathways for Constructions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="C2.html">
-     C.2
+     C.2 Construction Theorems
     </a>
    </li>
   </ul>
@@ -407,14 +407,41 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theorems">
-   Theorems
+  <a class="reference internal nav-link" href="#estimating-pi">
+   Estimating
+   <span class="math notranslate nohighlight">
+    \(\pi\)
+   </span>
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#constructions">
+     Constructions
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#constructions">
-   Constructions
+  <a class="reference internal nav-link" href="#quadrature">
+   Quadrature
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quadrature-of-the-lune">
+     Quadrature of the Lune
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quadratic-equations">
+     Quadratic Equations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#theorems">
+     Theorems
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -427,31 +454,67 @@
         
               <div>
                 
-  <div class="section" id="c-1-construction-theorems">
-<h1>C.1 Construction Theorems<a class="headerlink" href="#c-1-construction-theorems" title="Permalink to this headline">¶</a></h1>
-<p>Compass and straightedge constructions form an important part of the Greek’s approach to geometry and proofs.</p>
-<div class="section" id="theorems">
-<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="c-1-pathways-for-constructions">
+<h1>C.1 Pathways for Constructions<a class="headerlink" href="#c-1-pathways-for-constructions" title="Permalink to this headline">¶</a></h1>
+<p>The Greeks developed compass and straightedge constructions along two main pathways.</p>
 <ol class="simple">
-<li><p>Radii of congruent circles are congruent.</p></li>
-<li><p>Consider two circles <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span> with centers <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> respectively. If <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span> intersect in exactly two points, say, <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span>, then quadrilateral <span class="math notranslate nohighlight">\(PRQS\)</span> is a kite. If <span class="math notranslate nohighlight">\(p\cong q\)</span>, <span class="math notranslate nohighlight">\(PQRS\)</span> is a rhombus. If <span class="math notranslate nohighlight">\(p\in Q\)</span> and <span class="math notranslate nohighlight">\(q\in P\)</span>, <span class="math notranslate nohighlight">\(\triangle{PRQ}\)</span> is equilateral, as is <span class="math notranslate nohighlight">\(\triangle{PSQ}\)</span>.</p></li>
+<li><p>Determining the value of <span class="math notranslate nohighlight">\(\pi\)</span>.</p></li>
+<li><p>Calculating quadratures.</p></li>
+</ol>
+<div class="section" id="estimating-pi">
+<h2>Estimating <span class="math notranslate nohighlight">\(\pi\)</span><a class="headerlink" href="#estimating-pi" title="Permalink to this headline">¶</a></h2>
+<p>For two thousand years, the best estimates of <span class="math notranslate nohighlight">\(\pi\)</span> followed the same basic plan: use regular polygons to inscribe and circumscribe the unit circle. These upper and lower bounds converge as the number of sides in the regular n-gons increases. Today, we would think of it as the limit as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>, and Archimedes accomplished these types of calculations using what he termed a method of exhuastion.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gMlf1ELvRzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Regular polygons were, for this reason, highly valued constructions, and the Greeks quickly figured out which were possible. Yet they lacked the level of rigor to prove conclusively that certain constructions were impossible.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LBgIWQcC6lM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="section" id="constructions">
+<h3>Constructions<a class="headerlink" href="#constructions" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Construct an equilateral triangle</p></li>
+<li><p>Construct a square</p></li>
+<li><p>Construct a regualr pentagon and a pentagram</p></li>
+<li><p>Construct a regular hexagon</p></li>
+<li><p>Construct an ocatagon</p></li>
+<li><p>Construct other regular polygons</p></li>
+<li><p>Determine what regular polygons are not possible</p></li>
 </ol>
 </div>
-<div class="section" id="constructions">
-<h2>Constructions<a class="headerlink" href="#constructions" title="Permalink to this headline">¶</a></h2>
-<p>We can construct the following compass and straightedge and, using the first and second construction theorems, prove the constructions have the required properties.</p>
+</div>
+<div class="section" id="quadrature">
+<h2>Quadrature<a class="headerlink" href="#quadrature" title="Permalink to this headline">¶</a></h2>
+<p>For the Greeks, quadrature meant constructing a square with equal area to a given figure. Since the beginning of the Enlightenment, quadrature has typically meant finding the area of a figure. While the Greeks never squared the circle – that’s impossible – they did manage to determine the quadrature of many impressive figures.</p>
+<div class="section" id="quadrature-of-the-lune">
+<h3>Quadrature of the Lune<a class="headerlink" href="#quadrature-of-the-lune" title="Permalink to this headline">¶</a></h3>
+<p>The godfather of quadrature was Hippocrates who worked on the quadrature of the lune, one of the most impressive mathematical accomplishments prior to the invention of calculus.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n_FsAwvxBI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section" id="quadratic-equations">
+<h3>Quadratic Equations<a class="headerlink" href="#quadratic-equations" title="Permalink to this headline">¶</a></h3>
+<p>The Greeks solved quadratic equations using compass and straightedge quadrature. In fact, they were able to solve all quadratic equations of the form:</p>
+<div class="math notranslate nohighlight">
+\[\begin{align}x^2 + bx + c = 0\end{align}\]</div>
+<p>Of course, this means they solved all quadratics with real roots, since we can take a general quadratic equation</p>
+<div class="math notranslate nohighlight">
+\[x^2 + bx + c = 0\]</div>
+<p>and divide through by <span class="math notranslate nohighlight">\(a\)</span>. This yields equation (1).</p>
+<p>The Greek idea of area was based on quadrature. They didn’t think of area as rectangular, as length times width like we do. They thought of area as squares. They converted, when possible, other plane figures into squares with equivalent areas. This process is likely the foundation for why we refer to</p>
+<div class="math notranslate nohighlight">
+\[x^2\]</div>
+<p>as <span class="math notranslate nohighlight">\(x\)</span>-squared, referring to a time when it would have meant to construct a square the side lengths of which are <span class="math notranslate nohighlight">\(x\)</span> units.</p>
+</div>
+<div class="section" id="theorems">
+<h3>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h3>
+<p>Perform the following compass and straighedge constructions, and prove they have the require properties.</p>
 <ol class="simple">
-<li><p>Construct a segment of given length.</p></li>
-<li><p>Find the midpoint of given segment.</p></li>
-<li><p>Construct the perpendicular bisector of a segement.</p></li>
-<li><p>Construct the bisector of an angle.</p></li>
-<li><p>Construct a right triangle.</p></li>
-<li><p>Construct an isoceles triangle.</p></li>
-<li><p>Construct a 30-60-90 right triangle.</p></li>
-<li><p>Construct a 45-45-90 right triangle.</p></li>
-<li><p>Construct and equilateral triange.</p></li>
-<li><p>Construct a square.</p></li>
+<li><p>Square a triangle</p></li>
+<li><p>Square a rectangle</p></li>
+<li><p>Square a parallelogram</p></li>
+<li><p>Square a trapezoid</p></li>
+<li><p>Square a rhombus</p></li>
+<li><p>Solve quadratic equations</p></li>
+<li><p>Find the quadrature of a lune (Hippocrates)</p></li>
 </ol>
+</div>
 </div>
 </div>
 
@@ -484,7 +547,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="C0.html" title="previous page">5. Constructions</a>
-    <a class='right-next' id="next-link" href="C2.html" title="next page">C.2</a>
+    <a class='right-next' id="next-link" href="C2.html" title="next page">C.2 Construction Theorems</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
