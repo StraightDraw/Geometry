@@ -25,7 +25,12 @@ If a triangle has a right angle, several interesting relationships form. Now tha
 4. In a right triangle, one of the angles measures $30^\circ$ if and only if the side opposite this angle is one-half the length of the hypotenuse. 
 
     ````{note}
-    This result along with the Pythagorean Theorem gives us the $1-2-\sqrt3$ ratio of side lengths for $30-60-90$ right triangles. Recall that the Pythagorean Theorem is equivalent to the Euclidean parallel postulate and will be proven later.
+    This result along with the Pythagorean Theorem gives us the $1-2-\sqrt3$ ratio of side lengths for $30-60-90$ right triangles.
+    ````
+    
+    ````{hint}
+    Every right triangle has a self-similarity property when an altitude is drawn from the right angle to the hypotenuse. The two smaller triangles created are both similar to the original right triangle. This similarlity property leads directly to a proof of the Pythagorean Theorem.
     ````
 
 5. **Pythagorean Theorem (Similarity Proof)**. If $a$ and $b$ are the lengths of the legs of a right triangle the hypotenuse of which has length $c$, then $a^2+b^2=c^2$.
+

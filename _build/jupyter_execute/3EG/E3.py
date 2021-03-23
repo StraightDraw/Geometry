@@ -28,8 +28,11 @@ Kite
 Rhombus
 : A parallelogram with all sides congruent.
 
-Square
+Rectangle
 : A parallelogram with a right angle.
+
+Square
+: A rectangular rhombus.
 
 Similar Polygons
 : Two polygons are *similar* provided (i) corresponding sides of each are in the same proportion, and (ii) corresponding interior angles are congruent.
