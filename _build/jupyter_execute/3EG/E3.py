@@ -53,10 +53,10 @@ The parallelogram decomposition theorem stated that we could always create congr
 
 4. The area of a trapezoid is the product of its height and the arithmetic mean of its bases.
 
-````{margin}
-![Pythagorean Theorem](https://www.mathsisfun.com/geometry/images/pythagoras.svg)
-Area Proof of Pythagorean Theorem
-````
+    ````{margin}
+    ![Pythagorean Theorem](https://www.mathsisfun.com/geometry/images/pythagoras.svg)
+    Area Proof of Pythagorean Theorem
+    ````
 
 5. **Pythagorean Theorem (Area Proof)**. If $a$ and $b$ are the lengths of the legs of a right triangle the hypotenuse of which has length $c$, then $a^2+b^2=c^2$.
 
