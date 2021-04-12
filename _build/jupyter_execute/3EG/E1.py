@@ -1,4 +1,4 @@
-# 3.1 Building Blocks
+# 3.1 CAIA and the Results of a Parallel Postulate
 
 We proved parallel lines exist in neutral geometry using only Euclid's first four axioms. 
 

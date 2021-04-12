@@ -32,7 +32,7 @@ Rectangle
 : A parallelogram with a right angle.
 
 Square
-: A rectangular rhombus.
+: A rhombus with a right angle.
 
 Similar Polygons
 : Two polygons are *similar* provided (i) corresponding sides of each are in the same proportion, and (ii) corresponding interior angles are congruent.
@@ -83,3 +83,5 @@ The parallelogram decomposition theorem stated that we could always create congr
 8. **SAS Triangle Similarity**. If an angle of one triangle is congruent to the corresponding angle of a second triangle, and the corresponding sides adjacent to these angles are in proportion, then the triangles are similar.
 
 9. **SSS Triangle Similarity**. If the lengths of the sides of one triangle are proportional to the corresponding side lengths of a second triangle, then the triangles are similar.
+
+10. **Converse of Pythagorean Theorem.** Given $\triangle ABC$ with side lengths $a,b,c$ such that $c$ is the longest side, then $a^2 +b^2 = c^2$ only if $\triangle ABC$ is a right triangle.
