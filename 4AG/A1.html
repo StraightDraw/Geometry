@@ -166,7 +166,7 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../3EG/E1.html">
-     3.1 Building Blocks
+     3.1 CAIA and the Results of a Parallel Postulate
     </a>
    </li>
    <li class="toctree-l2">
@@ -201,7 +201,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../3EG/E8.html">
-     3.8 Homework
+     3.8 Exercises
     </a>
    </li>
   </ul>
@@ -244,12 +244,12 @@
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../5CN/C1.html">
-     C.1 Construction Theorems
+     C.1 Pathways for Constructions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../5CN/C2.html">
-     C.2
+     C.2 Construction Theorems
     </a>
    </li>
   </ul>
@@ -435,9 +435,11 @@
 <dl class="simple myst">
 <dt>Affine Geometry</dt><dd><p>A geometry in which the Euclidean parallel postulate holds.</p>
 </dd>
-<dt>Slope of line <span class="math notranslate nohighlight">\(l\)</span>:</dt><dd><p>The unique <span class="math notranslate nohighlight">\(m\in\mathbb{R}\)</span> such that, for any two points <span class="math notranslate nohighlight">\(N(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(M(x_2,y_2)\)</span> on <span class="math notranslate nohighlight">\(l\)</span>, $<span class="math notranslate nohighlight">\(m=\frac{y_1-y_2}{x_1-x_2}\)</span>$</p>
+<dt>Slope of line <span class="math notranslate nohighlight">\(l\)</span>:</dt><dd><p>The unique <span class="math notranslate nohighlight">\(m\in\mathbb{R}\)</span> such that, for any two points <span class="math notranslate nohighlight">\(P(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(P(x_2,y_2)\)</span> on <span class="math notranslate nohighlight">\(l\)</span>,</p>
 </dd>
 </dl>
+<div class="math notranslate nohighlight">
+\[m=\frac{y_1-y_2}{x_1-x_2}\]</div>
 <p>Affine coordinates can be created for any (non-finite) affine geometry, and they will have the properties we associate with Cartesian Coordinates. The SMSG Axioms provide everything needed to create the typical Cartesian Coordinate System which can, with a bit more work, include the <span class="math notranslate nohighlight">\(z\)</span>-axis as well.</p>
 <div class="section" id="distance-in-a-coordinate-system-o-xy">
 <h2>Distance in a Coordinate System <span class="math notranslate nohighlight">\(O_{xy}\)</span><a class="headerlink" href="#distance-in-a-coordinate-system-o-xy" title="Permalink to this headline">¶</a></h2>
@@ -446,7 +448,12 @@
 <div class="section" id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p>For two distinct points with the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x_1,y)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|x_1-x_2|\)</span>. For two distinct points with the same <span class="math notranslate nohighlight">\(x\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x,y_2)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=|y_1-y_2|\)</span>.</p>
+<li><p>For two distinct points with the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x_1,y)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\text{Dist}(P,Q)=|x_1-x_2|\]</div>
+<p>For two distinct points with the same <span class="math notranslate nohighlight">\(x\)</span>-coordinate, say, <span class="math notranslate nohighlight">\(P(x,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x,y_2)\)</span>, the distance between <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(Q\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\text{Dist}(P,Q)=|y_1-y_2|\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>From the algebraic properties of real numbers, we know that for any distinct <span class="math notranslate nohighlight">\(a,b\in\mathbb{R}\)</span></p>
@@ -455,17 +462,22 @@
 <p>which makes the <em>distance formula</em> much easier to establish.</p>
 </div>
 </li>
-<li><p><strong>Distance Formula.</strong> Prove that, for any two distinct points <span class="math notranslate nohighlight">\(P(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y_2)\)</span> in the coordinate plane, <span class="math notranslate nohighlight">\(\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\)</span>.</p>
+<li><p><strong>Distance Formula.</strong> Prove that, for any two distinct points <span class="math notranslate nohighlight">\(P(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(Q(x_2,y_2)\)</span> in the coordinate plane,</p>
+<div class="math notranslate nohighlight">
+\[\text{Dist}(P,Q)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\]</div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>The distance formula is simply the anlaytic geometry version of the Pythagorean Theorem.</p>
 </div>
 </li>
-<li><p><strong>Midpoint Formula.</strong> Prove that the midpoint <span class="math notranslate nohighlight">\(M\)</span> of line segment <span class="math notranslate nohighlight">\(\overline{AB}\)</span> where <span class="math notranslate nohighlight">\(A(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(B(x_2,y_2)\)</span> is given by:$<span class="math notranslate nohighlight">\(M(x,y)=\left( \frac{x_1+x_2}{2},\frac{y_1+y_2}{2} \right)\)</span>$</p></li>
+<li><p><strong>Midpoint Formula.</strong> Prove that the midpoint <span class="math notranslate nohighlight">\(M\)</span> of line segment <span class="math notranslate nohighlight">\(\overline{AB}\)</span> where <span class="math notranslate nohighlight">\(A(x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\(B(x_2,y_2)\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
+\[M(x,y)=\left( \frac{x_1+x_2}{2},\frac{y_1+y_2}{2} \right)\]</div>
+</li>
 <li><p><strong>Linear Equations.</strong> For any line <span class="math notranslate nohighlight">\(l\)</span> not parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis, prove all points <span class="math notranslate nohighlight">\(P(x,y)\)</span> satisfy the relationship <span class="math notranslate nohighlight">\(y=mx+b\)</span> for some <span class="math notranslate nohighlight">\(m,b\in\mathbb{R}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Lines parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis have equations of the form <span class="math notranslate nohighlight">\(x=k\)</span> for some <span class="math notranslate nohighlight">\(k\in\mathbb{R}\)</span>. We say the slope of such lines is \textbf{undefined}. Some textbooks refer to these types of lines as having “no slope.” This is very confusing especially for high school students: “no slope” seems almost the same as “zero slope” due to how we communicate in real life. In this course, we will always refer to these lines as having <em>undefined slope</em>.</p>
+<p>Lines parallel to the <span class="math notranslate nohighlight">\(y\)</span>-axis have equations of the form <span class="math notranslate nohighlight">\(x=k\)</span> for some <span class="math notranslate nohighlight">\(k\in\mathbb{R}\)</span>. We say the slope of such lines is <em>undefined</em>. Some textbooks refer to these types of lines as having “no slope.” This is very confusing especially for high school students: “no slope” seems almost the same as “zero slope” due to how we communicate in real life. In this course, we will always refer to these lines as having <em>undefined slope</em>.</p>
 </div>
 </li>
 </ol>
